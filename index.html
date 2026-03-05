@@ -43,7 +43,7 @@
         #breathing-line { height: 6px; background: #34d399; width: 0%; transition: width 0s linear; box-shadow: 0 0 15px #34d399; }
         
         #global-back-btn { transition: all 0.2s; z-index: 100; }
-        #global-back-btn.hidden { opacity: 0; pointer-events: none; transform: translateX(-20px); }
+        #global-back-btn.hidden { opacity: 0; pointer-events: none; transform: translateX(-10px); }
     </style>
 </head>
 <body class="font-sans antialiased flex justify-center no-select">
@@ -117,24 +117,25 @@
         <!-- === VIEW: ROUTER (WEAVER) === -->
         <main id="view-router" class="view-content p-5 fade-in">
             <div class="space-y-4 mb-6">
+                <!-- Layers restored as per your request -->
                 <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30">
                     <div class="flex justify-between items-center mb-3 text-[10px] font-black uppercase text-slate-500 tracking-widest">
                         <span>1. Feel</span>
-                        <button onclick="toggleExpand('feelings-box', this)" class="text-emerald-400">Expand</button>
+                        <button onclick="toggleExpand('feelings-box', this)" class="text-emerald-400 uppercase tracking-tighter">Show All</button>
                     </div>
                     <div id="feelings-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
                 </div>
                 <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30">
                     <div class="flex justify-between items-center mb-3 text-[10px] font-black uppercase text-slate-500 tracking-widest">
                         <span>2. Face</span>
-                        <button onclick="toggleExpand('situations-box', this)" class="text-emerald-400">Expand</button>
+                        <button onclick="toggleExpand('situations-box', this)" class="text-emerald-400 uppercase tracking-tighter">Show All</button>
                     </div>
                     <div id="situations-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
                 </div>
                 <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30">
                     <div class="flex justify-between items-center mb-3 text-[10px] font-black uppercase text-slate-500 tracking-widest">
                         <span>3. Intend</span>
-                        <button onclick="toggleExpand('intentions-box', this)" class="text-emerald-400">Expand</button>
+                        <button onclick="toggleExpand('intentions-box', this)" class="text-emerald-400 uppercase tracking-tighter">Show All</button>
                     </div>
                     <div id="intentions-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
                 </div>
@@ -194,7 +195,7 @@
         </button>
 
         <!-- Navigation Bar -->
-        <nav id="bottom-nav" class="bg-slate-900 border-t border-slate-800/80 flex justify-between items-center h-[72px] px-6 shrink-0 z-30 shadow-2xl">
+        <nav id="bottom-nav" class="bg-slate-900 border-t border-slate-800/80 flex justify-around items-center h-[72px] px-6 shrink-0 z-30 shadow-2xl">
             <button onclick="switchTab('home')" id="tab-btn-home" class="p-2 text-slate-500 transition-all"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></button>
             <button onclick="switchTab('library')" id="tab-btn-library" class="p-2 text-slate-500 transition-all"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></button>
             <button onclick="switchTab('router')" id="tab-btn-router" class="p-2 text-slate-500 transition-all"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></button>
@@ -235,24 +236,34 @@
 
         const namesData = [
             { id: 0, arabic: "ٱللَّٰهُ", transliteration: "Allah", meaning: "The One and Only God", tags: ["peace", "mercy", "strength", "guidance"] },
-            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "compassion", "anxiety", "sadness"] },
-            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["mercy", "healing", "forgiveness"] },
-            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxiety", "stress", "conflict"] },
+            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "compassion", "anxiety", "sadness", "hardship"] },
+            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["mercy", "healing", "forgiveness", "repentance"] },
+            { id: 3, arabic: "ٱلْمَلِكُ", transliteration: "Al-Malik", meaning: "The Sovereign", tags: ["leadership", "control", "authority"] },
+            { id: 4, arabic: "ٱلْقُدُّوسُ", transliteration: "Al-Quddus", meaning: "The Pure", tags: ["purity", "focus", "discipline"] },
+            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "anxiety", "stress", "worried"] },
             { id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu’min", meaning: "The Giver of Security", tags: ["safety", "fear", "protection", "security"] },
-            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Repeatedly Forgiving", tags: ["forgiveness", "repentance", "guilt"] },
+            { id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Mighty", tags: ["strength", "courage", "leadership"] },
+            { id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Compeller", tags: ["healing", "restoration", "heartbreak"] },
+            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Repeatedly Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret"] },
+            { id: 15, arabic: "ٱلْقهَّارُ", transliteration: "Al-Qahhar", meaning: "The Subduer", tags: ["addiction", "self control", "discipline"] },
+            { id: 16, arabic: "ٱلْوَهَّابُ", transliteration: "Al-Wahhab", meaning: "The Bestower", tags: ["gifts", "blessings", "unexpected help"] },
+            { id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "business growth"] },
             { id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "obstacles"] },
-            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-‘Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "study", "wisdom"] },
+            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-‘Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "study", "wisdom", "intelligence"] },
+            { id: 24, arabic: "ٱلْمُعِزُّ", transliteration: "Al-Mu’izz", meaning: "The Giver of Honor", tags: ["respect", "status", "promotion"] },
             { id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "calmness", "unseen help"] },
-            { id: 32, arabic: "ٱلْحَلِيمُ", transliteration: "Al-Halim", meaning: "The Forbearing", tags: ["anger", "patience", "frustration"] },
+            { id: 32, arabic: "ٱلْحَلِيمُ", transliteration: "Al-Halim", meaning: "The Forbearing", tags: ["anger", "patience", "frustration", "emotional regulation"] },
             { id: 38, arabic: "ٱلْحَافِظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel"] },
             { id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy", "clarity"] },
-            { id: 47, arabic: "ٱلْوَدُودُ", transliteration: "Al-Wadud", meaning: "The Loving", tags: ["love", "marriage", "family", "harmony"] },
+            { id: 47, arabic: "ٱلْوَدُودُ", transliteration: "Al-Wadud", meaning: "The Loving", tags: ["love", "loneliness", "marriage", "family", "harmony"] },
+            { id: 52, arabic: "ٱلْقَوِيُّ", transliteration: "Al-Qawiy", meaning: "The Strong", tags: ["strength", "physical power", "endurance"] },
             { id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout"] },
             { id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance", "endurance"] },
-            { id: 84, arabic: "ٱلْوَكِيلُ", transliteration: "Al-Wakil", meaning: "The Trustee", tags: ["reliance", "trust", "surrender", "control"] }
+            { id: 84, arabic: "ٱلْوَكِيلُ", transliteration: "Al-Wakil", meaning: "The Trustee", tags: ["reliance", "trust", "surrender", "control"] },
+            { id: 98, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "resilience"] }
         ];
 
-        const routineLibrary = { morning: [0, 1, 2, 5, 18, 19, 62], evening: [0, 14, 30, 32, 38, 46, 63], crisis: [5, 30, 84] };
+        const routineLibrary = { morning: [62, 18, 19, 0, 1, 5, 17], evening: [14, 5, 38, 30, 46, 63, 2], crisis: [5, 30, 84] };
 
         // --- Core Functions ---
         function switchTab(tab, push = true) {
@@ -265,8 +276,10 @@
             const view = document.getElementById(`view-${tab}`); if(view) view.classList.add('active');
             const btn = document.getElementById(`tab-btn-${tab}`); if(btn) btn.classList.add('text-emerald-400');
             
-            document.getElementById('bottom-nav').classList.toggle('hidden', tab === 'counter');
-            document.getElementById('main-header').classList.toggle('hidden', tab === 'counter');
+            const bottomNav = document.getElementById('bottom-nav');
+            const mainHeader = document.getElementById('main-header');
+            if (bottomNav) bottomNav.classList.toggle('hidden', tab === 'counter');
+            if (mainHeader) mainHeader.classList.toggle('hidden', tab === 'counter');
             
             const backBtn = document.getElementById('global-back-btn');
             if(backBtn) { backBtn.classList.toggle('hidden', historyStack.length <= 1); backBtn.style.bottom = tab === 'counter' ? '20px' : '90px'; }
@@ -279,10 +292,9 @@
         function goBack() { if (historyStack.length > 1) switchTab(historyStack.pop(), false); }
 
         function initApp() {
-            currentNameData = namesData[0];
-            renderTags('feelings-box', ["anxiety", "sadness", "anger", "fear", "fatigue", "overwhelmed", "confusion"]);
-            renderTags('situations-box', ["exams", "job search", "leadership", "marriage", "family", "conflict", "hardship"]);
-            renderTags('intentions-box', ["peace", "wisdom", "healing", "protection", "provision", "clarity", "resilience"]);
+            renderTags('feelings-box', ["anxiety", "sadness", "anger", "fear", "fatigue", "overwhelmed", "confusion", "heartbreak", "burnout", "guilt", "regret"]);
+            renderTags('situations-box', ["exams", "job search", "leadership", "marriage", "family", "conflict", "hardship", "business growth", "public speaking", "travel", "debt"]);
+            renderTags('intentions-box', ["peace", "wisdom", "healing", "protection", "provision", "clarity", "resilience", "honor", "discipline", "control"]);
             filterNames('library'); filterNames('router'); updateDayTrack(); updateStatsDisplay(); setupSafetyButtons();
         }
 
@@ -307,19 +319,16 @@
                 if(duaText) duaText.innerHTML = `Ya Rahman Ya Rahim, <span class='text-indigo-400'>Ya ${mid.join(', Ya ')}</span>, Ya Wakil, I place my trust in You.`;
             } else if (ctx === 'router') document.getElementById('combination-banner')?.classList.add('hidden');
             
-            list.innerHTML = res.map(n => `<div onclick="openCounter(${n.id}); switchTab('counter')" class="bg-slate-800 border border-slate-700/50 p-6 rounded-[2rem] flex justify-between items-center active:scale-95 transition-all mb-3 shadow-sm"><div><h3 class="font-black text-white text-lg">${n.transliteration}</h3><p class="text-[10px] text-slate-500 uppercase">${n.meaning}</p></div><span class="text-3xl font-serif text-emerald-500">${n.arabic}</span></div>`).join('');
-        }
-
-        function startWeavedDua() { openCounter(0, false, 33); switchTab('counter'); }
-
-        function updateDayTrack() {
-            const day = new Date().getDate(), name = namesData[(day - 1) % namesData.length];
-            const tl = document.getElementById('track-day-label'), nt = document.getElementById('track-name-trans'), nm = document.getElementById('track-name-meaning'), dots = document.getElementById('track-progress-dots');
-            if(tl) tl.innerText = `Day ${day}`; if(nt) nt.innerText = name.transliteration; if(nm) nm.innerText = name.meaning;
-            if(dots) dots.innerHTML = Array(5).fill(0).map((_, i) => `<div class='w-1.5 h-1.5 rounded-full ${i < (day % 5) ? 'bg-indigo-400' : 'bg-slate-700'}'></div>`).join('');
+            list.innerHTML = res.map(n => `<div onclick="openCounter(${n.id}); switchTab('counter')" class="bg-slate-800 border border-slate-700/50 p-6 rounded-[2rem] flex justify-between items-center active:scale-95 transition-all mb-3 shadow-sm"><div><h3 class="font-black text-white text-lg uppercase tracking-tight">${n.transliteration}</h3><p class="text-[10px] text-slate-500 uppercase">${n.meaning}</p></div><span class="text-3xl font-serif text-emerald-500">${n.arabic}</span></div>`).join('');
         }
 
         function startDayTrack() { openCounter(namesData[(new Date().getDate() - 1) % namesData.length].id, false, 100); switchTab('counter'); }
+        function updateDayTrack() {
+            const day = new Date().getDate(), name = namesData[(day - 1) % namesData.length];
+            const tl = document.getElementById('track-day-label'), nt = document.getElementById('track-name-trans'), nm = document.getElementById('track-name-meaning'), dots = document.getElementById('track-progress-dots');
+            if(tl) tl.innerText = `Day ${day} Track`; if(nt) nt.innerText = name.transliteration; if(nm) nm.innerText = name.meaning;
+            if(dots) dots.innerHTML = Array(5).fill(0).map((_, i) => `<div class='w-1.5 h-1.5 rounded-full ${i < (day % 5) ? 'bg-indigo-400' : 'bg-slate-700'}'></div>`).join('');
+        }
 
         function openCounter(id, fromRoutine = false, customTarget = 33) {
             currentNameData = namesData.find(n => n.id === id) || namesData[0];
@@ -330,6 +339,10 @@
             document.getElementById('target-btn-text').innerText = target;
             document.getElementById('target-count-display').innerText = 'Target: ' + target;
             resetCounter(); setDhikrTarget('self');
+            if (fromRoutine) {
+                document.getElementById('routine-progress').classList.remove('hidden');
+                document.getElementById('routine-step').innerText = "Active";
+            } else document.getElementById('routine-progress').classList.add('hidden');
         }
 
         function toggleBreathingMode() {
@@ -382,6 +395,7 @@
         function closeConfirmModal() { const m = document.getElementById('confirm-reset-modal'); if(m) { m.classList.remove('opacity-100'); setTimeout(() => { m.classList.remove('flex'); m.classList.add('hidden'); }, 300); } }
         function handleSearch(e) { searchQuery = e.target.value.toLowerCase(); filterNames('library'); }
         function clearFilters() { activeTags.clear(); document.querySelectorAll('#view-router button[id^="tag-"]').forEach(b => b.classList.remove('border-emerald-500')); filterNames('router'); }
+        function startWeavedDua() { openCounter(currentNameData ? currentNameData.id : 0, false, 33); switchTab('counter'); }
         function openTargetModal() { document.getElementById('target-modal').classList.remove('hidden'); document.getElementById('target-modal').classList.add('flex'); void document.getElementById('target-modal').offsetWidth; document.getElementById('target-modal').classList.add('opacity-100'); }
         function closeTargetModal() { document.getElementById('target-modal').classList.remove('opacity-100'); setTimeout(() => document.getElementById('target-modal').classList.add('hidden'), 300); }
         function quickSetTarget(v) { document.getElementById('custom-target-input').value = v; }
