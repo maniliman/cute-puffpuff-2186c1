@@ -77,7 +77,7 @@
 
             <div class="mb-8">
                 <h2 class="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] mb-4">30-Day Mastery</h2>
-                <div onclick="startDayTrack()" class="bg-gradient-to-br from-indigo-950 to-slate-800 border border-indigo-500/20 p-6 rounded-[2rem] relative overflow-hidden cursor-pointer active:scale-95 transition-all shadow-xl">
+                <div id="day-track-card" onclick="startDayTrack()" class="bg-gradient-to-br from-indigo-950 to-slate-800 border border-indigo-500/20 p-6 rounded-[2rem] relative overflow-hidden cursor-pointer active:scale-95 transition-all shadow-xl">
                     <div class="flex justify-between items-center mb-2">
                         <span id="track-day-label" class="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-400">Day 1</span>
                         <div id="track-progress-dots" class="flex gap-1.5"></div>
@@ -117,24 +117,24 @@
         <!-- === VIEW: ROUTER (WEAVER) === -->
         <main id="view-router" class="view-content p-5 fade-in">
             <div class="space-y-4 mb-6">
-                <!-- Layers restored as per your request -->
-                <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30">
+                <!-- Layers restored with full 50x each library -->
+                <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30 shadow-inner">
                     <div class="flex justify-between items-center mb-3 text-[10px] font-black uppercase text-slate-500 tracking-widest">
-                        <span>1. Feel</span>
+                        <span>1. Feel (The Internal)</span>
                         <button onclick="toggleExpand('feelings-box', this)" class="text-emerald-400 uppercase tracking-tighter">Show All</button>
                     </div>
                     <div id="feelings-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
                 </div>
-                <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30">
+                <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30 shadow-inner">
                     <div class="flex justify-between items-center mb-3 text-[10px] font-black uppercase text-slate-500 tracking-widest">
-                        <span>2. Face</span>
+                        <span>2. Face (The External)</span>
                         <button onclick="toggleExpand('situations-box', this)" class="text-emerald-400 uppercase tracking-tighter">Show All</button>
                     </div>
                     <div id="situations-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
                 </div>
-                <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30">
+                <div class="bg-slate-800 p-4 rounded-3xl border border-slate-700/30 shadow-inner">
                     <div class="flex justify-between items-center mb-3 text-[10px] font-black uppercase text-slate-500 tracking-widest">
-                        <span>3. Intend</span>
+                        <span>3. Intend (The Goal)</span>
                         <button onclick="toggleExpand('intentions-box', this)" class="text-emerald-400 uppercase tracking-tighter">Show All</button>
                     </div>
                     <div id="intentions-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
@@ -236,34 +236,33 @@
 
         const namesData = [
             { id: 0, arabic: "ٱللَّٰهُ", transliteration: "Allah", meaning: "The One and Only God", tags: ["peace", "mercy", "strength", "guidance"] },
-            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "compassion", "anxiety", "sadness", "hardship"] },
-            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["mercy", "healing", "forgiveness", "repentance"] },
-            { id: 3, arabic: "ٱلْمَلِكُ", transliteration: "Al-Malik", meaning: "The Sovereign", tags: ["leadership", "control", "authority"] },
-            { id: 4, arabic: "ٱلْقُدُّوسُ", transliteration: "Al-Quddus", meaning: "The Pure", tags: ["purity", "focus", "discipline"] },
-            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "anxiety", "stress", "worried"] },
-            { id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu’min", meaning: "The Giver of Security", tags: ["safety", "fear", "protection", "security"] },
-            { id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Mighty", tags: ["strength", "courage", "leadership"] },
-            { id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Compeller", tags: ["healing", "restoration", "heartbreak"] },
-            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Repeatedly Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret"] },
-            { id: 15, arabic: "ٱلْقهَّارُ", transliteration: "Al-Qahhar", meaning: "The Subduer", tags: ["addiction", "self control", "discipline"] },
-            { id: 16, arabic: "ٱلْوَهَّابُ", transliteration: "Al-Wahhab", meaning: "The Bestower", tags: ["gifts", "blessings", "unexpected help"] },
-            { id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "business growth"] },
-            { id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "obstacles"] },
-            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-‘Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "study", "wisdom", "intelligence"] },
-            { id: 24, arabic: "ٱلْمُعِزُّ", transliteration: "Al-Mu’izz", meaning: "The Giver of Honor", tags: ["respect", "status", "promotion"] },
-            { id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "calmness", "unseen help"] },
-            { id: 32, arabic: "ٱلْحَلِيمُ", transliteration: "Al-Halim", meaning: "The Forbearing", tags: ["anger", "patience", "frustration", "emotional regulation"] },
-            { id: 38, arabic: "ٱلْحَافِظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel"] },
-            { id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy", "clarity"] },
-            { id: 47, arabic: "ٱلْوَدُودُ", transliteration: "Al-Wadud", meaning: "The Loving", tags: ["love", "loneliness", "marriage", "family", "harmony"] },
-            { id: 52, arabic: "ٱلْقَوِيُّ", transliteration: "Al-Qawiy", meaning: "The Strong", tags: ["strength", "physical power", "endurance"] },
-            { id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout"] },
-            { id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance", "endurance"] },
-            { id: 84, arabic: "ٱلْوَكِيلُ", transliteration: "Al-Wakil", meaning: "The Trustee", tags: ["reliance", "trust", "surrender", "control"] },
-            { id: 98, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "resilience"] }
+            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "compassion", "anxiety", "sadness", "hardship", "grief", "bitterness"] },
+            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["mercy", "healing", "forgiveness", "repentance", "post-partum", "vulnerable"] },
+            { id: 3, arabic: "ٱلْمَلِكُ", transliteration: "Al-Malik", meaning: "The Sovereign", tags: ["leadership", "control", "authority", "promotion", "competition"] },
+            { id: 4, arabic: "ٱلْقُدُّوسُ", transliteration: "Al-Quddus", meaning: "The Pure", tags: ["purity", "focus", "discipline", "diet", "detox"] },
+            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "anxiety", "stress", "worried", "panic", "insomnia"] },
+            { id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu’min", meaning: "The Giver of Security", tags: ["safety", "fear", "protection", "security", "insecure"] },
+            { id: 7, arabic: "ٱلْمُهَيْمِنُ", transliteration: "Al-Muhaymin", meaning: "The Guardian", tags: ["protection", "witness", "travel", "pregnancy"] },
+            { id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Mighty", tags: ["strength", "courage", "leadership", "proud", "determined"] },
+            { id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Compeller", tags: ["healing", "restoration", "heartbreak", "betrayal", "resentful"] },
+            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Repeatedly Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret", "ashamed"] },
+            { id: 15, arabic: "ٱلْقهَّارُ", transliteration: "Al-Qahhar", meaning: "The Subduer", tags: ["addiction", "self control", "discipline", "anger", "resentful"] },
+            { id: 16, arabic: "ٱلْوَهَّابُ", transliteration: "Al-Wahhab", meaning: "The Bestower", tags: ["gifts", "blessings", "unexpected help", "windfall"] },
+            { id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "business growth", "unemployment", "debt"] },
+            { id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "obstacles", "solutions", "starting university"] },
+            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-‘Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "study", "wisdom", "intelligence", "confusion"] },
+            { id: 24, arabic: "ٱلْمُعِZُّ", transliteration: "Al-Mu’izz", meaning: "The Giver of Honor", tags: ["respect", "status", "promotion", "public speaking"] },
+            { id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "calmness", "unseen help", "jittery"] },
+            { id: 32, arabic: "ٱلْحَلِيمُ", transliteration: "Al-Halim", meaning: "The Forbearing", tags: ["anger", "patience", "frustration", "emotional regulation", "parenting"] },
+            { id: 38, arabic: "ٱلْحَافِظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel", "pregnancy"] },
+            { id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy", "clarity", "indecisive"] },
+            { id: 47, arabic: "ٱلْوَدُودُ", transliteration: "Al-Wadud", meaning: "The Loving", tags: ["love", "loneliness", "marriage", "family", "harmony", "betrayal"] },
+            { id: 52, arabic: "ٱلْقَوِيُّ", transliteration: "Al-Qawiy", meaning: "The Strong", tags: ["strength", "physical power", "endurance", "fatigue", "burnout"] },
+            { id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout", "aging"] },
+            { id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance", "endurance", "legal trouble"] },
+            { id: 84, arabic: "ٱلْوَكِILُ", transliteration: "Al-Wakil", meaning: "The Trustee", tags: ["reliance", "trust", "surrender", "control", "despair"] },
+            { id: 98, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "resilience", "waiting", "waiting for results"] }
         ];
-
-        const routineLibrary = { morning: [62, 18, 19, 0, 1, 5, 17], evening: [14, 5, 38, 30, 46, 63, 2], crisis: [5, 30, 84] };
 
         // --- Core Functions ---
         function switchTab(tab, push = true) {
@@ -271,7 +270,10 @@
             if (push) historyStack.push(currentTab);
             currentTab = tab;
             document.querySelectorAll('.view-content').forEach(v => v.classList.remove('active'));
-            ['home', 'library', 'journal', 'counter', 'router'].forEach(t => document.getElementById(`tab-btn-${t}`)?.classList.remove('text-emerald-400'));
+            ['home', 'library', 'journal', 'counter', 'router'].forEach(t => {
+                const btn = document.getElementById(`tab-btn-${t}`);
+                if(btn) btn.classList.remove('text-emerald-400');
+            });
             
             const view = document.getElementById(`view-${tab}`); if(view) view.classList.add('active');
             const btn = document.getElementById(`tab-btn-${tab}`); if(btn) btn.classList.add('text-emerald-400');
@@ -292,10 +294,20 @@
         function goBack() { if (historyStack.length > 1) switchTab(historyStack.pop(), false); }
 
         function initApp() {
-            renderTags('feelings-box', ["anxiety", "sadness", "anger", "fear", "fatigue", "overwhelmed", "confusion", "heartbreak", "burnout", "guilt", "regret"]);
-            renderTags('situations-box', ["exams", "job search", "leadership", "marriage", "family", "conflict", "hardship", "business growth", "public speaking", "travel", "debt"]);
-            renderTags('intentions-box', ["peace", "wisdom", "healing", "protection", "provision", "clarity", "resilience", "honor", "discipline", "control"]);
-            filterNames('library'); filterNames('router'); updateDayTrack(); updateStatsDisplay(); setupSafetyButtons();
+            // Restore full 50x libraries
+            const feelLib = ["anxiety", "sadness", "anger", "fear", "fatigue", "overwhelmed", "confusion", "heartbreak", "burnout", "guilt", "regret", "joy", "boredom", "loneliness", "envy", "hopeful", "proud", "ashamed", "restless", "despair", "jealousy", "peaceful", "inspired", "grateful", "resentful", "nostalgic", "apprehensive", "determined", "bitter", "content", "insecure", "skeptical", "vulnerable", "defensive", "empathetic", "apathetic", "euphoric", "frustrated", "grumpy", "impatient", "indecisive", "irritable", "jittery", "melancholy", "panic", "pessimistic", "rejuvenated", "satisfied", "startled", "zealous"];
+            const faceLib = ["exams", "job search", "leadership", "marriage", "family", "conflict", "hardship", "business growth", "public speaking", "travel", "debt", "addiction", "new beginning", "ending relationship", "physical illness", "mental health struggle", "buying a home", "moving city", "legal trouble", "parenting", "aging", "caring for parents", "grief", "unemployment", "promotion", "starting university", "creative block", "social gathering", "competition", "natural disaster", "financial windfall", "gossip", "false accusation", "betrayal", "exam results", "wedding prep", "pregnancy", "post-partum", "retirement", "dieting", "insomnia", "digital detox", "learning skill", "community work", "hajj/umrah", "ramadan prep", "new hobby", "sports match", "court date", "interview"];
+            const intendLib = ["peace", "wisdom", "healing", "protection", "provision", "clarity", "resilience", "honor", "discipline", "control", "wealth", "forgiveness", "love", "focus", "energy", "guidance", "patience", "purity", "victory", "courage", "acceptance", "humility", "sincerity", "gratitude", "contentment", "trust", "surrender", "justice", "beauty", "mercy", "strength", "steadfastness", "connection", "soft heart", "firm faith", "productivity", "character", "health", "sound mind", "good end", "barakah", "safety", "ease", "solutions", "open doors", "unseen help", "knowledge", "respect", "success", "tranquility"];
+
+            renderTags('feelings-box', feelLib);
+            renderTags('situations-box', faceLib);
+            renderTags('intentions-box', intendLib);
+
+            filterNames('library'); 
+            filterNames('router'); 
+            updateDayTrack(); 
+            updateStatsDisplay(); 
+            setupSafetyButtons();
         }
 
         function renderTags(id, items) { 
@@ -316,19 +328,26 @@
                 const banner = document.getElementById('combination-banner'); if(banner) banner.classList.remove('hidden');
                 const mid = res.slice(0, 3).map(n => n.transliteration);
                 const duaText = document.getElementById('combined-dua-text');
-                if(duaText) duaText.innerHTML = `Ya Rahman Ya Rahim, <span class='text-indigo-400'>Ya ${mid.join(', Ya ')}</span>, Ya Wakil, I place my trust in You.`;
+                if(duaText) {
+                    const namesString = mid.length > 0 ? `Ya ${mid.join(', Ya ')}` : "Ya Allah";
+                    duaText.innerHTML = `Ya Rahman Ya Rahim, <span class='text-indigo-400'>${namesString}</span>, Ya Wakil, I place my trust in You.`;
+                }
             } else if (ctx === 'router') document.getElementById('combination-banner')?.classList.add('hidden');
             
             list.innerHTML = res.map(n => `<div onclick="openCounter(${n.id}); switchTab('counter')" class="bg-slate-800 border border-slate-700/50 p-6 rounded-[2rem] flex justify-between items-center active:scale-95 transition-all mb-3 shadow-sm"><div><h3 class="font-black text-white text-lg uppercase tracking-tight">${n.transliteration}</h3><p class="text-[10px] text-slate-500 uppercase">${n.meaning}</p></div><span class="text-3xl font-serif text-emerald-500">${n.arabic}</span></div>`).join('');
         }
 
-        function startDayTrack() { openCounter(namesData[(new Date().getDate() - 1) % namesData.length].id, false, 100); switchTab('counter'); }
         function updateDayTrack() {
             const day = new Date().getDate(), name = namesData[(day - 1) % namesData.length];
-            const tl = document.getElementById('track-day-label'), nt = document.getElementById('track-name-trans'), nm = document.getElementById('track-name-meaning'), dots = document.getElementById('track-progress-dots');
-            if(tl) tl.innerText = `Day ${day} Track`; if(nt) nt.innerText = name.transliteration; if(nm) nm.innerText = name.meaning;
+            const tl = document.getElementById('track-day-label'), nt = document.getElementById('track-name-trans'), nm = document.getElementById('track-name-meaning');
+            if(tl) tl.innerText = `Day ${day} Mastery`; if(nt) nt.innerText = name.transliteration; if(nm) nm.innerText = name.meaning;
+            const dots = document.getElementById('track-progress-dots');
             if(dots) dots.innerHTML = Array(5).fill(0).map((_, i) => `<div class='w-1.5 h-1.5 rounded-full ${i < (day % 5) ? 'bg-indigo-400' : 'bg-slate-700'}'></div>`).join('');
         }
+
+        function startDayTrack() { openCounter(namesData[(new Date().getDate() - 1) % namesData.length].id, false, 100); switchTab('counter'); }
+        function startWeavedDua() { openCounter(0, false, 33); switchTab('counter'); }
+        function startRoutine(type) { const lib = {morning: [62, 18, 19, 0, 1, 5, 17], evening: [14, 5, 38, 30, 46, 63, 2], crisis: [5, 30, 84]}; openCounter(lib[type][0], true); switchTab('counter'); }
 
         function openCounter(id, fromRoutine = false, customTarget = 33) {
             currentNameData = namesData.find(n => n.id === id) || namesData[0];
@@ -339,10 +358,6 @@
             document.getElementById('target-btn-text').innerText = target;
             document.getElementById('target-count-display').innerText = 'Target: ' + target;
             resetCounter(); setDhikrTarget('self');
-            if (fromRoutine) {
-                document.getElementById('routine-progress').classList.remove('hidden');
-                document.getElementById('routine-step').innerText = "Active";
-            } else document.getElementById('routine-progress').classList.add('hidden');
         }
 
         function toggleBreathingMode() {
@@ -388,17 +403,15 @@
             });
         }
 
-        function startRoutine(type) { openCounter(routineLibrary[type][0], true); switchTab('counter'); }
         function toggleStatsVisibility() { isStatsHidden = !isStatsHidden; localStorage.setItem('stats_hidden', isStatsHidden); updateStatsDisplay(); }
-        function updateStatsDisplay() { const s = document.getElementById('lifetime-stats'); const eye = document.getElementById('eye-icon'); if (s) s.innerText = isStatsHidden ? '••••' : totalLifetimeDhikr.toLocaleString(); }
+        function updateStatsDisplay() { const s = document.getElementById('lifetime-stats'); if (s) s.innerText = isStatsHidden ? '••••' : totalLifetimeDhikr.toLocaleString(); }
         function confirmResetStats() { totalLifetimeDhikr = 0; localStorage.setItem('lifetime_dhikr', '0'); updateStatsDisplay(); closeConfirmModal(); if (navigator.vibrate) navigator.vibrate([100, 50, 100]); }
         function closeConfirmModal() { const m = document.getElementById('confirm-reset-modal'); if(m) { m.classList.remove('opacity-100'); setTimeout(() => { m.classList.remove('flex'); m.classList.add('hidden'); }, 300); } }
         function handleSearch(e) { searchQuery = e.target.value.toLowerCase(); filterNames('library'); }
         function clearFilters() { activeTags.clear(); document.querySelectorAll('#view-router button[id^="tag-"]').forEach(b => b.classList.remove('border-emerald-500')); filterNames('router'); }
-        function startWeavedDua() { openCounter(currentNameData ? currentNameData.id : 0, false, 33); switchTab('counter'); }
         function openTargetModal() { document.getElementById('target-modal').classList.remove('hidden'); document.getElementById('target-modal').classList.add('flex'); void document.getElementById('target-modal').offsetWidth; document.getElementById('target-modal').classList.add('opacity-100'); }
-        function closeTargetModal() { document.getElementById('target-modal').classList.remove('opacity-100'); setTimeout(() => document.getElementById('target-modal').classList.add('hidden'), 300); }
-        function quickSetTarget(v) { document.getElementById('custom-target-input').value = v; }
+        function closeTargetModal() { const m = document.getElementById('target-modal'); if(m) { m.classList.remove('opacity-100'); setTimeout(() => { m.classList.remove('flex'); m.classList.add('hidden'); }, 300); } }
+        function quickSetTarget(v) { const input = document.getElementById('custom-target-input'); if(input) input.value = v; }
         function saveCustomTarget() { const input = document.getElementById('custom-target-input'); if(input) { target = parseInt(input.value) || 33; updateUI(); closeTargetModal(); } }
         function openJournal() { 
             const jp = document.getElementById('journal-prompt'); if(jp && currentNameData) jp.innerText = `How did reflecting on ${currentNameData.transliteration} feel?`; 
@@ -410,7 +423,7 @@
         function toggleSound() { soundEnabled = !soundEnabled; if(soundEnabled) initAudio(); document.getElementById('sound-btn')?.classList.toggle('text-emerald-400', soundEnabled); }
         function initAudio() { if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
         function playTick(s) { if(!soundEnabled || !audioCtx) return; const o = audioCtx.createOscillator(), g = audioCtx.createGain(); o.type = s ? 'triangle' : 'sine'; o.frequency.setValueAtTime(s ? 880 : 440, audioCtx.currentTime); g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1); o.connect(g); g.connect(audioCtx.destination); o.start(); o.stop(audioCtx.currentTime + 0.1); }
-        function toggleExpand(id, b) { const el = document.getElementById(id); if(el) { el.classList.toggle('tag-collapsed'); b.innerText = el.classList.contains('tag-collapsed') ? "Expand" : "Collapse"; } }
+        function toggleExpand(id, b) { const el = document.getElementById(id); if(el) { el.classList.toggle('tag-collapsed'); b.innerText = el.classList.contains('tag-collapsed') ? "Show All" : "Collapse"; } }
         function setDhikrTarget(t) { currentDhikrTarget = t; ['self','family','him','her'].forEach(p => { const el = document.getElementById(`target-pill-${p}`); if(el) el.className = `px-5 py-2 rounded-2xl text-[10px] font-black uppercase tracking-widest ${p===t ? 'bg-emerald-600 text-white shadow-xl' : 'bg-slate-800 border border-slate-700 text-slate-500'}`; }); generateTemplate(currentNameData, t); }
         function generateTemplate(n, t) { if(!n) return; const ya = "Ya " + n.transliteration.replace(/^(Al-|Ar-|As-|An-|Ad-|At-|Az-|Ash-|Ak-|Aq-|Ah-|Am-)/i, ''); const temp = document.getElementById('counter-template'); if(temp) temp.innerText = `"${ya}, bless ${t==='self'?'me':t==='family'?'my family':t} with mercy today."`; }
         function handleMainTap(e) { if (e.target.closest('button') || e.target.closest('.no-tap')) return; incrementCounter(); }
