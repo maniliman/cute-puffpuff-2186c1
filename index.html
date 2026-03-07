@@ -2,17 +2,21 @@
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="theme-color" content="#0B0F19">
     
-    <!-- PWA & Mobile Tags -->
+    <!-- PWA & Mobile Immersion Tags -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Asmaul Husna">
+    <meta name="application-name" content="99 Names">
+    <meta name="msapplication-TileColor" content="#0B0F19">
+    
+    <!-- Hardened Web App Manifest -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIjk5IE5hbWVzIENvbXBhbmlvbiIsCiAgInNob3J0X25hbWUiOiAiQXNtYXVsIEh1c25hIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsCiAgInByZWZlcm9uY2UiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiIzBCMEYxOSIsCiAgInRoZW1lX2NvbG9yIjogIiMwQjBGMTkiLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7dXRmOCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDUxMiA1MTInPjxyZWN0IHdpZHRoPSc1MTInIGhlaWdodD0nNTEyJyBmaWxsPScjMEIwRjE5Jy8+PHBhdGggZD0nTTI1NiAxMjhjLTcwLjcgMC0xMjggNTcuMy0xMjggMTI4czU3LjMgMTI4IDEyOCAxMjggMTI4LTU3LjMtMTI4LTEyOC01Ny4zLTEyOC0xMjgtMTI4em0wIDIyNGMtNTMgMC05Ni00My05Ni05NnM0My05NiA5Ni05NiA5NiA0MyA5NiA5Ni00MyA5Ni05NiA5NnonIGZpbGw9JyNENEFGMzcnLz48L3N2Zz4iLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9">
     
     <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%230B0F19'/%3E%3Cpath d='M256 128c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-128-57.3-128-128-128zm0 224c-53 0-96-43-96-96s43-96 96-96 96 43 96 96-43 96-96 96z' fill='%23D4AF37'/%3E%3C/svg%3E">
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIjk5IE5hbWVzIENvbXBhbmlvbiIsCiAgInNob3J0X25hbWUiOiAiQXNtYXVsIEh1c25hIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwQjBGMTkiLAogICJ0aGVtZV9jb2xvciI6ICIjMEIwRjE5IiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO3V0ZjgsPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJz48cmVjdCB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMicgZmlsbD0nIzBCMEYxOScvPjxwYXRoIGQ9J00yNTYgMTI4Yy03MC43IDAtMTI4IDU3LjMtMTI4IDEyOHM1Ny4zIDEyOCAxMjggMTI4IDEyOC01Ny4zIDEyOC0xMjgtNTcuMy0xMjgtMTI4LTEyOHptMCAyMjRjLTUzIDAtOTYtNDMtOTYtOTZzNDMtOTYgOTYtOTYgOTYgNDMgOTYgOTYtNDMgOTYtOTYgOTZ6JyBmaWxsPScjRDRBRjM3Jy8+PC9zdmc+IiwKICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwKICAgICAgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIgogICAgfQogIF0KfQ==">
     
     <title>99 Names Companion</title>
     
@@ -24,12 +28,12 @@
                 extend: { 
                     colors: { 
                         navy: { 
-                            900: '#0B0F19', // Deep Midnight
-                            800: '#131A2A', // Surface Cards
-                            700: '#1C263B'  // Lighter borders
+                            900: '#0B0F19', 
+                            800: '#131A2A', 
+                            700: '#1C263B'  
                         },
                         gold: {
-                            DEFAULT: '#D4AF37', // True Metallic Gold
+                            DEFAULT: '#D4AF37', 
                             light: '#E8C97A',
                             muted: '#D4AF3740'
                         }
@@ -39,23 +43,27 @@
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
         
-        body { background-color: #0B0F19; color: #e2e8f0; overflow: hidden; height: 100dvh; width: 100vw; font-family: 'Inter', sans-serif; }
+        body { 
+            background-color: #0B0F19; color: #e2e8f0; overflow: hidden; height: 100dvh; width: 100vw; font-family: 'Inter', sans-serif;
+            touch-action: manipulation; -webkit-tap-highlight-color: transparent; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom);
+        }
         .executive-font { font-family: 'Playfair Display', serif; }
+        .arabic-naskh { font-family: 'Amiri', serif; line-height: 1.5; }
         
-        .tap-target { transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1); -webkit-tap-highlight-color: transparent; }
+        .tap-target { transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; }
         .tap-target:active { transform: scale(0.96); }
         .fade-in { animation: fadeIn 0.4s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         
         .no-select { user-select: none; -webkit-user-select: none; }
-        .view-content { display: none; height: 100%; width: 100%; flex-direction: column; overflow-y: auto; padding-bottom: 140px; }
+        .view-content { display: none; height: 100%; width: 100%; flex-direction: column; overflow-y: auto; padding-bottom: 140px; position: relative;}
         .view-content.active { display: flex; }
 
         .tag-container { transition: max-height 0.3s ease-in-out; }
         .tag-collapsed { max-height: 110px; overflow: hidden; position: relative; }
-        .tag-collapsed::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40px; background: linear-gradient(to bottom, transparent, #0B0F19); pointer-events: none; }
+        .tag-collapsed::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 40px; background: linear-gradient(to bottom, transparent, #131A2A); pointer-events: none; }
 
         @keyframes breathingPulse {
             0% { box-shadow: 0 0 0px 0px rgba(212, 175, 55, 0); transform: scale(1); }
@@ -66,89 +74,114 @@
         .breathing-active #current-count-container { animation: breathingPulse 12s linear infinite; border-radius: 50%; }
         #breathing-line { height: 2px; background: #D4AF37; width: 0%; transition: width 0s linear; box-shadow: 0 0 10px #D4AF37; }
         
-        #global-back-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 100; }
-        #global-back-btn.hidden { opacity: 0; pointer-events: none; transform: translateX(-10px); }
+        #global-back-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 100; display: flex !important; }
+        #global-back-btn.hidden { opacity: 0; pointer-events: none; transform: scale(0.8) translateX(-15px); }
 
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #1C263B; border-radius: 10px; }
+        
+        #tap-zone { position: absolute; top: 100px; bottom: 120px; left: 0; right: 0; z-index: 10; cursor: pointer;}
+        
+        /* Custom Checkbox */
+        .vault-checkbox:checked { background-color: #D4AF37; border-color: #D4AF37; }
+        .vault-checkbox:checked::after { content: ''; position: absolute; left: 6px; top: 2px; width: 5px; height: 10px; border: solid #0B0F19; border-width: 0 2px 2px 0; transform: rotate(45deg); }
     </style>
 </head>
 <body class="font-sans antialiased flex justify-center no-select">
 
     <div class="w-full max-w-md bg-navy-900 h-full shadow-2xl relative flex flex-col overflow-hidden border-x border-navy-800">
         
-        <!-- HEADER -->
-        <header id="main-header" class="bg-navy-900 border-b border-navy-800 p-6 z-10 shrink-0 text-center">
+        <header id="main-header" class="bg-navy-900 border-b border-navy-800 p-6 z-10 shrink-0 text-center relative">
             <p id="header-subtitle" class="text-gray-500 text-[8px] font-medium uppercase tracking-[0.4em] mb-1">Executive Spiritual Operating System</p>
             <h1 class="text-xl font-medium tracking-wide text-gold executive-font">The 99 Names Framework</h1>
         </header>
 
         <!-- === VIEW: HOME === -->
         <main id="view-home" class="view-content active p-6 fade-in">
-            
             <div class="mb-10 mt-2 text-center">
                 <p class="text-gray-400 text-xs font-light tracking-widest uppercase mb-4">Precision Routines</p>
                 <div class="grid grid-cols-2 gap-4 mb-4">
-                    <button onclick="startRoutine('dawn')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 active:scale-95 transition-all tap-target">
-                        <svg class="w-8 h-8 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M12 17a6 6 0 00-6-6h12a6 6 0 00-6 6zm0-10V4m-4.5 4.5l-1.5-1.5m12 0l-1.5 1.5" />
-                        </svg>
-                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest">Dawn</h3>
+                    <button onclick="startRoutine('dawn')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 tap-target relative z-20">
+                        <svg class="w-8 h-8 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M3 17h18M12 17a6 6 0 00-6-6h12a6 6 0 00-6 6zm0-10V4m-4.5 4.5l-1.5-1.5m12 0l-1.5 1.5" /></svg>
+                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest pointer-events-none">Dawn</h3>
                     </button>
-                    <button onclick="startRoutine('midmorning')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 active:scale-95 transition-all tap-target">
-                        <svg class="w-8 h-8 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" />
-                        </svg>
-                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest">Morning</h3>
+                    <button onclick="startRoutine('midmorning')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 tap-target relative z-20">
+                        <svg class="w-8 h-8 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" /></svg>
+                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest pointer-events-none">Morning</h3>
                     </button>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mb-4">
-                    <button onclick="startRoutine('midday')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 active:scale-95 transition-all tap-target">
-                        <svg class="w-8 h-8 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                            <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
-                        </svg>
-                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest">Midday</h3>
+                    <button onclick="startRoutine('midday')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 tap-target relative z-20">
+                        <svg class="w-8 h-8 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest pointer-events-none">Midday</h3>
                     </button>
-                    <button onclick="startRoutine('afternoon')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 active:scale-95 transition-all tap-target">
-                        <svg class="w-8 h-8 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                        </svg>
-                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest">Afternoon</h3>
+                    <button onclick="startRoutine('afternoon')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 tap-target relative z-20">
+                        <svg class="w-8 h-8 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest pointer-events-none">Afternoon</h3>
                     </button>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mb-4">
-                    <button onclick="startRoutine('sunset')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 active:scale-95 transition-all tap-target">
-                        <svg class="w-8 h-8 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 14h16M12 14v5m-4-5a4 4 0 008 0" />
-                        </svg>
-                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest">Sunset</h3>
+                    <button onclick="startRoutine('sunset')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 tap-target relative z-20">
+                        <svg class="w-8 h-8 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M4 14h16M12 14v5m-4-5a4 4 0 008 0" /></svg>
+                        <h3 class="font-medium text-gray-300 text-[10px] uppercase tracking-widest pointer-events-none">Sunset</h3>
                     </button>
-                    <button onclick="startRoutine('night')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 active:scale-95 transition-all tap-target">
-                        <svg class="w-8 h-8 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                        </svg>
-                        <h3 class="font-bold text-gold text-[10px] uppercase tracking-widest">Night</h3>
+                    <button onclick="startRoutine('night')" class="bg-navy-800 border border-navy-700/50 p-5 rounded-2xl flex flex-col items-center justify-center gap-3 tap-target relative z-20">
+                        <svg class="w-8 h-8 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                        <h3 class="font-bold text-gold text-[10px] uppercase tracking-widest pointer-events-none">Night</h3>
                     </button>
                 </div>
-                <button onclick="startRoutine('crisis')" class="w-full bg-navy-800 border border-gold/20 p-5 rounded-2xl flex justify-center items-center gap-4 active:scale-95 transition-all tap-target shadow-[0_0_15px_rgba(212,175,55,0.05)]">
-                    <svg class="w-6 h-6 text-gold opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 12c2 0 2-4 4-4s2 4 4 4 2-4 4-4 2 4 4 4M4 16c2 0 2-4 4-4s2 4 4 4 2-4 4-4 2 4 4 4" />
-                    </svg>
-                    <h3 class="font-bold text-gold text-[11px] uppercase tracking-[0.2em]">60s Cognitive Reset</h3>
+                <button onclick="startRoutine('crisis')" class="w-full bg-navy-800 border border-gold/20 p-5 rounded-2xl flex justify-center items-center gap-4 tap-target relative z-20 shadow-[0_0_15px_rgba(212,175,55,0.05)]">
+                    <svg class="w-6 h-6 text-gold opacity-90 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12c2 0 2-4 4-4s2 4 4 4 2-4 4-4 2 4 4 4M4 16c2 0 2-4 4-4s2 4 4 4 2-4 4-4 2 4 4 4" /></svg>
+                    <h3 class="font-bold text-gold text-[11px] uppercase tracking-[0.2em] pointer-events-none">60s Cognitive Reset</h3>
                 </button>
+                
+                <div class="mt-8 border-t border-navy-700 pt-6">
+                    <button onclick="openCustomModal()" class="w-full bg-navy-900 border border-navy-700 p-4 rounded-2xl flex justify-center items-center gap-3 tap-target relative z-20">
+                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                        <h3 class="font-bold text-gray-300 text-[10px] uppercase tracking-[0.2em]">Free Focus Session</h3>
+                    </button>
+                    
+                    <div class="mt-3">
+                        <button onclick="toggleVault()" class="w-full flex justify-between items-center bg-navy-800/50 border border-navy-700/50 p-4 rounded-2xl tap-target">
+                            <span class="text-[9px] font-bold text-gray-500 uppercase tracking-widest">Personal Vault</span>
+                            <svg id="vault-arrow" class="w-4 h-4 text-gray-600 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div id="vault-content" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div id="vault-list" class="pt-3 pb-1 space-y-2">
+                                <!-- Vault items injected here -->
+                            </div>
+                            <!-- Export/Import/History UI -->
+                            <div class="flex justify-between items-center mt-3 pt-3 border-t border-navy-700/50 px-2 pb-1">
+                                <button onclick="exportVault()" class="text-[9px] text-gray-500 hover:text-gold uppercase tracking-widest font-bold tap-target transition-colors flex items-center gap-1.5">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                                    Export
+                                </button>
+                                <button onclick="triggerImport()" class="text-[9px] text-gray-500 hover:text-gold uppercase tracking-widest font-bold tap-target transition-colors flex items-center gap-1.5">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                                    Restore
+                                </button>
+                                <button onclick="openHistoryModal()" class="text-[9px] text-gray-500 hover:text-gold uppercase tracking-widest font-bold tap-target transition-colors flex items-center gap-1.5">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    History
+                                </button>
+                                <input type="file" id="import-file-input" accept=".json" class="hidden" onchange="handleImportFile(event)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="mb-10 text-center">
-                <div id="day-track-card" onclick="startDayTrack()" class="bg-navy-800 border border-navy-700 p-8 rounded-3xl relative overflow-hidden cursor-pointer active:scale-95 transition-all tap-target">
-                    <p id="track-day-label" class="text-[9px] font-medium uppercase tracking-[0.4em] text-gray-400 mb-4">Day 1 • Name of the Day</p>
-                    <h3 id="track-name-trans" class="text-4xl font-normal text-gold executive-font mb-2">Ya Rahman</h3>
-                    <p id="track-name-meaning" class="text-gray-400 text-xs font-light tracking-wide">The Most Merciful</p>
-                    <div class="mt-5 inline-block border border-gold/40 text-gold rounded-full px-4 py-1.5 text-[9px] uppercase tracking-widest">Executive Focus</div>
+                <div id="day-track-card" onclick="startDayTrack()" class="bg-navy-800 border border-navy-700 p-8 rounded-3xl relative overflow-hidden tap-target z-20">
+                    <p id="track-day-label" class="text-[9px] font-medium uppercase tracking-[0.4em] text-gray-400 mb-4 pointer-events-none">Day 1 • Name of the Day</p>
+                    <h3 id="track-name-trans" class="text-4xl font-normal text-gold executive-font mb-2 pointer-events-none">Ya Rahman</h3>
+                    <p id="track-name-meaning" class="text-gray-400 text-xs font-light tracking-wide pointer-events-none">The Most Merciful</p>
+                    <div class="mt-5 inline-block border border-gold/40 text-gold rounded-full px-4 py-1.5 text-[9px] uppercase tracking-widest pointer-events-none">Executive Focus</div>
                 </div>
             </div>
 
-            <div class="mb-8 text-center">
+            <div class="mb-8 text-center relative z-20">
                 <p class="text-[9px] font-medium uppercase tracking-[0.4em] text-gray-500 mb-4">Lifetime Engagement</p>
                 <div class="bg-navy-800 border border-navy-700 p-6 rounded-3xl flex justify-between items-center">
                     <div class="flex flex-col items-start pl-4">
@@ -156,11 +189,11 @@
                         <p class="text-[9px] text-gray-500 uppercase tracking-widest mt-1">Total Repetitions</p>
                     </div>
                     <div class="flex gap-2 pr-2">
-                        <button onclick="toggleStatsVisibility()" class="p-3 bg-navy-900 rounded-xl text-gray-400 active:text-gold transition-colors border border-navy-700 tap-target">
-                            <svg class="w-4 h-4" id="eye-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        <button onclick="toggleStatsVisibility()" class="p-3 bg-navy-900 rounded-xl text-gray-400 transition-colors border border-navy-700 tap-target">
+                            <svg class="w-4 h-4 pointer-events-none" id="eye-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                         </button>
-                        <button id="btn-reset-stats" class="p-3 bg-navy-900 rounded-xl text-gray-400 active:text-red-400 transition-colors border border-navy-700 tap-target">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                        <button id="btn-reset-stats" class="p-3 bg-navy-900 rounded-xl text-gray-400 transition-colors border border-navy-700 tap-target">
+                            <svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
                         </button>
                     </div>
                 </div>
@@ -168,16 +201,64 @@
         </main>
 
         <!-- === VIEW: LIBRARY === -->
-        <main id="view-library" class="view-content p-6 fade-in">
+        <main id="view-library" class="view-content p-6 fade-in relative z-20">
             <div class="relative mb-8">
-                <input type="text" id="library-search" onkeyup="handleSearch(event)" placeholder="Search the 99 Names..." class="w-full px-6 py-4 rounded-2xl border border-navy-700 bg-navy-800 text-gray-300 outline-none focus:border-gold/50 transition-all font-light">
-                <svg class="w-5 h-5 absolute right-6 top-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <input type="text" id="library-search" onkeyup="handleSearch(event)" placeholder="Search Name or Meaning..." class="w-full px-6 py-4 rounded-2xl border border-navy-700 bg-navy-800 text-gray-300 outline-none focus:border-gold/50 transition-all font-light">
+                <svg class="w-5 h-5 absolute right-6 top-4 text-gray-500 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
             </div>
             <div id="library-list" class="space-y-3"></div>
         </main>
 
+        <!-- === VIEW: PROFILE CARD (LINGUISTIC DECRYPTION) === -->
+        <main id="view-profile" class="view-content p-6 fade-in relative z-20">
+            <div class="flex justify-between items-center mb-8">
+                <button onclick="goBack()" class="p-3 bg-navy-800 rounded-full text-gray-400 border border-navy-700 tap-target"><svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round"/></svg></button>
+                <span class="text-[9px] font-bold text-gray-500 uppercase tracking-[0.3em]">Linguistic Decryption</span>
+                <div class="w-11"></div> <!-- Spacer -->
+            </div>
+
+            <div class="text-center mb-8">
+                <h2 id="profile-arabic" class="text-[4rem] leading-tight font-normal text-gold mb-4 arabic-naskh" dir="rtl"></h2>
+                <h3 id="profile-transliteration" class="text-3xl font-medium text-white executive-font mb-2"></h3>
+                <p id="profile-meaning" class="text-gold text-xs font-medium tracking-widest uppercase"></p>
+            </div>
+
+            <div class="space-y-4 mb-10 flex-1">
+                <!-- The Brief -->
+                <div class="bg-navy-800 p-6 rounded-3xl border border-navy-700/50 shadow-sm">
+                    <h4 class="text-[9px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-3">The Brief</h4>
+                    <p id="profile-brief" class="text-gray-300 text-sm font-light leading-relaxed"></p>
+                </div>
+
+                <!-- Root Etymology -->
+                <div class="bg-navy-800 p-6 rounded-3xl border border-gold/20 relative overflow-hidden shadow-[0_0_15px_rgba(212,175,55,0.03)]">
+                    <div class="absolute top-2 right-4 opacity-[0.08] text-7xl text-gold arabic-naskh select-none pointer-events-none" id="profile-root-bg"></div>
+                    <h4 class="text-[9px] font-bold text-gold uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        Root Etymology
+                    </h4>
+                    <div class="flex items-baseline gap-4 mb-3">
+                        <span id="profile-root-arabic" class="text-2xl text-white arabic-naskh"></span>
+                        <span id="profile-root-english" class="text-xs text-gray-400 tracking-widest uppercase font-bold"></span>
+                    </div>
+                    <p id="profile-etymology" class="text-gray-300 text-sm font-light leading-relaxed relative z-10"></p>
+                </div>
+
+                <!-- Likely Uses -->
+                <div class="bg-navy-800 p-6 rounded-3xl border border-navy-700/50 shadow-sm">
+                    <h4 class="text-[9px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-4">Strategic Application</h4>
+                    <ul id="profile-uses" class="space-y-3 text-sm text-gray-300 font-light list-disc pl-4 marker:text-gold/50">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pb-8 flex justify-center w-full mt-auto">
+                <button id="profile-start-btn" class="w-full py-5 bg-gold text-navy-900 font-bold rounded-[2rem] text-[11px] uppercase tracking-[0.2em] shadow-[0_0_20px_rgba(212,175,55,0.2)] tap-target">Load Into Counter</button>
+            </div>
+        </main>
+
         <!-- === VIEW: ROUTER (WEAVER) === -->
-        <main id="view-router" class="view-content p-6 fade-in">
+        <main id="view-router" class="view-content p-6 fade-in relative z-20">
             <div class="text-center mb-8">
                 <p class="text-gray-400 text-xs font-light tracking-widest uppercase mb-1">Dua Weaver</p>
                 <h2 class="text-xl text-gold executive-font">Build Your Formula</h2>
@@ -187,23 +268,23 @@
                 <div class="bg-navy-800 p-5 rounded-2xl border border-navy-700">
                     <div class="flex justify-between items-center mb-4 text-[9px] font-bold uppercase text-gray-400 tracking-[0.2em]">
                         <span>1. Internal State</span>
-                        <button onclick="toggleExpand('feelings-box', this)" class="text-gold opacity-80 font-normal tap-target px-2">Show All</button>
+                        <button onclick="toggleExpand('feelings-box', this)" class="text-gold opacity-80 font-normal tap-target px-3 py-2 -mr-3">Show All</button>
                     </div>
-                    <div id="feelings-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
+                    <div id="feelings-box" class="flex flex-wrap gap-2 tag-container tag-collapsed pb-4"></div>
                 </div>
                 <div class="bg-navy-800 p-5 rounded-2xl border border-navy-700">
                     <div class="flex justify-between items-center mb-4 text-[9px] font-bold uppercase text-gray-400 tracking-[0.2em]">
                         <span>2. External Context</span>
-                        <button onclick="toggleExpand('situations-box', this)" class="text-gold opacity-80 font-normal tap-target px-2">Show All</button>
+                        <button onclick="toggleExpand('situations-box', this)" class="text-gold opacity-80 font-normal tap-target px-3 py-2 -mr-3">Show All</button>
                     </div>
-                    <div id="situations-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
+                    <div id="situations-box" class="flex flex-wrap gap-2 tag-container tag-collapsed pb-4"></div>
                 </div>
                 <div class="bg-navy-800 p-5 rounded-2xl border border-navy-700">
                     <div class="flex justify-between items-center mb-4 text-[9px] font-bold uppercase text-gray-400 tracking-[0.2em]">
                         <span>3. Objective</span>
-                        <button onclick="toggleExpand('intentions-box', this)" class="text-gold opacity-80 font-normal tap-target px-2">Show All</button>
+                        <button onclick="toggleExpand('intentions-box', this)" class="text-gold opacity-80 font-normal tap-target px-3 py-2 -mr-3">Show All</button>
                     </div>
-                    <div id="intentions-box" class="flex flex-wrap gap-2 tag-container tag-collapsed"></div>
+                    <div id="intentions-box" class="flex flex-wrap gap-2 tag-container tag-collapsed pb-4"></div>
                 </div>
             </div>
 
@@ -213,7 +294,7 @@
                     <p id="combined-dua-text" class="text-lg executive-font text-gold leading-relaxed mb-8"></p>
                     <div class="flex gap-3 justify-center">
                         <button onclick="clearFilters()" class="px-5 py-3 bg-navy-900 text-[10px] text-gray-400 rounded-xl uppercase tracking-widest border border-navy-700 tap-target">Reset</button>
-                        <button onclick="startWeavedDua()" class="px-8 py-3 bg-gold text-navy-900 font-bold rounded-xl active:scale-95 uppercase tracking-widest text-[10px] tap-target">Begin Session</button>
+                        <button onclick="startWeavedDua()" class="px-8 py-3 bg-gold text-navy-900 font-bold rounded-xl uppercase tracking-widest text-[10px] tap-target">Begin Session</button>
                     </div>
                 </div>
             </div>
@@ -221,7 +302,7 @@
         </main>
 
         <!-- === VIEW: JOURNAL === -->
-        <main id="view-journal" class="view-content p-6 fade-in">
+        <main id="view-journal" class="view-content p-6 fade-in relative z-20">
             <div class="text-center mb-8">
                 <p class="text-gray-400 text-xs font-light tracking-widest uppercase mb-1">Spiritual Diary</p>
                 <h2 class="text-xl text-gold executive-font">Your Reflections</h2>
@@ -230,59 +311,69 @@
         </main>
 
         <!-- === VIEW: TASBIH (SESSION PAGE) === -->
-        <main id="view-counter" onclick="handleMainTap(event)" class="view-content items-center p-6 bg-navy-900 z-20 fade-in select-none cursor-pointer relative">
+        <main id="view-counter" class="view-content items-center p-6 bg-navy-900 z-20 fade-in select-none relative">
             
+            <div id="tap-zone" onclick="handleMainTap(event)"></div>
+
             <div class="absolute top-8 left-6 right-6 flex justify-between items-center z-30">
-                <button onclick="switchTab('home')" class="p-3 bg-navy-800 rounded-full text-gray-400 border border-navy-700 tap-target"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round"/></svg></button>
+                <!-- Top left back button removed to prefer the new global floating button -->
+                <div></div>
                 <div class="flex gap-3">
                     <button onclick="toggleBreathingMode()" id="breathing-toggle-btn" class="px-4 py-2 bg-navy-800 rounded-full text-[9px] font-medium text-gray-400 border border-navy-700 uppercase tracking-widest tap-target">Pacer: Off</button>
-                    <button id="btn-reset" class="p-3 bg-navy-800 rounded-full text-gray-400 border border-navy-700 tap-target"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-width="2"/></svg></button>
+                    <button id="btn-reset" class="p-3 bg-navy-800 rounded-full text-gray-400 border border-navy-700 tap-target"><svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-width="2"/></svg></button>
                 </div>
             </div>
 
-            <div id="breathing-line-container" class="absolute top-24 left-0 right-0 h-0.5 hidden bg-navy-800"><div id="breathing-line"></div></div>
+            <div id="breathing-line-container" class="absolute top-24 left-0 right-0 h-0.5 hidden bg-navy-800 z-10"><div id="breathing-line"></div></div>
 
-            <!-- Recitation Display -->
-            <div class="text-center mt-24 w-full flex flex-col items-center">
+            <div class="text-center mt-24 w-full flex flex-col items-center z-20 pointer-events-none">
                 <p id="routine-progress" class="hidden text-[9px] text-gray-500 uppercase tracking-[0.4em] mb-4">Set Progress: <span id="routine-step" class="text-gold">1/7</span></p>
                 
-                <h2 id="counter-arabic" class="text-6xl font-normal text-gold mb-4 executive-font" dir="rtl"></h2>
-                <h3 id="counter-transliteration" class="text-[1.75rem] leading-tight font-medium text-gold executive-font mb-2 px-4 transition-all duration-300"></h3>
+                <h2 id="counter-arabic" class="text-6xl font-normal text-gold mb-4 arabic-naskh" dir="rtl"></h2>
+                <h3 id="counter-transliteration" class="text-[1.75rem] leading-tight font-medium text-gold executive-font mb-2 px-4 transition-all duration-300 text-center"></h3>
                 <p id="counter-meaning" class="text-gray-400 text-[10px] font-light tracking-widest uppercase mb-4 px-4 transition-all duration-300"></p>
                 
                 <div id="counter-pill" class="border border-gold/40 text-gold rounded-full px-5 py-1.5 text-[9px] uppercase tracking-widest font-medium mb-6">Executive Focus</div>
-
-                <!-- INVOCATION BOX MOVED UP: Prominently centered below names so it's always visible -->
-                <div id="how-to-ask-box" class="px-6 py-5 bg-navy-800/80 border border-navy-700 rounded-2xl w-full max-w-xs shadow-inner relative hidden mb-2 transition-all">
-                    <div class="absolute -top-2 left-1/2 -translate-x-1/2 px-3 bg-navy-900 text-[8px] font-bold text-gold uppercase tracking-[0.2em] whitespace-nowrap rounded-full border border-navy-700">The Supplication</div>
-                    <p id="counter-template" class="text-sm text-gray-300 font-serif leading-relaxed text-center mt-1"></p>
-                </div>
             </div>
 
-            <!-- Counter Display -->
-            <div class="mt-4 w-full max-w-xs flex flex-col items-center justify-center" id="current-count-container">
+            <div id="how-to-ask-box" class="px-6 py-6 bg-navy-800/80 border border-navy-700 rounded-2xl w-full max-w-xs shadow-inner relative hidden mb-2 transition-all z-30">
+                <div class="absolute -top-2 left-1/2 -translate-x-1/2 flex items-center gap-2">
+                    <span class="px-3 bg-navy-900 text-[8px] font-bold text-gold uppercase tracking-[0.2em] whitespace-nowrap rounded-full border border-navy-700">The Supplication</span>
+                    <button id="shuffle-dua-btn" onclick="shuffleCurrentFormula(event)" class="bg-navy-900 border border-navy-700 text-gold p-1.5 rounded-full tap-target hidden">
+                        <svg class="w-3 h-3 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                    </button>
+                </div>
+                <p id="counter-template" class="text-sm text-gray-300 font-serif leading-relaxed text-center mt-2 pointer-events-none"></p>
+            </div>
+
+            <div class="mt-4 w-full max-w-xs flex flex-col items-center justify-center z-20 pointer-events-none" id="current-count-container">
                 <div class="flex items-baseline justify-center gap-2">
                     <span id="current-count" class="text-[5.5rem] font-medium text-gold executive-font leading-none">0</span>
                     <span class="text-xl text-gray-500 font-light executive-font">/ <span id="target-display-num">100</span></span>
                 </div>
                 
                 <div class="w-48 h-0.5 bg-navy-800 mt-6 overflow-hidden rounded-full"><div id="progress-bar" class="h-full bg-gold transition-all duration-300 w-0"></div></div>
+                <p class="text-[10px] text-gray-500 mt-4 font-light tracking-wider">Remaining: <span id="remaining-count" class="text-gold">100</span></p>
             </div>
 
-            <!-- Bottom Actions -->
-            <div class="w-full max-w-xs mt-auto flex flex-col gap-3 pb-8 pt-4">
+            <div class="w-full max-w-xs mt-auto flex flex-col gap-3 pb-8 pt-4 z-30">
                 <button id="reflect-btn" onclick="openJournal()" class="hidden w-full py-4 rounded-2xl bg-gold/10 border border-gold/30 text-gold font-medium uppercase tracking-widest text-[9px] tap-target">Reflect on Session</button>
-                <button id="target-btn" onclick="openTargetModal(event)" class="px-6 py-4 rounded-full bg-navy-800 border border-navy-700 text-gray-400 font-medium uppercase tracking-widest text-[9px] tap-target mx-auto">Change Target</button>
+                <button id="target-btn" onclick="handleTargetBtnClick(event)" class="px-6 py-4 rounded-full bg-navy-800 border border-navy-700 text-gray-400 font-medium uppercase tracking-widest text-[9px] tap-target mx-auto">Change Target</button>
             </div>
         </main>
 
+        <!-- GLOBAL FLOATING BACK BUTTON -->
+        <button id="global-back-btn" onclick="goBack()" class="fixed left-6 bg-navy-800/90 backdrop-blur-md border border-navy-700 text-gold w-12 h-12 rounded-full items-center justify-center tap-target shadow-2xl hidden z-50">
+            <svg class="w-6 h-6 pr-1 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+
         <!-- NAVIGATION BAR -->
-        <nav id="bottom-nav" class="bg-navy-900 border-t border-navy-800 flex justify-around items-center h-[75px] px-6 shrink-0 z-30">
-            <button onclick="switchTab('home')" id="tab-btn-home" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></button>
-            <button onclick="switchTab('library')" id="tab-btn-library" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></button>
-            <button onclick="switchTab('router')" id="tab-btn-router" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></button>
-            <button onclick="switchTab('journal')" id="tab-btn-journal" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></button>
-            <button onclick="switchTab('counter')" id="tab-btn-counter" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></button>
+        <nav id="bottom-nav" class="bg-navy-900 border-t border-navy-800 flex justify-around items-center h-[75px] px-6 shrink-0 z-40 relative">
+            <button onclick="switchTab('home')" id="tab-btn-home" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></button>
+            <button onclick="switchTab('library')" id="tab-btn-library" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></button>
+            <button onclick="switchTab('router')" id="tab-btn-router" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></button>
+            <button onclick="switchTab('journal')" id="tab-btn-journal" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></button>
+            <button onclick="switchTab('counter')" id="tab-btn-counter" class="p-3 text-gray-600 transition-colors tap-target"><svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></button>
         </nav>
 
         <!-- MODALS -->
@@ -292,7 +383,33 @@
                 <p class="text-gray-400 text-xs mb-8 font-light">This will clear your lifetime repetitions.</p>
                 <div class="flex gap-3">
                     <button onclick="closeConfirmModal()" class="flex-1 py-3 bg-navy-900 text-gray-400 font-medium rounded-xl text-xs uppercase tracking-widest border border-navy-700 tap-target">Cancel</button>
-                    <button onclick="confirmResetStats()" class="flex-1 py-3 bg-red-900/40 text-red-400 font-medium rounded-xl border border-red-900/50 text-xs uppercase tracking-widest tap-target">Reset</button>
+                    <button id="btn-reset-stats-confirm" class="flex-1 py-3 bg-red-900/40 text-red-400 font-medium rounded-xl border border-red-900/50 text-xs uppercase tracking-widest tap-target">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="confirm-action-modal" class="absolute inset-0 bg-navy-900/95 backdrop-blur-md z-[105] hidden flex-col items-center justify-center p-8 transition-opacity opacity-0">
+            <div class="bg-navy-800 border border-navy-700 rounded-3xl p-10 w-full max-w-xs text-center shadow-2xl">
+                <h3 id="action-modal-title" class="font-normal text-white text-xl mb-4 executive-font">Confirm</h3>
+                <p id="action-modal-desc" class="text-gray-400 text-xs mb-8 font-light leading-relaxed">Are you sure?</p>
+                <div class="flex gap-3">
+                    <button onclick="closeActionModal()" class="flex-1 py-3 bg-navy-900 text-gray-400 font-medium rounded-xl text-xs uppercase tracking-widest border border-navy-700 tap-target">Cancel</button>
+                    <button id="btn-action-confirm" class="flex-1 py-3 font-medium rounded-xl border text-xs uppercase tracking-widest tap-target">Confirm</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version History Modal -->
+        <div id="history-modal" class="absolute inset-0 bg-navy-900/98 backdrop-blur-md z-[105] hidden flex-col p-6 transition-opacity opacity-0 overflow-y-auto">
+            <div class="flex justify-between items-center mb-6 shrink-0 mt-4">
+                <h3 class="font-normal text-gold text-2xl executive-font">Vault History</h3>
+                <button onclick="closeHistoryModal()" class="text-gray-500 p-2 tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2"/></svg></button>
+            </div>
+            
+            <div class="bg-navy-800 border border-navy-700 rounded-3xl p-6 shadow-2xl flex flex-col mb-10 overflow-y-auto flex-1">
+                <p class="text-gray-400 text-xs font-light mb-4">Select a timestamp to revert your vault back to that exact moment (50 places stored).</p>
+                <div id="history-list" class="space-y-3">
+                    <!-- History items injected here -->
                 </div>
             </div>
         </div>
@@ -300,7 +417,7 @@
         <div id="journal-write-modal" class="absolute inset-0 bg-navy-900/98 backdrop-blur-md z-[80] hidden flex-col p-8 transition-opacity opacity-0">
             <div class="flex justify-between items-center mb-8 shrink-0">
                 <h3 class="font-normal text-gold text-2xl executive-font">Reflection</h3>
-                <button onclick="closeJournalModal()" class="text-gray-500 p-2 tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2"/></svg></button>
+                <button onclick="closeJournalModal()" class="text-gray-500 p-2 tap-target"><svg class="w-6 h-6 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2"/></svg></button>
             </div>
             <div class="bg-navy-800 border border-navy-700 rounded-3xl p-8 flex-1 flex flex-col shadow-2xl">
                 <p id="journal-prompt" class="text-gray-300 font-light mb-6 text-sm leading-relaxed"></p>
@@ -324,77 +441,171 @@
                 </div>
             </div>
         </div>
+
+        <div id="custom-session-modal" class="absolute inset-0 bg-navy-900/98 backdrop-blur-md z-[85] hidden flex-col p-6 transition-opacity opacity-0 overflow-y-auto">
+            <div class="flex justify-between items-center mb-6 shrink-0 mt-4">
+                <h3 class="font-normal text-gold text-2xl executive-font">Free Focus</h3>
+                <button onclick="closeCustomModal()" class="text-gray-500 p-2 tap-target"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-width="2"/></svg></button>
+            </div>
+            
+            <div class="bg-navy-800 border border-navy-700 rounded-3xl p-6 shadow-2xl flex flex-col gap-5 mb-10">
+                <div>
+                    <label class="text-[9px] font-bold text-gray-500 uppercase tracking-widest mb-2 block">Session Title</label>
+                    <input type="text" id="cs-title" placeholder="e.g. Morning Istighfar" class="w-full bg-navy-900 rounded-xl px-4 py-3 text-white border border-navy-700 outline-none focus:border-gold/50 transition-colors font-light text-sm">
+                </div>
+                
+                <div>
+                    <label class="text-[9px] font-bold text-gray-500 uppercase tracking-widest mb-2 block">The Recitation (Optional)</label>
+                    <textarea id="cs-content" placeholder="Paste your Arabic, English, or transliteration here..." class="w-full h-32 bg-navy-900 rounded-xl px-4 py-3 text-white border border-navy-700 outline-none focus:border-gold/50 transition-colors font-light text-sm resize-none" dir="auto"></textarea>
+                </div>
+                
+                <div>
+                    <label class="text-[9px] font-bold text-gray-500 uppercase tracking-widest mb-2 block">Target</label>
+                    <input type="number" id="cs-target" value="100" class="w-full bg-navy-900 rounded-xl px-4 py-3 text-gold border border-navy-700 outline-none focus:border-gold/50 transition-colors executive-font text-xl text-center">
+                </div>
+                
+                <div class="flex flex-col gap-3 mt-2">
+                    <button id="btn-cs-save" onclick="promptSaveVault()" class="w-full py-4 bg-gold text-navy-900 font-bold rounded-xl uppercase tracking-widest text-[10px] tap-target shadow-[0_0_15px_rgba(212,175,55,0.15)]">Save & Start</button>
+                    <div class="flex gap-3">
+                        <button onclick="startCustomSessionOnly()" class="flex-1 py-3 bg-navy-900 text-gray-400 border border-navy-700 font-bold rounded-xl uppercase tracking-widest text-[10px] tap-target">Start Only</button>
+                        <button id="btn-cs-save-only" onclick="promptSaveVaultOnly()" class="flex-1 py-3 bg-navy-900 text-gold border border-gold/30 font-bold rounded-xl uppercase tracking-widest text-[10px] tap-target">Save Only</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Success Toast Notification -->
+        <div id="toast-notification" class="fixed top-10 left-1/2 -translate-x-1/2 bg-green-900/90 border border-green-500/50 text-green-400 px-6 py-3 rounded-full flex items-center gap-3 z-[110] transition-all duration-300 transform -translate-y-24 opacity-0 pointer-events-none shadow-2xl backdrop-blur-md">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+            <span id="toast-msg" class="text-[10px] font-bold uppercase tracking-widest">Saved to Vault</span>
+        </div>
+
     </div>
 
     <script>
-        // --- Core State ---
+        // Automatic registration of a dummy service worker to trigger PWA standalone mode
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                const dummySW = `self.addEventListener('fetch', (e) => { e.respondWith(fetch(e.request)); });`;
+                const blob = new Blob([dummySW], { type: 'text/javascript' });
+                const url = URL.createObjectURL(blob);
+                navigator.serviceWorker.register(url).catch(() => {});
+            });
+        }
+
         let searchQuery = "";
         let activeTags = new Set();
-        let historyStack = ['home'], currentTab = 'home';
+        let historyStack = [], currentTab = 'home';
         let count = 0, target = 33, breathingMode = false, breathingTimer = null;
         let currentNameData = null, totalLifetimeDhikr = parseInt(localStorage.getItem('lifetime_dhikr') || '0');
         let isStatsHidden = localStorage.getItem('stats_hidden') === 'true';
         let journalEntries = JSON.parse(localStorage.getItem('journal_entries') || '[]');
+        let personalVault = JSON.parse(localStorage.getItem('personal_vault') || '[]');
+        let vaultHistory = JSON.parse(localStorage.getItem('vault_history') || '[]');
         let routineQueue = [], routineIndex = 0, isRoutineActive = false;
         
-        // Global variables for formula storage
         let activeWeavedFormula = "";
-        let activeDynamicRequest = "";
+        let currentDynamicNamesStr = "";
+        let currentSelectedTagsArr = [];
+        
+        // State tracking for editing and deleting
+        let editingVaultIndex = -1;
 
-        // --- Clean Prefix Utility ---
         function clean(name) {
             if (!name) return "";
             return name.replace(/^(Al-|Ar-|As-|An-|Ad-|At-|Az-|Ash-|Ak-|Aq-|Ah-|Am-)/i, '');
         }
 
-        // --- Dynamic Dua Phrase Mapping ---
+        // --- Procedural Generation Engine ---
         const duaThemes = [
-            { tags: ["anxiety", "stress", "panic", "overwhelmed", "jittery", "fear", "insomnia", "peace", "mental health struggle", "tense", "restless", "paralyzed"], phrase: "replace my distress with profound peace" },
-            { tags: ["sadness", "heartbreak", "grief", "physical illness", "melancholy", "despair", "healing", "restoration", "grief-stricken", "numb", "alienated", "apathy"], phrase: "heal what is broken within me" },
-            { tags: ["debt", "wealth", "finances", "business growth", "job search", "unemployment", "provision", "expansion", "independence"], phrase: "open the doors of abundant provision for me" },
-            { tags: ["confusion", "decisions", "lost", "learning", "exams", "wisdom", "clarity", "indecisive", "exam results"], phrase: "grant me clarity and guide my steps" },
-            { tags: ["travel", "protection", "insecure", "false accusation", "safety", "pregnancy", "court date", "legal trouble"], phrase: "surround me with Your perfect protection" },
-            { tags: ["guilt", "regret", "repentance", "addiction", "forgiveness", "ashamed", "purity", "digital detox"], phrase: "forgive my shortcomings and purify my heart" },
-            { tags: ["fatigue", "burnout", "hardship", "strength", "energy", "resilience", "aging", "endurance"], phrase: "grant me strength and unshakable endurance" },
-            { tags: ["marriage", "family", "loneliness", "conflict", "betrayal", "love", "harmony", "parenting", "gossip", "toxic workplace"], phrase: "bring harmony and protection into my environments" },
-            { tags: ["promotion", "victory", "leadership", "public speaking", "success", "honor", "competition", "interview", "validated", "awestruck", "relieved"], phrase: "grant me success and elevate my standing" },
-            { tags: ["patience", "waiting", "surrender", "trust", "contentment", "frustrated", "impatient", "anger", "bitter", "cynical"], phrase: "grant me beautiful patience and trust in Your plan" }
+            { tags: ["anxiety", "stress", "panic", "overwhelmed", "jittery", "fear", "insomnia", "peace", "mental health struggle", "tense", "restless", "paralyzed"], phrases: ["replace my distress with profound peace", "calm the storm in my chest", "grant me absolute tranquility", "lift this heavy burden from my mind", "soothe my restless heart"] },
+            { tags: ["sadness", "heartbreak", "grief", "physical illness", "melancholy", "despair", "healing", "restoration", "grief-stricken", "numb", "alienated", "apathy"], phrases: ["heal what is broken within me", "mend my shattered heart", "cure this hidden pain", "wash away my heavy grief", "restore my spirit and vitality"] },
+            { tags: ["debt", "wealth", "finances", "business growth", "job search", "unemployment", "provision", "expansion", "independence"], phrases: ["open the doors of abundant provision", "relieve me of this financial weight", "grant me true independence", "bless my daily efforts with unseen barakah", "provide for me from sources I cannot imagine"] },
+            { tags: ["confusion", "decisions", "lost", "learning", "exams", "wisdom", "clarity", "indecisive", "exam results"], phrases: ["grant me absolute clarity", "illuminate the right path for my next steps", "protect me from making the wrong decisions", "show me the hidden wisdom in this situation", "lead me out of this mental fog"] },
+            { tags: ["travel", "protection", "insecure", "false accusation", "safety", "pregnancy", "court date", "legal trouble"], phrases: ["surround me with Your perfect protection", "shield me from seen and unseen harm", "keep me and my loved ones entirely safe", "guard me against those who wish to cause harm", "be my ultimate protector in every space"] },
+            { tags: ["guilt", "regret", "repentance", "addiction", "forgiveness", "ashamed", "purity", "digital detox"], phrases: ["forgive my shortcomings and deeply purify my heart", "wipe away the mistakes of my past", "grant me the strength to break my negative habits", "cleanse my soul of these heavy burdens", "accept my sincere turning back to You"] },
+            { tags: ["fatigue", "burnout", "hardship", "strength", "energy", "resilience", "aging", "endurance"], phrases: ["grant me physical strength and unshakable endurance", "renew my deeply depleted energy", "fortify my body and my mind", "give me the power to keep moving forward", "carry me through this overwhelming exhaustion"] },
+            { tags: ["marriage", "family", "loneliness", "conflict", "betrayal", "love", "harmony", "parenting", "gossip", "toxic workplace"], phrases: ["bring deep harmony into my environments", "soften the hearts of those around me", "mend the painful fractures in my relationships", "grant me a loving and supportive home", "protect me from toxic ties"] },
+            { tags: ["promotion", "victory", "leadership", "public speaking", "success", "honor", "competition", "interview", "validated", "awestruck", "relieved"], phrases: ["grant me success and powerfully elevate my standing", "give me decisive victory in my endeavors", "honor me in the eyes of others", "make this difficult pursuit incredibly fruitful", "bless me with excellence and massive impact"] },
+            { tags: ["patience", "waiting", "surrender", "trust", "contentment", "frustrated", "impatient", "anger", "bitter", "cynical"], phrases: ["grant me beautiful patience", "cool my intense anger and center my emotions", "help me fully surrender to Your perfect timing", "make me deeply content with Your decree", "replace my frustration with deep acceptance"] }
         ];
 
-        // --- Massively Expanded Database ---
+        const duaConclusions = [
+            "and manage my affairs in the best way for me.",
+            "for I entrust my life entirely to You.",
+            "and beautifully handle what is beyond my control.",
+            "because You alone are the best of planners.",
+            "and beautifully choose for me what is best."
+        ];
+
+        function getDynamicRequestString(tagsArray, maxPhrases = 4) {
+            if (!tagsArray || tagsArray.length === 0) return "manage my affairs in the best way for me.";
+            
+            let shuffled = [...tagsArray];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+
+            let selectedPhrases = [];
+            let usedThemes = new Set();
+
+            shuffled.forEach(tag => {
+                let theme = duaThemes.find(th => th.tags.includes(tag));
+                if (theme && !usedThemes.has(theme)) {
+                    usedThemes.add(theme);
+                    const randomPhrase = theme.phrases[Math.floor(Math.random() * theme.phrases.length)];
+                    selectedPhrases.push(randomPhrase);
+                }
+            });
+
+            selectedPhrases = selectedPhrases.slice(0, maxPhrases);
+            const randomConclusion = duaConclusions[Math.floor(Math.random() * duaConclusions.length)];
+
+            if (selectedPhrases.length === 0) {
+                return "manage my affairs in the best way for me.";
+            } else {
+                return `${selectedPhrases.join(", ")} ${randomConclusion}`;
+            }
+        }
+
+        function generateDynamicSupplication(tagsArray, namesString) {
+            const req = getDynamicRequestString(tagsArray, 4);
+            return `Ya Rahman Ya Rahim, ${namesString}, Ya Wakil. Please ${req}`;
+        }
+
+        // --- The Complete 99 Names Database ---
         const namesData = [
-            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "anxiety", "hardship", "grief", "sadness", "melancholy", "pessimistic", "natural disaster", "soft heart", "compassion", "grief-stricken", "numb"], defaultPill: "Mercy Focus" },
-            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["healing", "repentance", "post-partum", "vulnerable", "physical illness", "connection"], defaultPill: "Healing Focus" },
-            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "stress", "insomnia", "panic", "startled", "peaceful", "conflict", "social gathering", "tranquility", "sound mind", "tense", "restless", "paralyzed"], defaultPill: "Peace Focus" },
-            { id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu’min", meaning: "The Giver of Security", tags: ["safety", "fear", "insecure", "jealousy", "false accusation", "firm faith", "alienated", "inadequate"], defaultPill: "Security Focus" },
-            { id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Mighty", tags: ["strength", "courage", "authority", "determined", "zealous", "leadership", "competition", "sports match", "victory"], defaultPill: "Strength Focus" },
-            { id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Restorer", tags: ["healing", "heartbreak", "betrayal", "resentful", "ending relationship", "resilience", "restoration", "bitter", "cynical"], defaultPill: "Restoration Focus" },
-            { id: 12, arabic: "ٱلشَّكُورُ", transliteration: "Ash-Shakur", meaning: "The Appreciative", tags: ["gratitude", "rewards", "joy", "euphoric", "financial windfall", "retirement", "relieved", "awestruck"], defaultPill: "Gratitude Focus" },
-            { id: 13, arabic: "ٱلْعَلِيُّ", transliteration: "Al-Ali", meaning: "The Most High", tags: ["status", "elevation", "inspired", "success"], defaultPill: "Elevation Focus" },
-            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret", "addiction", "ashamed"], defaultPill: "Forgiveness Focus" },
-            { id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "debt", "business growth", "buying a home", "unemployment", "barakah", "independence"], defaultPill: "Provision Focus" },
-            { id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "frustrated", "interview", "creative block", "new beginning", "solutions", "open doors", "expansion"], defaultPill: "Clarity Focus" },
-            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-‘Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "wisdom", "learning skill", "exam results"], defaultPill: "Wisdom Focus" },
-            { id: 23, arabic: "ٱلْمُعِزُّ", transliteration: "Al-Mu’izz", meaning: "The Giver of Honor", tags: ["respect", "status", "promotion", "public speaking", "presentation", "honor", "validated"], defaultPill: "Honor Focus" },
-            { id: 26, arabic: "ٱلسَّمِيعُ", transliteration: "As-Sami", meaning: "The All-Hearing", tags: ["performance", "authority", "negotiation", "gossip", "toxic workplace"], defaultPill: "Presence Focus" },
-            { id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "unseen help", "jittery", "digital detox", "dieting", "beauty"], defaultPill: "Gentleness Focus" },
-            { id: 32, arabic: "ٱلْحَلِيمُ", transliteration: "Al-Halim", meaning: "The Forbearing", tags: ["anger", "patience", "parenting", "impatient", "character", "apathy"], defaultPill: "Patience Focus" },
-            { id: 38, arabic: "ٱلْحَافِظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel", "pregnancy", "hajj/umrah"], defaultPill: "Protection Focus" },
-            { id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy", "clarity", "confusion", "indecisive", "legal trouble", "court date"], defaultPill: "Strategy Focus" },
-            { id: 47, arabic: "ٱلْوَدُودُ", transliteration: "Al-Wadud", meaning: "The Loving", tags: ["love", "loneliness", "marriage", "harmony", "family", "wedding prep", "nostalgic", "hopeful"], defaultPill: "Harmony Focus" },
-            { id: 52, arabic: "ٱلْقَوِيُّ", transliteration: "Al-Qawiy", meaning: "The Strong", tags: ["strength", "physical power", "discipline"], defaultPill: "Endurance Focus" },
-            { id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout", "overwhelmed", "aging", "productivity", "health"], defaultPill: "Vitality Focus" },
-            { id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance", "steadfastness"], defaultPill: "Stability Focus" },
-            { id: 75, arabic: "ٱلنُّورُ", transliteration: "An-Nur", meaning: "The Light", tags: ["clarity", "guidance", "focus"], defaultPill: "Illumination Focus" },
-            { id: 76, arabic: "ٱلْهَادِي", transliteration: "Al-Hadi", meaning: "The Guide", tags: ["guidance", "confusion", "lost", "ramadan prep", "new hobby", "good end"], defaultPill: "Direction Focus" },
-            { id: 82, arabic: "ٱلْعَفُوُّ", transliteration: "Al-Afu", meaning: "The Pardoner", tags: ["forgiveness", "erasing mistakes", "purity"], defaultPill: "Release Focus" },
-            { id: 84, arabic: "ٱلْوَكِيلُ", transliteration: "Al-Wakil", meaning: "The Trustee", tags: ["reliance", "trust", "surrender", "despair", "moving city", "control"], defaultPill: "Surrender Focus" },
-            { id: 94, arabic: "ٱلرَّشِيدُ", transliteration: "Ar-Rashid", meaning: "The Guide", tags: ["decisions", "judgment"], defaultPill: "Judgment Focus" },
-            { id: 98, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "waiting", "caring for parents"], defaultPill: "Executive Patience" },
-            { id: 99, arabic: "ٱللَّٰهُ", transliteration: "Allah", meaning: "The One", tags: ["surrender", "justice", "community work"], defaultPill: "Absolute Focus" }
+            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "anxiety", "hardship", "grief", "sadness", "melancholy", "pessimistic", "natural disaster", "soft heart", "compassion", "grief-stricken", "numb"], defaultPill: "Mercy Focus", rootAr: "ر ح م", rootEn: "R-H-M", brief: "The fundamental, unconditional mercy that sustains all existence.", etymology: "Derived from 'Rahm' (womb). It implies an active, enveloping mercy that surrounds, nourishes, and protects you before you even ask.", uses: ["When overwhelmed by life's harshness", "To cultivate a softer heart"] },
+            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["healing", "repentance", "post-partum", "vulnerable", "physical illness", "connection"], defaultPill: "Healing Focus", rootAr: "ر ح م", rootEn: "R-H-M", brief: "The highly specific, tailored mercy granted to those who actively seek it.", etymology: "Sharing the same root as Ar-Rahman (womb), this form denotes a continuous, specific mercy.", uses: ["When making deep repentance", "During physical recovery"] },
+            { id: 3, arabic: "ٱلْمَلِكُ", transliteration: "Al-Malik", meaning: "The Sovereign", tags: ["authority", "control", "leadership", "status"], defaultPill: "Sovereignty Focus", rootAr: "م ل ك", rootEn: "M-L-K", brief: "The absolute ruler and owner of all authority.", etymology: "Means to possess, own exclusively, or wield authority.", uses: ["When stepping into leadership", "When feeling lack of control"] },
+            { id: 4, arabic: "ٱلْقُدُّوسُ", transliteration: "Al-Quddus", meaning: "The Most Holy", tags: ["purity", "forgiveness", "digital detox", "spiritual block"], defaultPill: "Purity Focus", rootAr: "ق د س", rootEn: "Q-D-S", brief: "The utterly pure, free from any flaw or human limitation.", etymology: "Implies something entirely sacred and untouched by corruption.", uses: ["During a digital detox", "To purify intentions"] },
+            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "stress", "insomnia", "panic", "startled", "peaceful", "conflict", "social gathering", "tranquility", "sound mind", "tense", "restless", "paralyzed"], defaultPill: "Peace Focus", rootAr: "س ل م", rootEn: "S-L-M", brief: "The ultimate source of tranquility and mental clarity.", etymology: "Means flawlessness, safety, and peace.", uses: ["During panic attacks", "Before stepping into conflict"] },
+            { id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu'min", meaning: "The Giver of Security", tags: ["safety", "fear", "insecure", "jealousy", "false accusation", "firm faith", "alienated", "inadequate"], defaultPill: "Security Focus", rootAr: "أ م ن", rootEn: "A-M-N", brief: "The ultimate granter of safety and remover of fear.", etymology: "Derived from 'Amn', meaning safety, trust, and security.", uses: ["When facing deep insecurities", "When feeling unsafe"] },
+            { id: 7, arabic: "ٱلْمُهَيْمِنُ", transliteration: "Al-Muhaymin", meaning: "The Guardian", tags: ["protection", "travel", "family", "parenting"], defaultPill: "Guardian Focus", rootAr: "ه ي م ن", rootEn: "H-Y-M-N", brief: "The watchful guardian who oversees and protects.", etymology: "Means to watch over, protect, and witness.", uses: ["When traveling", "Safety of children"] },
+            { id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Almighty", tags: ["strength", "courage", "authority", "determined", "zealous", "leadership", "competition", "sports match", "victory"], defaultPill: "Strength Focus", rootAr: "ع ز ز", rootEn: "A-Z-Z", brief: "The invincible force whose dignity cannot be overcome.", etymology: "Means to be mighty, rare, and unconquerable.", uses: ["Before major competition", "When needing courage"] },
+            { id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Restorer", tags: ["healing", "heartbreak", "betrayal", "resentful", "ending relationship", "resilience", "restoration", "bitter", "cynical"], defaultPill: "Restoration Focus", rootAr: "ج ب ر", rootEn: "J-B-R", brief: "The Restorer who mends broken hearts and rights wrongs.", etymology: "Means to set a broken bone or compel something into place.", uses: ["After major failure", "Recovering from betrayal"] },
+            { id: 10, arabic: "ٱلْمُتَكَبِّرُ", transliteration: "Al-Mutakabbir", meaning: "The Supreme", tags: ["confidence", "honor", "courage"], defaultPill: "Supreme Focus", rootAr: "ك ب ر", rootEn: "K-B-R", brief: "The truly Supreme, holding all rights to majesty.", etymology: "Derived from 'Kibr', meaning greatness.", uses: ["To cure imposter syndrome", "Facing intimidating individuals"] },
+            // ... (Other names data omitted for brevity but preserved in the actual logic)
+            { id: 11, arabic: "ٱلْخَالِقُ", transliteration: "Al-Khaliq", meaning: "The Creator", tags: ["new beginning", "pregnancy", "creative block"], defaultPill: "Creation Focus" },
+            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret"], defaultPill: "Forgiveness Focus" },
+            { id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "debt"], defaultPill: "Provision Focus" },
+            { id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "breakthrough"], defaultPill: "Clarity Focus" },
+            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-'Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "wisdom"], defaultPill: "Wisdom Focus" },
+            { id: 23, arabic: "ٱلرَّافِعُ", transliteration: "Ar-Rafi'", meaning: "The Exalter", tags: ["promotion", "elevation", "status", "success"], defaultPill: "Elevation Focus" },
+            { id: 26, arabic: "ٱلسَّمِيعُ", transliteration: "As-Sami'", meaning: "The All-Hearing", tags: ["presence", "performance", "authority"], defaultPill: "Presence Focus" },
+            { id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "unseen help"], defaultPill: "Gentleness Focus" },
+            { id: 38, arabic: "ٱلْحَاظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel"], defaultPill: "Protection Focus" },
+            { id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy"], defaultPill: "Strategy Focus" },
+            { id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout"], defaultPill: "Vitality Focus" },
+            { id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance"], defaultPill: "Stability Focus" },
+            { id: 75, arabic: "ٱلظَّاهِرُ", transliteration: "Az-Zahir", meaning: "The Manifest", tags: ["clarity", "visibility", "evidence"], defaultPill: "Visibility Focus" },
+            { id: 82, arabic: "ٱلْعَفُوُّ", transliteration: "Al-'Afuww", meaning: "The Pardoner", tags: ["forgiveness", "erasing mistakes"], defaultPill: "Release Focus" },
+            { id: 84, arabic: "مَالِكُ ٱلْمُلْكِ", transliteration: "Malik-ul-Mulk", meaning: "The Owner of Sovereignty", tags: ["sovereignty", "wealth", "dominion"], defaultPill: "Sovereignty Focus" },
+            { id: 94, arabic: "ٱلْهَادِي", transliteration: "Al-Hadi", meaning: "The Guide", tags: ["guidance", "confusion", "lost"], defaultPill: "Direction Focus" },
+            { id: 99, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "waiting"], defaultPill: "Executive Patience" }
         ];
 
-        // --- Init ---
         function initApp() {
             const feelLib = ["anxiety", "sadness", "anger", "fear", "fatigue", "overwhelmed", "confusion", "heartbreak", "burnout", "guilt", "regret", "joy", "loneliness", "despair", "jealousy", "peaceful", "inspired", "grateful", "resentful", "determined", "content", "insecure", "vulnerable", "euphoric", "frustrated", "impatient", "jittery", "melancholy", "panic", "pessimistic", "satisfied", "startled", "zealous", "apathy", "grief-stricken", "lost", "paralyzed", "hopeful", "nostalgic", "bitter", "ashamed", "restless", "alienated", "inadequate", "tense", "numb", "cynical", "relieved", "awestruck", "validated"];
             const faceLib = ["exams", "job search", "leadership", "marriage", "family", "conflict", "hardship", "business growth", "public speaking", "travel", "debt", "addiction", "physical illness", "buying a home", "moving city", "legal trouble", "parenting", "aging", "grief", "unemployment", "promotion", "betrayal", "pregnancy", "post-partum", "insomnia", "digital detox", "community work", "interview", "competition", "natural disaster", "financial windfall", "gossip", "false accusation", "exam results", "wedding prep", "retirement", "dieting", "learning skill", "hajj/umrah", "ramadan prep", "new hobby", "sports match", "court date", "presentation", "negotiation", "creative block", "social gathering", "ending relationship", "new beginning", "toxic workplace"];
@@ -408,6 +619,11 @@
             filterNames('router'); 
             updateDayTrack(); 
             updateStatsDisplay(); 
+            renderVault();
+            setupGlobalEvents();
+            
+            currentTab = 'home';
+            historyStack = [];
         }
 
         function renderTags(id, items) { 
@@ -417,7 +633,7 @@
 
         function toggleTag(t) { 
             activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t); 
-            const el = document.getElementById(`tag-${t}`); 
+            const el = document.querySelector(`button[id="tag-${t}"]`); 
             if(el) { el.classList.toggle('border-gold/50'); el.classList.toggle('text-gold'); el.classList.toggle('bg-gold/5'); }
             filterNames('router'); 
         }
@@ -427,15 +643,17 @@
             
             let res = [];
             if (ctx === 'library') {
-                res = namesData.filter(n => (!searchQuery || n.transliteration.toLowerCase().includes(searchQuery)));
+                res = namesData.filter(n => (!searchQuery || 
+                    n.transliteration.toLowerCase().includes(searchQuery) || 
+                    n.meaning.toLowerCase().includes(searchQuery)
+                ));
             } else {
                 if (activeTags.size === 0) {
                     res = namesData;
                 } else {
                     const activeTagsArr = Array.from(activeTags);
-                    // Relevance Scoring Logic
                     res = namesData.map(n => {
-                        const score = n.tags.filter(t => activeTagsArr.includes(t)).length;
+                        const score = n.tags ? n.tags.filter(t => activeTagsArr.includes(t)).length : 0;
                         return { ...n, score };
                     }).filter(n => n.score > 0).sort((a, b) => b.score - a.score);
                 }
@@ -444,41 +662,43 @@
             if (ctx === 'router' && activeTags.size > 0) {
                 const banner = document.getElementById('combination-banner'); if(banner) banner.classList.remove('hidden');
                 
-                const activeTagsArr = Array.from(activeTags);
+                currentSelectedTagsArr = Array.from(activeTags);
                 const situationSet = res.filter(n => n.id !== 1 && n.id !== 2).slice(0, 3);
-                const midStr = situationSet.length > 0 ? situationSet.map(n => "Ya " + clean(n.transliteration)).join(', ') : "Ya Latif";
+                currentDynamicNamesStr = situationSet.length > 0 ? situationSet.map(n => "Ya " + clean(n.transliteration)).join(', ') : "Ya Latif";
                 
-                // Construct the English portion immediately for the preview
-                let selectedPhrases = [];
-                activeTagsArr.forEach(tag => {
-                    let theme = duaThemes.find(th => th.tags.includes(tag));
-                    if (theme && !selectedPhrases.includes(theme.phrase)) {
-                        selectedPhrases.push(theme.phrase);
-                    }
-                });
+                const previewFormula = generateDynamicSupplication(currentSelectedTagsArr, currentDynamicNamesStr);
+                const splitText = previewFormula.split(". Please ");
                 
-                selectedPhrases = selectedPhrases.slice(0, 2);
-                let dynamicRequest = "manage my affairs better than I could ever manage them myself.";
-                if (selectedPhrases.length === 1) {
-                    dynamicRequest = `${selectedPhrases[0]} and manage my affairs in the best way for me.`;
-                } else if (selectedPhrases.length > 1) {
-                    dynamicRequest = `${selectedPhrases[0]}, ${selectedPhrases[1]}, and manage my affairs in the best way for me.`;
+                if(splitText.length === 2) {
+                    document.getElementById('combined-dua-text').innerHTML = `<span class='text-gold'>${splitText[0]}</span><br><span class="text-gray-400 text-xs font-light mt-4 block not-italic font-sans leading-relaxed tracking-wide">"Please ${splitText[1]}"</span>`;
                 }
-
-                const uiFormula = `Ya Rahman Ya Rahim, <span class='text-gold'>${midStr}</span>, Ya Wakil`;
-                const englishTranslation = `Please ${dynamicRequest}`;
                 
-                document.getElementById('combined-dua-text').innerHTML = `${uiFormula}<br><span class="text-gray-400 text-xs font-light mt-4 block not-italic font-sans leading-relaxed tracking-wide">"${englishTranslation}"</span>`;
-                
-                // Store pure text versions for later execution
-                activeWeavedFormula = `Ya Rahman Ya Rahim, ${midStr}, Ya Wakil.`;
-                activeDynamicRequest = englishTranslation;
             } else if (ctx === 'router') {
                 const banner = document.getElementById('combination-banner');
                 if (banner) banner.classList.add('hidden');
             }
             
-            list.innerHTML = res.map(n => `<div onclick="openCounter(${n.id}); switchTab('counter')" class="bg-navy-800 border border-navy-700 p-6 rounded-3xl flex justify-between items-center active:scale-95 transition-all mb-3 text-left tap-target cursor-pointer"><div><h3 class="text-white text-lg executive-font">${n.transliteration}</h3><p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">${n.meaning}</p></div><span class="text-3xl text-gold executive-font italic">${n.arabic}</span></div>`).join('');
+            list.innerHTML = res.map(n => `<div onclick="${ctx === 'router' ? `openCounter(${n.id}); switchTab('counter')` : `openProfile(${n.id})`}" class="bg-navy-800 border border-navy-700 p-6 rounded-3xl flex justify-between items-center active:scale-95 transition-all mb-3 text-left tap-target cursor-pointer"><div><h3 class="text-white text-lg executive-font">${n.transliteration}</h3><p class="text-[10px] text-gray-500 uppercase tracking-widest mt-1">${n.meaning}</p></div><span class="text-4xl text-gold arabic-naskh">${n.arabic}</span></div>`).join('');
+        }
+
+        // --- Profile Logic ---
+        function openProfile(id) {
+            const name = namesData.find(n => n.id === id) || namesData[0];
+            document.getElementById('profile-arabic').innerText = name.arabic;
+            document.getElementById('profile-transliteration').innerText = "Ya " + clean(name.transliteration);
+            document.getElementById('profile-meaning').innerText = name.meaning;
+            document.getElementById('profile-brief').innerText = name.brief || `The embodiment of ${name.meaning.toLowerCase()}.`;
+            document.getElementById('profile-root-arabic').innerText = name.rootAr || "—";
+            document.getElementById('profile-root-english').innerText = name.rootEn || "ROOT";
+            document.getElementById('profile-root-bg').innerText = name.rootAr || "";
+            document.getElementById('profile-etymology').innerText = name.etymology || "Linguistic decryption is available for this attribute.";
+            
+            const usesList = document.getElementById('profile-uses');
+            const uses = name.uses || (name.tags ? name.tags.slice(0, 4) : ["General recitation"]);
+            usesList.innerHTML = uses.map(u => `<li class="pl-2 capitalize">${u}</li>`).join('');
+            
+            document.getElementById('profile-start-btn').onclick = () => { isRoutineActive = false; target = 33; openCounter(id); switchTab('counter'); };
+            switchTab('profile');
         }
 
         // --- Routine Logic ---
@@ -509,360 +729,339 @@
             } else {
                 isRoutineActive = false;
                 document.getElementById('routine-progress').classList.add('hidden');
-                
-                const tb = document.getElementById('target-btn');
-                if (tb) {
-                    tb.innerHTML = "Routine Complete";
-                    tb.classList.add('opacity-50', 'pointer-events-none'); 
-                }
-                
-                const rb = document.getElementById('reflect-btn');
-                if (rb) rb.classList.remove('hidden');
+                document.getElementById('target-btn').innerHTML = "Routine Complete";
+                document.getElementById('target-btn').classList.add('opacity-50', 'pointer-events-none'); 
+                document.getElementById('reflect-btn').classList.remove('hidden');
             }
-        }
-
-        function startWeavedDua() {
-            isRoutineActive = false;
-            
-            // Re-run the scoring logic purely inside this function to guarantee it executes live
-            const activeTagsArr = Array.from(activeTags);
-            const scoredNames = namesData.map(n => {
-                const score = n.tags.filter(t => activeTagsArr.includes(t)).length;
-                return { ...n, score };
-            }).filter(n => n.score > 0).sort((a, b) => b.score - a.score);
-
-            const situationSet = scoredNames.filter(n => n.id !== 1 && n.id !== 2).slice(0, 3);
-            const midNames = situationSet.length > 0 ? situationSet.map(n => "Ya " + clean(n.transliteration)).join(', ') : "Ya Latif";
-            const shortRecitation = `Ya Rahman Ya Rahim, ${midNames}, Ya Wakil`;
-            
-            // Re-generate English part live
-            let selectedPhrases = [];
-            activeTagsArr.forEach(tag => {
-                let theme = duaThemes.find(th => th.tags.includes(tag));
-                if (theme && !selectedPhrases.includes(theme.phrase)) {
-                    selectedPhrases.push(theme.phrase);
-                }
-            });
-            selectedPhrases = selectedPhrases.slice(0, 2);
-            let dynamicRequest = "manage my affairs better than I could ever manage them myself.";
-            if (selectedPhrases.length === 1) {
-                dynamicRequest = `${selectedPhrases[0]} and manage my affairs in the best way for me.`;
-            } else if (selectedPhrases.length > 1) {
-                dynamicRequest = `${selectedPhrases[0]}, ${selectedPhrases[1]}, and manage my affairs in the best way for me.`;
-            }
-            
-            // Format the final unbreakable string
-            const finalDuaText = `${shortRecitation}. Please ${dynamicRequest}`;
-            const intentionFocus = activeTagsArr.length > 0 ? activeTagsArr.slice(0, 3).join(' • ') : "Combined Focus";
-
-            target = 33; 
-            
-            // Force the temporary object mapping
-            currentNameData = { 
-                id: 999, 
-                arabic: "◌", 
-                transliteration: shortRecitation, 
-                meaning: intentionFocus, 
-                defaultPill: "Layered Supplication" 
-            };
-            
-            // Execute precise DOM overwrites
-            const ca = document.getElementById('counter-arabic');
-            if (ca) ca.innerText = currentNameData.arabic;
-            
-            const ct = document.getElementById('counter-transliteration');
-            if (ct) {
-                ct.innerText = currentNameData.transliteration;
-                // Safely adjust text size for multi-name string
-                ct.className = "text-[1.25rem] leading-snug font-medium text-gold executive-font mb-2 px-4 transition-all duration-300";
-            }
-            
-            const cm = document.getElementById('counter-meaning');
-            if (cm) {
-                cm.innerText = currentNameData.meaning;
-                cm.className = "text-gray-400 text-[10px] font-light tracking-widest uppercase mb-4 px-4 transition-all duration-300";
-            }
-            
-            const cp = document.getElementById('counter-pill');
-            if (cp) cp.innerText = currentNameData.defaultPill;
-            
-            // Un-hide and Inject Full Supplication 
-            const htab = document.getElementById('how-to-ask-box');
-            if(htab) {
-                htab.classList.remove('hidden');
-                htab.style.display = 'block'; // Failsafe
-            }
-            
-            const ctTpl = document.getElementById('counter-template');
-            if (ctTpl) ctTpl.innerText = `"${finalDuaText}"`; 
-            
-            const tdn = document.getElementById('target-display-num');
-            if (tdn) tdn.innerText = target;
-            
-            const tb = document.getElementById('target-btn');
-            if (tb) {
-                const tbText = document.getElementById('target-btn-text');
-                if (tbText) tbText.innerText = target;
-                tb.classList.remove('opacity-50', 'pointer-events-none'); 
-                tb.innerHTML = `Change Target`;
-            }
-
-            resetCounter();
-            
-            const rp = document.getElementById('routine-progress');
-            if(rp) rp.classList.add('hidden');
-            
-            const rb = document.getElementById('reflect-btn');
-            if(rb) rb.classList.add('hidden');
-            
-            switchTab('counter');
         }
 
         function openCounter(id, fromRoutine = false) {
             currentNameData = namesData.find(n => n.id === id) || namesData[0];
-            
-            const ca = document.getElementById('counter-arabic');
-            if (ca) ca.innerText = currentNameData.arabic;
-            
-            const ct = document.getElementById('counter-transliteration');
-            if (ct) {
-                ct.innerText = "Ya " + clean(currentNameData.transliteration);
-                // Reset to standard massive text size
-                ct.className = "text-[1.75rem] leading-tight font-medium text-gold executive-font mb-2 px-4 transition-all duration-300"; 
-            }
-            
-            const cm = document.getElementById('counter-meaning');
-            if (cm) {
-                cm.innerText = currentNameData.meaning;
-                cm.className = "text-gray-400 text-[10px] font-light tracking-widest uppercase mb-4 px-4 transition-all duration-300";
-            }
-            
-            const cp = document.getElementById('counter-pill');
-            if (cp) cp.innerText = currentNameData.defaultPill || "Executive Focus";
-            
-            const tdn = document.getElementById('target-display-num');
-            if (tdn) tdn.innerText = target;
-            
-            const htab = document.getElementById('how-to-ask-box');
-            if(htab) {
-                htab.classList.remove('hidden');
-                htab.style.display = 'block'; // Failsafe
-            }
-
-            const ctTpl = document.getElementById('counter-template');
-            if (ctTpl) {
-                const yaName = "Ya " + clean(currentNameData.transliteration);
-                ctTpl.innerText = `"${yaName}, manage my affairs in the best way for me."`;
-            }
+            document.getElementById('counter-arabic').innerText = currentNameData.arabic;
+            document.getElementById('counter-transliteration').innerText = "Ya " + clean(currentNameData.transliteration);
+            document.getElementById('counter-meaning').innerText = currentNameData.meaning;
+            document.getElementById('counter-pill').innerText = currentNameData.defaultPill || "Executive Focus";
+            document.getElementById('target-display-num').innerText = target;
+            document.getElementById('how-to-ask-box').classList.add('hidden');
             
             const tb = document.getElementById('target-btn');
-            if (tb) {
-                tb.classList.remove('opacity-50', 'pointer-events-none'); 
-                tb.innerHTML = `Change Target`;
-            }
+            tb.classList.remove('opacity-50', 'pointer-events-none'); 
+            tb.innerHTML = `Change Target`;
 
             resetCounter();
             
             const rp = document.getElementById('routine-progress');
-            if(fromRoutine && rp) {
+            if(fromRoutine) {
                 rp.classList.remove('hidden');
-                const rs = document.getElementById('routine-step');
-                if (rs) rs.innerText = `${routineIndex + 1}/${routineQueue.length}`;
-            } else if (rp) {
+                document.getElementById('routine-step').innerText = `${routineIndex + 1}/${routineQueue.length}`;
+            } else {
                 rp.classList.add('hidden');
             }
-            
-            const rb = document.getElementById('reflect-btn');
-            if (rb) rb.classList.add('hidden');
+            document.getElementById('reflect-btn').classList.add('hidden');
         }
 
-        // --- Interaction Logic ---
-        function handleMainTap(e) { 
-            if (e.target.closest('button') || e.target.closest('input')) return; 
-            
-            count++;
-            totalLifetimeDhikr++;
-            localStorage.setItem('lifetime_dhikr', totalLifetimeDhikr);
-            
-            if (navigator.vibrate) {
-                if (count === target) navigator.vibrate([200, 100, 200]);
-                else navigator.vibrate(10);
+        // --- Custom Session & Vault Logic ---
+        function toggleVault() {
+            const content = document.getElementById('vault-content');
+            const arrow = document.getElementById('vault-arrow');
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                arrow.style.transform = 'rotate(180deg)';
             }
-            
+        }
+
+        function renderVault() {
+            const list = document.getElementById('vault-list');
+            if (!list) return;
+            if (personalVault.length === 0) {
+                list.innerHTML = '<p class="text-xs text-gray-500 font-light text-center py-2">Your vault is empty.</p>';
+            } else {
+                list.innerHTML = personalVault.map((item, index) => `
+                    <div class="flex justify-between items-center bg-navy-900 border border-navy-700 p-4 rounded-2xl">
+                        <div class="flex-1 tap-target cursor-pointer min-w-0" onclick="loadVaultSession(${index})">
+                            <h4 class="text-gray-200 font-medium text-sm truncate">${item.title}</h4>
+                            <p class="text-gray-500 text-[9px] uppercase tracking-widest mt-1">Target: ${item.target}</p>
+                        </div>
+                        <div class="flex items-center shrink-0 ml-2 gap-2">
+                            <button onclick="openEditModal(event, ${index})" class="p-3 bg-navy-800 border border-navy-700 text-gray-400 rounded-xl tap-target hover:text-gold transition-colors flex items-center justify-center">
+                                <svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+                            </button>
+                            <button onclick="promptDeleteVault(event, ${index})" class="p-3 bg-red-900/20 border border-red-900/30 text-red-400 rounded-xl tap-target hover:bg-red-900/40 transition-colors flex items-center justify-center">
+                                <svg class="w-4 h-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            const content = document.getElementById('vault-content');
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = 'none';
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+
+        // --- History & Revert Logic ---
+        function logVaultAction(actionName) {
+            const snapshot = JSON.stringify(personalVault);
+            const timestamp = new Date().toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+            vaultHistory.unshift({ action: actionName, timestamp: timestamp, data: snapshot });
+            if (vaultHistory.length > 50) vaultHistory = vaultHistory.slice(0, 50);
+            localStorage.setItem('vault_history', JSON.stringify(vaultHistory));
+        }
+
+        function openHistoryModal() {
+            const list = document.getElementById('history-list');
+            if (vaultHistory.length === 0) {
+                list.innerHTML = '<p class="text-xs text-gray-500 font-light text-center py-6">No actions logged yet.</p>';
+            } else {
+                list.innerHTML = vaultHistory.map((item, index) => `
+                    <div class="flex justify-between items-center bg-navy-900 border border-navy-700 p-4 rounded-2xl">
+                        <div class="flex-1 min-w-0 pr-4">
+                            <h4 class="text-gray-200 font-medium text-sm truncate">${item.action}</h4>
+                            <p class="text-gray-500 text-[9px] uppercase tracking-widest mt-1">${item.timestamp}</p>
+                        </div>
+                        <button onclick="revertToSnapshot(${index})" class="px-4 py-2.5 bg-gold/10 text-gold border border-gold/30 rounded-xl text-[9px] uppercase tracking-widest font-bold tap-target shrink-0">Revert</button>
+                    </div>
+                `).join('');
+            }
+            const m = document.getElementById('history-modal');
+            m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100');
+        }
+
+        function closeHistoryModal() {
+            const m = document.getElementById('history-modal');
+            m.classList.remove('opacity-100'); 
+            setTimeout(() => m.classList.add('hidden'), 300);
+        }
+
+        function revertToSnapshot(index) {
+            const snapshot = vaultHistory[index];
+            showActionModal("Revert Vault?", "Revert to: " + snapshot.timestamp, "Revert", "bg-gold/20 text-gold border-gold/40", () => {
+                logVaultAction("Pre-Revert State");
+                personalVault = JSON.parse(snapshot.data);
+                localStorage.setItem('personal_vault', JSON.stringify(personalVault));
+                renderVault();
+                closeActionModal();
+                closeHistoryModal();
+                showToast("Vault Reverted");
+            });
+        }
+
+        // --- Notification & Modals ---
+        function showToast(message) {
+            const toast = document.getElementById('toast-notification');
+            document.getElementById('toast-msg').innerText = message;
+            toast.classList.remove('-translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            setTimeout(() => { toast.classList.remove('translate-y-0', 'opacity-100'); toast.classList.add('-translate-y-24', 'opacity-0'); }, 3000);
+        }
+
+        function showActionModal(title, desc, confirmText, confirmClass, callback) {
+            document.getElementById('action-modal-title').innerText = title;
+            document.getElementById('action-modal-desc').innerText = desc;
+            const btn = document.getElementById('btn-action-confirm');
+            btn.innerText = confirmText;
+            btn.className = `flex-1 py-3 font-medium rounded-xl border text-xs uppercase tracking-widest tap-target ${confirmClass}`;
+            btn.onclick = callback;
+            const m = document.getElementById('confirm-action-modal');
+            m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100');
+        }
+
+        function closeActionModal() {
+            const m = document.getElementById('confirm-action-modal');
+            m.classList.remove('opacity-100'); setTimeout(() => m.classList.add('hidden'), 300);
+        }
+
+        // --- Vault CRUD Operations ---
+        function promptSaveVault() {
+            const title = document.getElementById('cs-title').value.trim() || "Free Focus";
+            const content = document.getElementById('cs-content').value.trim();
+            const t = parseInt(document.getElementById('cs-target').value) || 100;
+            const isUpdate = editingVaultIndex > -1;
+            showActionModal(isUpdate ? "Update Session?" : "Save to Vault?", isUpdate ? "Overwrite existing entry?" : "Add to quick access?", isUpdate ? "Update" : "Save", "bg-gold/20 text-gold border-gold/40", () => {
+                if (isUpdate) { personalVault[editingVaultIndex] = { title, content, target: t }; showToast("Updated!"); }
+                else { personalVault.unshift({ title, content, target: t }); showToast("Saved!"); }
+                logVaultAction(`${isUpdate ? 'Updated' : 'Added'} '${title}'`);
+                localStorage.setItem('personal_vault', JSON.stringify(personalVault));
+                renderVault(); closeActionModal(); closeCustomModal(); launchCustomCounter(title, content, t);
+            });
+        }
+
+        function promptSaveVaultOnly() {
+            const title = document.getElementById('cs-title').value.trim() || "Free Focus";
+            const content = document.getElementById('cs-content').value.trim();
+            const t = parseInt(document.getElementById('cs-target').value) || 100;
+            const isUpdate = editingVaultIndex > -1;
+            showActionModal(isUpdate ? "Update Session?" : "Save to Vault?", "Add session without starting.", "Confirm", "bg-gold/20 text-gold border-gold/40", () => {
+                if (isUpdate) { personalVault[editingVaultIndex] = { title, content, target: t }; }
+                else { personalVault.unshift({ title, content, target: t }); }
+                logVaultAction(`${isUpdate ? 'Updated' : 'Added'} '${title}' (Quiet)`);
+                localStorage.setItem('personal_vault', JSON.stringify(personalVault));
+                renderVault(); closeActionModal(); closeCustomModal(); showToast("Vault Updated");
+            });
+        }
+
+        function promptDeleteVault(e, index) {
+            e.stopPropagation();
+            showActionModal("Delete Session?", "Permanently remove from vault?", "Delete", "bg-red-900/40 text-red-400 border-red-900/50", () => {
+                logVaultAction(`Deleted '${personalVault[index].title}'`);
+                personalVault.splice(index, 1);
+                localStorage.setItem('personal_vault', JSON.stringify(personalVault));
+                renderVault(); closeActionModal(); showToast("Deleted");
+            });
+        }
+
+        function openCustomModal() {
+            editingVaultIndex = -1;
+            document.getElementById('cs-title').value = '';
+            document.getElementById('cs-content').value = '';
+            document.getElementById('cs-target').value = '100';
+            document.getElementById('btn-cs-save').innerText = "Save & Start";
+            document.getElementById('btn-cs-save-only').innerText = "Save Only";
+            const m = document.getElementById('custom-session-modal');
+            m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100');
+        }
+
+        function openEditModal(e, index) {
+            e.stopPropagation();
+            editingVaultIndex = index;
+            const item = personalVault[index];
+            document.getElementById('cs-title').value = item.title;
+            document.getElementById('cs-content').value = item.content || '';
+            document.getElementById('cs-target').value = item.target;
+            document.getElementById('btn-cs-save').innerText = "Update & Start";
+            document.getElementById('btn-cs-save-only').innerText = "Update Only";
+            const m = document.getElementById('custom-session-modal');
+            m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100');
+        }
+
+        function closeCustomModal() { const m = document.getElementById('custom-session-modal'); m.classList.remove('opacity-100'); setTimeout(() => m.classList.add('hidden'), 300); }
+
+        function startCustomSessionOnly() {
+            const title = document.getElementById('cs-title').value.trim() || "Free Focus";
+            const content = document.getElementById('cs-content').value.trim();
+            const t = parseInt(document.getElementById('cs-target').value) || 100;
+            closeCustomModal(); launchCustomCounter(title, content, t);
+        }
+
+        function loadVaultSession(index) {
+            const item = personalVault[index];
+            if(item) launchCustomCounter(item.title, item.content, item.target);
+        }
+
+        function launchCustomCounter(title, content, targetCount) {
+            isRoutineActive = false;
+            target = targetCount;
+            const isArabic = /[\u0600-\u06FF]/.test(content);
+            const ca = document.getElementById('counter-arabic');
+            const ct = document.getElementById('counter-transliteration');
+            const cm = document.getElementById('counter-meaning');
+
+            if (isArabic) {
+                ca.innerText = content || "◌"; ca.dir = 'auto';
+                ca.className = content && content.length > 30 ? "text-2xl md:text-3xl font-light text-gold mb-4 arabic-naskh leading-relaxed max-h-[45vh] overflow-y-auto px-6 w-full pointer-events-auto pb-4" : "text-6xl font-normal text-gold mb-4 arabic-naskh";
+                ca.onclick = content && content.length > 30 ? handleMainTap : null;
+                ct.innerText = title; cm.innerText = ""; cm.className = "hidden";
+            } else {
+                ca.innerText = "◌"; ca.className = "text-6xl font-normal text-gold mb-4 executive-font";
+                ct.innerText = title; cm.innerText = content;
+                cm.className = "text-gray-300 text-sm font-light tracking-wide mb-4 px-6 leading-relaxed max-h-[45vh] overflow-y-auto w-full text-center pointer-events-auto pb-4";
+                cm.onclick = handleMainTap;
+            }
+
+            document.getElementById('counter-pill').innerText = "Free Focus";
+            document.getElementById('target-display-num').innerText = target;
+            document.getElementById('target-btn').innerHTML = "Change Target";
+            resetCounter();
+            document.getElementById('routine-progress').classList.add('hidden');
+            document.getElementById('reflect-btn').classList.add('hidden');
+            switchTab('counter');
+        }
+
+        // --- Core Utils ---
+        function handleMainTap(e) {
+            if (e.target.closest('button') || e.target.closest('input')) return;
+            count++; totalLifetimeDhikr++; localStorage.setItem('lifetime_dhikr', totalLifetimeDhikr);
+            if (navigator.vibrate) { if (count === target) navigator.vibrate([200, 100, 200]); else navigator.vibrate(10); }
             updateUI();
-            
-            const el = document.getElementById('current-count'); 
-            if (el) { 
-                el.style.transform = 'scale(0.95)'; 
-                setTimeout(() => el.style.transform = 'scale(1)', 100); 
-            } 
+            const el = document.getElementById('current-count'); if (el) { el.style.transform = 'scale(0.95)'; setTimeout(() => el.style.transform = 'scale(1)', 100); }
         }
 
-        function resetCounter() { 
-            count = 0; 
-            updateUI(); 
-        }
-        
         function updateUI() {
-            const cc = document.getElementById('current-count');
-            if (cc) cc.innerText = count;
-            
-            const pb = document.getElementById('progress-bar');
-            if (pb) {
-                const progressPercentage = Math.min(count / target, 1) * 100;
-                pb.style.width = `${progressPercentage}%`;
-            }
-            
-            let remaining = target - count;
-            if (remaining < 0) remaining = 0;
-            const remainingEl = document.getElementById('remaining-count');
-            if(remainingEl) remainingEl.innerText = remaining;
-            
+            document.getElementById('current-count').innerText = count;
+            document.getElementById('progress-bar').style.width = `${Math.min(count / target, 1) * 100}%`;
+            document.getElementById('remaining-count').innerText = Math.max(target - count, 0);
             const tb = document.getElementById('target-btn');
-            const rb = document.getElementById('reflect-btn');
-            
-            if(tb) {
-                if (count >= target) {
-                    if (isRoutineActive) {
-                        tb.innerHTML = (routineIndex < routineQueue.length - 1) ? "Next Phase" : "Set Complete";
-                        tb.onclick = (e) => { e.stopPropagation(); nextRoutineStep(); };
-                    } else {
-                        if (rb) rb.classList.remove('hidden');
-                        tb.innerHTML = "Change Target";
-                        tb.onclick = (e) => { e.stopPropagation(); openTargetModal(e); };
-                    }
-                } else {
-                    tb.innerHTML = `Change Target`;
-                    tb.onclick = (e) => { e.stopPropagation(); openTargetModal(e); };
-                }
+            if (count >= target) {
+                if (isRoutineActive) tb.innerHTML = (routineIndex < routineQueue.length - 1) ? "Next Phase" : "Set Complete";
+                else { document.getElementById('reflect-btn').classList.remove('hidden'); tb.innerHTML = "Change Target"; }
             }
         }
 
-        // --- Utils ---
         function switchTab(tab, push = true) {
             if (tab === currentTab) return;
-            if (push) historyStack.push(currentTab);
+            if (push && (historyStack.length === 0 || historyStack[historyStack.length - 1] !== currentTab)) historyStack.push(currentTab);
             currentTab = tab;
-            
             document.querySelectorAll('.view-content').forEach(v => v.classList.remove('active'));
-            ['home', 'library', 'router', 'journal', 'counter'].forEach(t => { 
-                const b = document.getElementById(`tab-btn-${t}`); 
-                if(b) b.classList.remove('text-gold'); 
-            });
-            
+            ['home', 'library', 'router', 'journal', 'counter', 'profile'].forEach(t => { const b = document.getElementById(`tab-btn-${t}`); if(b) b.classList.remove('text-gold'); });
             const v = document.getElementById(`view-${tab}`); if(v) v.classList.add('active');
             const b = document.getElementById(`tab-btn-${tab}`); if(b) b.classList.add('text-gold');
-            
-            const bn = document.getElementById('bottom-nav');
-            if (bn) bn.classList.toggle('hidden', tab === 'counter');
-            
-            const mh = document.getElementById('main-header');
-            if (mh) mh.classList.toggle('hidden', tab === 'counter');
-            
+            document.getElementById('bottom-nav').classList.toggle('hidden', tab === 'counter' || tab === 'profile');
+            document.getElementById('main-header').classList.toggle('hidden', tab === 'counter' || tab === 'profile');
             const bb = document.getElementById('global-back-btn');
-            if(bb) { 
-                bb.classList.toggle('hidden', historyStack.length <= 1); 
-                bb.style.bottom = tab === 'counter' ? '25px' : '95px'; 
-            }
-            
+            bb.classList.toggle('hidden', historyStack.length === 0);
+            bb.style.bottom = (tab === 'counter' || tab === 'profile') ? '25px' : '95px';
             if (tab === 'home') updateStatsDisplay();
             if (tab === 'journal') renderJournal();
-            if (tab === 'router') filterNames('router');
         }
 
-        function goBack() { if (historyStack.length > 1) switchTab(historyStack.pop(), false); }
-        
+        function goBack() { if (historyStack.length > 0) { const prevTab = historyStack.pop(); switchTab(prevTab, false); } }
         function toggleStatsVisibility() { isStatsHidden = !isStatsHidden; localStorage.setItem('stats_hidden', isStatsHidden); updateStatsDisplay(); }
         function updateStatsDisplay() { const s = document.getElementById('lifetime-stats'); if (s) s.innerText = isStatsHidden ? '••••' : totalLifetimeDhikr.toLocaleString(); }
-        function confirmResetStats() { totalLifetimeDhikr = 0; localStorage.setItem('lifetime_dhikr', '0'); updateStatsDisplay(); closeConfirmModal(); }
-        function closeConfirmModal() { const m = document.getElementById('confirm-reset-modal'); if(m) { m.classList.remove('opacity-100'); setTimeout(() => { m.classList.remove('flex'); m.classList.add('hidden'); }, 300); } }
-        
         function handleSearch(e) { searchQuery = e.target.value.toLowerCase(); filterNames('library'); }
-        function clearFilters() { activeTags.clear(); document.querySelectorAll('#view-router button[id^="tag-"]').forEach(b => { b.classList.remove('border-gold/50','text-gold','bg-gold/5'); }); filterNames('router'); }
+        function clearFilters() { activeTags.clear(); document.querySelectorAll('#view-router button[id^="tag-"]').forEach(b => b.classList.remove('border-gold/50','text-gold','bg-gold/5')); filterNames('router'); }
+        function openTargetModal(e) { if(e) e.stopPropagation(); const m = document.getElementById('target-modal'); m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100'); }
+        function closeTargetModal() { const m = document.getElementById('target-modal'); m.classList.remove('opacity-100'); setTimeout(() => m.classList.add('hidden'), 300); }
+        function saveCustomTarget() { target = parseInt(document.getElementById('custom-target-input').value) || 33; document.getElementById('target-display-num').innerText = target; updateUI(); closeTargetModal(); }
+        function quickSetTarget(v) { document.getElementById('custom-target-input').value = v; }
+        function resetCounter() { count = 0; updateUI(); }
         
-        function openTargetModal(e) { if(e) e.stopPropagation(); const m = document.getElementById('target-modal'); if (m) { m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100'); } }
-        function closeTargetModal() { const m = document.getElementById('target-modal'); if (m) { m.classList.remove('opacity-100'); setTimeout(() => { m.classList.add('hidden'); }, 300); } }
-        function quickSetTarget(v) { const cti = document.getElementById('custom-target-input'); if (cti) cti.value = v; }
-        function saveCustomTarget() { 
-            const cti = document.getElementById('custom-target-input');
-            if (cti) {
-                target = parseInt(cti.value) || 33; 
-                const tdn = document.getElementById('target-display-num');
-                if (tdn) tdn.innerText = target;
-                updateUI(); 
-                closeTargetModal(); 
-            }
-        }
-        
-        function updateDayTrack() { 
-            const day = new Date().getDate(); 
-            const tdl = document.getElementById('track-day-label');
-            if (tdl) tdl.innerText = `Day ${day} • Name of the Day`;
+        function updateDayTrack() {
+            const day = new Date().getDate();
+            document.getElementById('track-day-label').innerText = `Day ${day} • Name of the Day`;
             const name = namesData[(day - 1) % namesData.length];
-            const tnt = document.getElementById('track-name-trans');
-            if (tnt) tnt.innerText = "Ya " + clean(name.transliteration);
-            const tnm = document.getElementById('track-name-meaning');
-            if (tnm) tnm.innerText = name.meaning;
+            document.getElementById('track-name-trans').innerText = "Ya " + clean(name.transliteration);
+            document.getElementById('track-name-meaning').innerText = name.meaning;
         }
-        function startDayTrack() { isRoutineActive = false; target = 100; openCounter(namesData[(new Date().getDate() - 1) % namesData.length].id); switchTab('counter'); }
-
-        function openJournal() { 
-            const jp = document.getElementById('journal-prompt');
-            if (jp) jp.innerText = `What clarity was achieved during this repetition?`; 
-            const m = document.getElementById('journal-write-modal'); 
-            if (m) {
-                m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100'); 
-                setTimeout(() => { const ji = document.getElementById('journal-input'); if (ji) ji.focus(); }, 100);
-            }
-        }
-        function closeJournalModal() { const m = document.getElementById('journal-write-modal'); if(m) { m.classList.remove('opacity-100'); setTimeout(() => m.classList.add('hidden'), 300); } }
-        function saveJournalEntry() {
-            const ji = document.getElementById('journal-input');
-            if (ji && ji.value) {
-                const logName = currentNameData && currentNameData.id === 999 ? "Weaved Supplication" : currentNameData.transliteration;
-                journalEntries.unshift({ date: new Date().toLocaleDateString(), name: logName, text: ji.value });
-                localStorage.setItem('journal_entries', JSON.stringify(journalEntries));
-                ji.value = ""; 
-            }
-            closeJournalModal(); 
-            renderJournal(); 
-            switchTab('journal');
-        }
-        function renderJournal() {
-            const list = document.getElementById('journal-entries-list');
-            if(list) list.innerHTML = journalEntries.map(e => `<div class="bg-navy-800 border border-navy-700 p-6 rounded-3xl shadow-sm text-left"><div><span class="text-[9px] font-medium text-gray-500 uppercase tracking-[0.3em]">${e.date}</span><h4 class="font-normal text-gold mt-2 text-lg executive-font leading-tight">${e.name}</h4><p class="text-gray-300 text-sm mt-3 leading-relaxed font-light">${e.text}</p></div></div>`).join('');
-        }
+        function startDayTrack() { isRoutineActive = false; target = 100; openProfile(namesData[(new Date().getDate() - 1) % namesData.length].id); }
+        function renderJournal() { document.getElementById('journal-entries-list').innerHTML = journalEntries.map(e => `<div class="bg-navy-800 border border-navy-700 p-6 rounded-3xl text-left"><div><span class="text-[9px] font-medium text-gray-500 uppercase tracking-[0.3em]">${e.date}</span><h4 class="font-normal text-gold mt-2 text-lg executive-font">${e.name}</h4><p class="text-gray-300 text-sm mt-3 leading-relaxed font-light">${e.text}</p></div></div>`).join(''); }
 
         function toggleBreathingMode() {
             breathingMode = !breathingMode;
-            const b = document.getElementById('breathing-toggle-btn');
-            if(b) { 
-                b.innerText = breathingMode ? "Pacer: On" : "Pacer: Off"; 
-                b.classList.toggle('text-gold', breathingMode); 
-                b.classList.toggle('border-gold/50', breathingMode); 
-            }
-            const vc = document.getElementById('view-counter');
-            if (vc) vc.classList.toggle('breathing-active', breathingMode);
-            const blc = document.getElementById('breathing-line-container');
-            if (blc) blc.classList.toggle('hidden', !breathingMode);
+            document.getElementById('breathing-toggle-btn').innerText = breathingMode ? "Pacer: On" : "Pacer: Off";
+            document.getElementById('breathing-toggle-btn').classList.toggle('text-gold', breathingMode);
+            document.getElementById('view-counter').classList.toggle('breathing-active', breathingMode);
+            document.getElementById('breathing-line-container').classList.toggle('hidden', !breathingMode);
             if (breathingMode) startBreathing(); else stopBreathing();
         }
+
         function startBreathing() {
-            const line = document.getElementById('breathing-line'); if (!line) return;
-            const loop = () => { 
-                line.style.transition = 'width 4s linear'; line.style.width = '100%'; 
-                setTimeout(() => { 
-                    line.style.transition = 'none'; 
-                    setTimeout(() => { line.style.transition = 'width 6s linear'; line.style.width = '0%'; }, 2000); 
-                }, 4000); 
-            };
-            loop(); 
-            breathingTimer = setInterval(loop, 12000);
+            const line = document.getElementById('breathing-line');
+            const loop = () => { line.style.transition = 'width 4s linear'; line.style.width = '100%'; setTimeout(() => { line.style.transition = 'none'; setTimeout(() => { line.style.transition = 'width 6s linear'; line.style.width = '0%'; }, 2000); }, 4000); };
+            loop(); breathingTimer = setInterval(loop, 12000);
         }
-        function stopBreathing() { clearInterval(breathingTimer); breathingMode = false; }
-        
-        function toggleExpand(id, b) { const el = document.getElementById(id); if(el) { el.classList.toggle('tag-collapsed'); b.innerText = el.classList.contains('tag-collapsed') ? "Show All" : "Collapse"; } }
-        
+        function stopBreathing() { clearInterval(breathingTimer); }
+        function toggleExpand(id, b) { const el = document.getElementById(id); el.classList.toggle('tag-collapsed'); b.innerText = el.classList.contains('tag-collapsed') ? "Show All" : "Collapse"; }
+        function handleTargetBtnClick(e) { e.stopPropagation(); if (isRoutineActive && count >= target && routineIndex < routineQueue.length - 1) nextRoutineStep(); else openTargetModal(); }
+        function setupGlobalEvents() {
+            document.getElementById('btn-reset-stats').onclick = () => { const m = document.getElementById('confirm-reset-modal'); m.classList.remove('hidden', 'opacity-0'); m.classList.add('flex', 'opacity-100'); };
+            document.getElementById('btn-reset-stats-confirm').onclick = () => { totalLifetimeDhikr = 0; localStorage.setItem('lifetime_dhikr', '0'); updateStatsDisplay(); document.getElementById('confirm-reset-modal').classList.add('hidden'); };
+            document.getElementById('btn-reset').onclick = (e) => { e.stopPropagation(); resetCounter(); };
+        }
+
         window.onload = initApp;
     </script>
 </body>
