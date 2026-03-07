@@ -14,7 +14,7 @@
     <meta name="msapplication-TileColor" content="#0B0F19">
     
     <!-- Hardened Web App Manifest -->
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIjk5IE5hbWVzIENvbXBhbmlvbiIsCiAgInNob3J0X25hbWUiOiAiQXNtYXVsIEh1c25hIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsCiAgInByZWZlcm9uY2UiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiIzBCMEYxOSIsCiAgInRoZW1lX2NvbG9yIjogIiMwQjBGMTkiLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7dXRmOCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDUxMiA1MTInPjxyZWN0IHdpZHRoPSc1MTInIGhlaWdodD0nNTEyJyBmaWxsPScjMEIwRjE5Jy8+PHBhdGggZD0nTTI1NiAxMjhjLTcwLjcgMC0xMjggNTcuMy0xMjggMTI4czU3LjMgMTI4IDEyOCAxMjggMTI4LTU3LjMtMTI4LTEyOC01Ny4zLTEyOC0xMjgtMTI4em0wIDIyNGMtNTMgMC05Ni00My05Ni05NnM0My05NiA5Ni05NiA5NiA0MyA5NiA5Ni00MyA5Ni05NiA5NnonIGZpbGw9JyNENEFGMzcnLz48L3N2Zz4iLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9">
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIjk5IE5hbWVzIENvbXBhbmlvbiIsCiAgInNob3J0X25hbWUiOiAiQXNtYXVsIEh1c25hIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsCiAgInByZWZlcm9uY2UiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiIzBCMEYxOSIsCiAgInRoZW1lX2NvbG9yIjogIiMwQjBGMTkiLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7dXRmOCw8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDUxMiA1MTInPjxyZWN0IHdpZHRoPSc1MTInIGhlaWdodD0nNTEyJyBmaWxsPScjMEIwRjE5Jy8+PHBhdGggZD0nTTI1NiAxMjhjLTcwLjcgMC0xMjggNTcuMy0xMjggMTI4czU3LjMgMTI4IDEyOCAxMjggMTI4LTU3LjMtMTI4LTEyOC01Ny4zLTEyOC0xMjgtMTI4em0wIDIyNGMtNTMgMC05Ni00My05Ni05NnM0My05NiA5Ni05NiA5NiA0MyA5NiA5Ni00MyA5Ni05NnonIGZpbGw9JyNENEFGMzcnLz48L3N2Zz4iLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9">
     
     <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%230B0F19'/%3E%3Cpath d='M256 128c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-128-57.3-128-128-128zm0 224c-53 0-96-43-96-96s43-96 96-96 96 43 96 96-43 96-96 96z' fill='%23D4AF37'/%3E%3C/svg%3E">
     
@@ -576,34 +576,699 @@
 
         // --- The Complete 99 Names Database ---
         const namesData = [
-            { id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "anxiety", "hardship", "grief", "sadness", "melancholy", "pessimistic", "natural disaster", "soft heart", "compassion", "grief-stricken", "numb"], defaultPill: "Mercy Focus", rootAr: "ر ح م", rootEn: "R-H-M", brief: "The fundamental, unconditional mercy that sustains all existence.", etymology: "Derived from 'Rahm' (womb). It implies an active, enveloping mercy that surrounds, nourishes, and protects you before you even ask.", uses: ["When overwhelmed by life's harshness", "To cultivate a softer heart"] },
-            { id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["healing", "repentance", "post-partum", "vulnerable", "physical illness", "connection"], defaultPill: "Healing Focus", rootAr: "ر ح م", rootEn: "R-H-M", brief: "The highly specific, tailored mercy granted to those who actively seek it.", etymology: "Sharing the same root as Ar-Rahman (womb), this form denotes a continuous, specific mercy.", uses: ["When making deep repentance", "During physical recovery"] },
-            { id: 3, arabic: "ٱلْمَلِكُ", transliteration: "Al-Malik", meaning: "The Sovereign", tags: ["authority", "control", "leadership", "status"], defaultPill: "Sovereignty Focus", rootAr: "م ل ك", rootEn: "M-L-K", brief: "The absolute ruler and owner of all authority.", etymology: "Means to possess, own exclusively, or wield authority.", uses: ["When stepping into leadership", "When feeling lack of control"] },
-            { id: 4, arabic: "ٱلْقُدُّوسُ", transliteration: "Al-Quddus", meaning: "The Most Holy", tags: ["purity", "forgiveness", "digital detox", "spiritual block"], defaultPill: "Purity Focus", rootAr: "ق د س", rootEn: "Q-D-S", brief: "The utterly pure, free from any flaw or human limitation.", etymology: "Implies something entirely sacred and untouched by corruption.", uses: ["During a digital detox", "To purify intentions"] },
-            { id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "stress", "insomnia", "panic", "startled", "peaceful", "conflict", "social gathering", "tranquility", "sound mind", "tense", "restless", "paralyzed"], defaultPill: "Peace Focus", rootAr: "س ل م", rootEn: "S-L-M", brief: "The ultimate source of tranquility and mental clarity.", etymology: "Means flawlessness, safety, and peace.", uses: ["During panic attacks", "Before stepping into conflict"] },
-            { id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu'min", meaning: "The Giver of Security", tags: ["safety", "fear", "insecure", "jealousy", "false accusation", "firm faith", "alienated", "inadequate"], defaultPill: "Security Focus", rootAr: "أ م ن", rootEn: "A-M-N", brief: "The ultimate granter of safety and remover of fear.", etymology: "Derived from 'Amn', meaning safety, trust, and security.", uses: ["When facing deep insecurities", "When feeling unsafe"] },
-            { id: 7, arabic: "ٱلْمُهَيْمِنُ", transliteration: "Al-Muhaymin", meaning: "The Guardian", tags: ["protection", "travel", "family", "parenting"], defaultPill: "Guardian Focus", rootAr: "ه ي م ن", rootEn: "H-Y-M-N", brief: "The watchful guardian who oversees and protects.", etymology: "Means to watch over, protect, and witness.", uses: ["When traveling", "Safety of children"] },
-            { id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Almighty", tags: ["strength", "courage", "authority", "determined", "zealous", "leadership", "competition", "sports match", "victory"], defaultPill: "Strength Focus", rootAr: "ع ز ز", rootEn: "A-Z-Z", brief: "The invincible force whose dignity cannot be overcome.", etymology: "Means to be mighty, rare, and unconquerable.", uses: ["Before major competition", "When needing courage"] },
-            { id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Restorer", tags: ["healing", "heartbreak", "betrayal", "resentful", "ending relationship", "resilience", "restoration", "bitter", "cynical"], defaultPill: "Restoration Focus", rootAr: "ج ب ر", rootEn: "J-B-R", brief: "The Restorer who mends broken hearts and rights wrongs.", etymology: "Means to set a broken bone or compel something into place.", uses: ["After major failure", "Recovering from betrayal"] },
-            { id: 10, arabic: "ٱلْمُتَكَبِّرُ", transliteration: "Al-Mutakabbir", meaning: "The Supreme", tags: ["confidence", "honor", "courage"], defaultPill: "Supreme Focus", rootAr: "ك ب ر", rootEn: "K-B-R", brief: "The truly Supreme, holding all rights to majesty.", etymology: "Derived from 'Kibr', meaning greatness.", uses: ["To cure imposter syndrome", "Facing intimidating individuals"] },
-            // ... (Other names data omitted for brevity but preserved in the actual logic)
-            { id: 11, arabic: "ٱلْخَالِقُ", transliteration: "Al-Khaliq", meaning: "The Creator", tags: ["new beginning", "pregnancy", "creative block"], defaultPill: "Creation Focus" },
-            { id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret"], defaultPill: "Forgiveness Focus" },
-            { id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "debt"], defaultPill: "Provision Focus" },
-            { id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "breakthrough"], defaultPill: "Clarity Focus" },
-            { id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-'Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "wisdom"], defaultPill: "Wisdom Focus" },
-            { id: 23, arabic: "ٱلرَّافِعُ", transliteration: "Ar-Rafi'", meaning: "The Exalter", tags: ["promotion", "elevation", "status", "success"], defaultPill: "Elevation Focus" },
-            { id: 26, arabic: "ٱلسَّمِيعُ", transliteration: "As-Sami'", meaning: "The All-Hearing", tags: ["presence", "performance", "authority"], defaultPill: "Presence Focus" },
-            { id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "unseen help"], defaultPill: "Gentleness Focus" },
-            { id: 38, arabic: "ٱلْحَاظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel"], defaultPill: "Protection Focus" },
-            { id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy"], defaultPill: "Strategy Focus" },
-            { id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout"], defaultPill: "Vitality Focus" },
-            { id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance"], defaultPill: "Stability Focus" },
-            { id: 75, arabic: "ٱلظَّاهِرُ", transliteration: "Az-Zahir", meaning: "The Manifest", tags: ["clarity", "visibility", "evidence"], defaultPill: "Visibility Focus" },
-            { id: 82, arabic: "ٱلْعَفُوُّ", transliteration: "Al-'Afuww", meaning: "The Pardoner", tags: ["forgiveness", "erasing mistakes"], defaultPill: "Release Focus" },
-            { id: 84, arabic: "مَالِكُ ٱلْمُلْكِ", transliteration: "Malik-ul-Mulk", meaning: "The Owner of Sovereignty", tags: ["sovereignty", "wealth", "dominion"], defaultPill: "Sovereignty Focus" },
-            { id: 94, arabic: "ٱلْهَادِي", transliteration: "Al-Hadi", meaning: "The Guide", tags: ["guidance", "confusion", "lost"], defaultPill: "Direction Focus" },
-            { id: 99, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "waiting"], defaultPill: "Executive Patience" }
+            { 
+                id: 1, arabic: "ٱلرَّحْمَـٰنُ", transliteration: "Ar-Rahman", meaning: "The Entirely Merciful", tags: ["mercy", "anxiety", "hardship", "grief", "sadness", "melancholy", "pessimistic", "natural disaster", "soft heart", "compassion", "grief-stricken", "numb"], defaultPill: "Mercy Focus",
+                rootAr: "ر ح م", rootEn: "R-H-M",
+                brief: "The fundamental, unconditional mercy that sustains all existence.",
+                etymology: "Derived from 'Rahm' (womb). It implies an active, enveloping mercy that surrounds, nourishes, and protects you before you even ask—just as a womb fiercely cares for a child.",
+                uses: ["When overwhelmed by life's harshness", "To cultivate a softer heart", "When seeking general provision and safety"]
+            },
+            { 
+                id: 2, arabic: "ٱلرَّحِيمُ", transliteration: "Ar-Rahim", meaning: "The Especially Merciful", tags: ["healing", "repentance", "post-partum", "vulnerable", "physical illness", "connection"], defaultPill: "Healing Focus",
+                rootAr: "ر ح م", rootEn: "R-H-M",
+                brief: "The highly specific, tailored mercy granted to those who actively seek it.",
+                etymology: "Sharing the same root as Ar-Rahman (womb), this form denotes a continuous, specific mercy. It is the healing response you receive when you take a deliberate step toward the Divine.",
+                uses: ["When making deep, personal repentance", "During physical or emotional recovery", "To build a closer connection to God"]
+            },
+            { 
+                id: 3, arabic: "ٱلْمَلِكُ", transliteration: "Al-Malik", meaning: "The Sovereign", tags: ["authority", "control", "leadership", "status"], defaultPill: "Sovereignty Focus",
+                rootAr: "م ل ك", rootEn: "M-L-K",
+                brief: "The absolute ruler and owner of all authority.",
+                etymology: "Means to possess, own exclusively, or wield authority. It reminds the user that earthly power is temporary, while true control over all outcomes belongs solely to the Divine.",
+                uses: ["When stepping into a leadership role", "When feeling a lack of control over your life", "Before high-stakes negotiations"]
+            },
+            { 
+                id: 4, arabic: "ٱلْقُدُّوسُ", transliteration: "Al-Quddus", meaning: "The Most Holy", tags: ["purity", "forgiveness", "digital detox", "spiritual block"], defaultPill: "Purity Focus",
+                rootAr: "ق د س", rootEn: "Q-D-S",
+                brief: "The utterly pure, free from any flaw, error, or human limitation.",
+                etymology: "Implies something entirely sacred and untouched by corruption. It is the force that purifies your mind, intentions, and spirit from worldly pollution.",
+                uses: ["During a digital or mental detox", "When seeking to purify your intentions", "When overwhelmed by toxic environments"]
+            },
+            { 
+                id: 5, arabic: "ٱلسَّلَامُ", transliteration: "As-Salam", meaning: "The Source of Peace", tags: ["peace", "anxious", "stress", "insomnia", "panic", "startled", "peaceful", "conflict", "social gathering", "tranquility", "sound mind", "tense", "restless", "paralyzed"], defaultPill: "Peace Focus",
+                rootAr: "س ل م", rootEn: "S-L-M",
+                brief: "The ultimate source of tranquility and mental clarity.",
+                etymology: "Means flawlessness, safety, and peace. It is an active, protective peace that neutralizes chaos and grants absolute psychological security.",
+                uses: ["During panic attacks or high anxiety", "Before stepping into conflict", "When struggling with restless thoughts"]
+            },
+            { 
+                id: 6, arabic: "ٱلْمُؤْمِنُ", transliteration: "Al-Mu'min", meaning: "The Giver of Security", tags: ["safety", "fear", "insecure", "jealousy", "false accusation", "firm faith", "alienated", "inadequate"], defaultPill: "Security Focus",
+                rootAr: "أ م ن", rootEn: "A-M-N",
+                brief: "The ultimate granter of safety and the remover of fear.",
+                etymology: "Derived from 'Amn', meaning safety, trust, and security. It is the profound removal of fear and the establishment of unshakable confidence in the Divine plan.",
+                uses: ["When facing deep personal insecurities", "If dealing with false accusations", "When feeling entirely unsafe or alienated"]
+            },
+            { 
+                id: 7, arabic: "ٱلْمُهَيْمِنُ", transliteration: "Al-Muhaymin", meaning: "The Guardian", tags: ["protection", "travel", "family", "parenting"], defaultPill: "Guardian Focus",
+                rootAr: "ه ي م ن", rootEn: "H-Y-M-N",
+                brief: "The watchful guardian who oversees, protects, and determines the details.",
+                etymology: "Means to watch over, protect, and witness. It is an active guardianship that ensures nothing slips through the cracks.",
+                uses: ["When traveling or moving cities", "When praying for the safety of children", "When managing complex, high-risk projects"]
+            },
+            { 
+                id: 8, arabic: "ٱلْعَزِيزُ", transliteration: "Al-Aziz", meaning: "The Almighty", tags: ["strength", "courage", "authority", "determined", "zealous", "leadership", "competition", "sports match", "victory"], defaultPill: "Strength Focus",
+                rootAr: "ع ز ز", rootEn: "A-Z-Z",
+                brief: "The invincible force whose dignity and power cannot be overcome.",
+                etymology: "Means to be mighty, rare, and unconquerable. It grants the user a dignity and resilience that prevents them from being humiliated or defeated by worldly forces.",
+                uses: ["Before a major competition or presentation", "When needing the courage to stand your ground", "When establishing your authority"]
+            },
+            { 
+                id: 9, arabic: "ٱلْجَبَّارُ", transliteration: "Al-Jabbar", meaning: "The Restorer", tags: ["healing", "heartbreak", "betrayal", "resentful", "ending relationship", "resilience", "restoration", "bitter", "cynical"], defaultPill: "Restoration Focus",
+                rootAr: "ج ب ر", rootEn: "J-B-R",
+                brief: "The Restorer who mends broken hearts and forcefully rights wrongs.",
+                etymology: "Means to set a broken bone or to compel something into its correct place. It is the force that forcefully heals what is shattered and defends the vulnerable.",
+                uses: ["After a major failure or setback", "When recovering from betrayal", "When you need pure resilience to continue"]
+            },
+            { 
+                id: 10, arabic: "ٱلْمُتَكَبِّرُ", transliteration: "Al-Mutakabbir", meaning: "The Supreme", tags: ["confidence", "honor", "courage"], defaultPill: "Supreme Focus",
+                rootAr: "ك ب ر", rootEn: "K-B-R",
+                brief: "The truly Supreme, holding all rights to majesty.",
+                etymology: "Derived from 'Kibr', meaning greatness. It reminds the user to shed human arrogance and draw authentic confidence strictly from the Supreme Creator.",
+                uses: ["To cure personal arrogance or imposter syndrome", "When facing intimidating individuals", "To build quiet, authentic confidence"]
+            },
+            { 
+                id: 11, arabic: "ٱلْخَالِقُ", transliteration: "Al-Khaliq", meaning: "The Creator", tags: ["new beginning", "pregnancy", "creative block", "new hobby"], defaultPill: "Creation Focus",
+                rootAr: "خ ل ق", rootEn: "Kh-L-Q",
+                brief: "The precise architect who brings things from non-existence into being.",
+                etymology: "Means to measure, plan, and create something completely unprecedented. It is the spark of ultimate creativity and design.",
+                uses: ["When starting a completely new venture", "To break through severe creative blocks", "When preparing for parenthood"]
+            },
+            { 
+                id: 12, arabic: "ٱلْبَارِئُ", transliteration: "Al-Bari", meaning: "The Maker", tags: ["health", "healing", "physical illness"], defaultPill: "Maker Focus",
+                rootAr: "ب ر أ", rootEn: "B-R-A",
+                brief: "The Maker who brings exact proportions into physical reality.",
+                etymology: "Means to carve, to detach, or to form perfectly. It is the execution phase of creation, ensuring every part functions exactly as intended.",
+                uses: ["During physical illness or healing", "When executing a complex plan", "To find balance in your daily health"]
+            },
+            { 
+                id: 13, arabic: "ٱلْمُصَوِّرُ", transliteration: "Al-Musawwir", meaning: "The Fashioner", tags: ["beauty", "identity", "inadequate"], defaultPill: "Fashioner Focus",
+                rootAr: "ص و ر", rootEn: "S-W-R",
+                brief: "The shaper of forms, who gives everything its unique, defining identity.",
+                etymology: "Means to incline, shape, or form. It represents the careful, beautiful detailing that makes every single creation distinct.",
+                uses: ["When struggling with self-image or identity", "When refining the final details of a project", "To appreciate the beauty in difficult situations"]
+            },
+            { 
+                id: 14, arabic: "ٱلْغَفَّارُ", transliteration: "Al-Ghaffar", meaning: "The Forgiving", tags: ["forgiveness", "repentance", "guilt", "regret", "addiction", "ashamed"], defaultPill: "Forgiveness Focus",
+                rootAr: "غ ف ر", rootEn: "Gh-F-R",
+                brief: "The relentless forgiver who completely covers and shields your mistakes.",
+                etymology: "Means to cover, protect, and hide. Al-Ghaffar is the continuous, repeated forgiveness that entirely conceals your flaws from public and spiritual ruin.",
+                uses: ["When dealing with deep regret or guilt", "When struggling with recurring bad habits", "To seek protection from public exposure of mistakes"]
+            },
+            { 
+                id: 15, arabic: "ٱلْقَهَّارُ", transliteration: "Al-Qahhar", meaning: "The Subduer", tags: ["addiction", "discipline", "toxic workplace", "control"], defaultPill: "Discipline Focus",
+                rootAr: "ق ه ر", rootEn: "Q-H-R",
+                brief: "The dominant force that subdues enemies, ego, and internal desires.",
+                etymology: "Means to overcome, conquer, and forcefully subdue. It is the ultimate spiritual weapon against addictions, toxic forces, and out-of-control ego.",
+                uses: ["When battling severe addictions or bad habits", "To overcome oppressive or toxic environments", "When you need extreme self-discipline"]
+            },
+            { 
+                id: 16, arabic: "ٱلْوَهَّابُ", transliteration: "Al-Wahhab", meaning: "The Bestower", tags: ["gifts", "wealth", "financial windfall", "opportunity"], defaultPill: "Bestowal Focus",
+                rootAr: "و ه ب", rootEn: "W-H-B",
+                brief: "The giver of massive, unearned, and continuous gifts without expecting anything in return.",
+                etymology: "Means to give freely and generously without compensation. It is the source of sudden, unexpected blessings and talents.",
+                uses: ["When seeking an unexpected opportunity", "To ask for entirely pure, unearned blessings", "When facing massive resource deficits"]
+            },
+            { 
+                id: 17, arabic: "ٱلرَّزَّاقُ", transliteration: "Ar-Razzaq", meaning: "The Provider", tags: ["provision", "wealth", "finances", "debt", "business growth", "buying a home", "unemployment", "barakah", "independence"], defaultPill: "Provision Focus",
+                rootAr: "ر ز ق", rootEn: "R-Z-Q",
+                brief: "The continuous, reliable source of all physical and spiritual sustenance.",
+                etymology: "Means to provide a specific, beneficial portion. It promises that the exact resources you need to survive and thrive will reach you at the right time.",
+                uses: ["When dealing with debt or job loss", "Before launching a new business phase", "To seek financial independence"]
+            },
+            { 
+                id: 18, arabic: "ٱلْفَتَّاحُ", transliteration: "Al-Fattah", meaning: "The Opener", tags: ["opportunity", "exams", "job search", "frustrated", "interview", "creative block", "new beginning", "solutions", "open doors", "expansion"], defaultPill: "Clarity Focus",
+                rootAr: "ف ت ح", rootEn: "F-T-H",
+                brief: "The Opener of locked doors and the Granter of unexpected breakthroughs.",
+                etymology: "Means to open, to grant victory, or to judge. It represents the force that unlocks closed doors, clears dead ends, and provides sudden, undeniable breakthroughs.",
+                uses: ["When feeling completely stuck or paralyzed", "Before a major interview or exam", "When seeking a creative or strategic breakthrough"]
+            },
+            { 
+                id: 19, arabic: "ٱلْعَلِيمُ", transliteration: "Al-'Alim", meaning: "The All-Knowing", tags: ["knowledge", "learning", "wisdom", "learning skill", "exam results"], defaultPill: "Wisdom Focus",
+                rootAr: "ع ل م", rootEn: "A-L-M",
+                brief: "The ultimate source of absolute, comprehensive, and infinite knowledge.",
+                etymology: "Derived from 'Ilm', meaning knowledge that is certain, comprehensive, and exhaustive, leaving no detail, hidden or apparent, unknown.",
+                uses: ["When preparing for critical exams", "Seeking clarity in complex decisions", "When you need to grasp a difficult skill quickly"]
+            },
+            { 
+                id: 20, arabic: "ٱلْقَابِضُ", transliteration: "Al-Qabid", meaning: "The Withholder", tags: ["patience", "waiting", "trust"], defaultPill: "Trust Focus",
+                rootAr: "ق ب ض", rootEn: "Q-B-D",
+                brief: "The One who deliberately restricts or withholds to teach, protect, or test.",
+                etymology: "Means to grip, constrict, or hold back. It represents the necessary friction in life that builds spiritual and mental muscle.",
+                uses: ["When facing sudden delays or stagnation", "To build patience during financial constraints", "When learning to trust divine timing over human rushing"]
+            },
+            { 
+                id: 21, arabic: "ٱلْبَاسِطُ", transliteration: "Al-Basit", meaning: "The Extender", tags: ["expansion", "joy", "relief", "euphoric"], defaultPill: "Expansion Focus",
+                rootAr: "ب س ط", rootEn: "B-S-T",
+                brief: "The Expander who amplifies joy, provision, and emotional capacity.",
+                etymology: "Means to spread out, unfold, or expand. It is the direct counterbalance to constriction, bringing sudden relief, expansion, and breathing room.",
+                uses: ["When you need an expansion of your resources", "To break out of a depressive mental state", "When praying for your influence to reach further"]
+            },
+            { 
+                id: 22, arabic: "ٱلْخَافِضُ", transliteration: "Al-Khafid", meaning: "The Reducer", tags: ["humility", "arrogance", "justice"], defaultPill: "Humility Focus",
+                rootAr: "خ ف ض", rootEn: "Kh-F-D",
+                brief: "The force that precisely lowers the arrogant and limits unchecked power.",
+                etymology: "Means to lower, ease, or diminish. It is the spiritual equalizer that brings down the arrogant and humbles the ego.",
+                uses: ["To protect yourself from your own arrogance", "When dealing with oppressive authority figures", "To seek cosmic justice in an unfair situation"]
+            },
+            { 
+                id: 23, arabic: "ٱلرَّافِعُ", transliteration: "Ar-Rafi'", meaning: "The Exalter", tags: ["promotion", "elevation", "status", "success"], defaultPill: "Elevation Focus",
+                rootAr: "ر ف ع", rootEn: "R-F-A",
+                brief: "The exact force that elevates rank, status, and honor without limits.",
+                etymology: "Means to raise high or uplift. It ensures that when you are elevated by divine decree, no human intervention can tear you down.",
+                uses: ["When striving for a major promotion", "To clear your name and elevate your reputation", "Before stepping onto a public stage"]
+            },
+            { 
+                id: 24, arabic: "ٱلْمُعِزُّ", transliteration: "Al-Mu'izz", meaning: "The Honorer", tags: ["respect", "status", "promotion", "public speaking", "presentation", "honor", "validated"], defaultPill: "Honor Focus",
+                rootAr: "ع ز ز", rootEn: "A-Z-Z",
+                brief: "The Giver of true honor, dignity, and unshakable respect.",
+                etymology: "Derived from 'Izzah', meaning might and honor. It implies bestowing a level of dignity that commands immediate respect from others.",
+                uses: ["Before leading a high-stakes negotiation", "When your authority is being challenged", "To cultivate self-respect when feeling validated"]
+            },
+            { 
+                id: 25, arabic: "ٱلْمُذِلُّ", transliteration: "Al-Mudhill", meaning: "The Dishonorer", tags: ["protection from enemies", "false accusation"], defaultPill: "Protection Focus",
+                rootAr: "ذ ل ل", rootEn: "Dh-L-L",
+                brief: "The one who degrades falsehood and strips power from the unjust.",
+                etymology: "Means to lower, degrade, or humble forcefully. It is the protective mechanism that strips the illusion of power away from your enemies.",
+                uses: ["When facing malicious gossip or slander", "To seek protection from those actively plotting against you", "To recognize the fragility of worldly power"]
+            },
+            { 
+                id: 26, arabic: "ٱلسَّمِيعُ", transliteration: "As-Sami'", meaning: "The All-Hearing", tags: ["performance", "authority", "negotiation", "gossip", "toxic workplace"], defaultPill: "Presence Focus",
+                rootAr: "س م ع", rootEn: "S-M-A",
+                brief: "The absolute perceiver of all sounds, unspoken thoughts, and hidden motives.",
+                etymology: "Means to hear, listen, and pay close attention. It guarantees that no whisper, plea, or silent tear goes unregistered.",
+                uses: ["When feeling unheard by the people around you", "To silence anxiety about behind-the-back office politics", "When making a quiet, desperate plea"]
+            },
+            { 
+                id: 27, arabic: "ٱلْبَصِيرُ", transliteration: "Al-Basir", meaning: "The All-Seeing", tags: ["awareness", "focus", "clarity"], defaultPill: "Awareness Focus",
+                rootAr: "ب ص ر", rootEn: "B-S-R",
+                brief: "The One whose insight fully penetrates the surface of all reality.",
+                etymology: "Means to see, realize, and perceive deeply. It is a profound, penetrating vision that sees not just actions, but the core intentions behind them.",
+                uses: ["When you need clarity to see through a deception", "To heighten your own focus and perception", "When seeking validation that your unseen hard work is noted"]
+            },
+            { 
+                id: 28, arabic: "ٱلْحَكَمُ", transliteration: "Al-Hakam", meaning: "The Judge", tags: ["justice", "court date", "conflict"], defaultPill: "Justice Focus",
+                rootAr: "ح ك م", rootEn: "H-K-M",
+                brief: "The ultimate arbiter whose verdict is flawless, final, and perfectly fair.",
+                etymology: "Means to restrict from wrongdoing, to judge, and to pass a final verdict. It is the absolute authority that settles all disputes.",
+                uses: ["When heading into a legal battle or court date", "During an unresolvable personal conflict", "When you need the truth to be officially recognized"]
+            },
+            { 
+                id: 29, arabic: "ٱلْعَدْلُ", transliteration: "Al-'Adl", meaning: "The Just", tags: ["fairness", "equality", "legal trouble"], defaultPill: "Fairness Focus",
+                rootAr: "ع د ل", rootEn: "A-D-L",
+                brief: "The embodiment of absolute, objective fairness and equilibrium.",
+                etymology: "Means to act justly, to straighten, and to balance perfectly. It ensures that every action in the universe eventually meets its exact, proportional reaction.",
+                uses: ["When suffering from extreme systemic unfairness", "To ask for a perfectly balanced outcome in a dispute", "When ensuring you are treating your own team fairly"]
+            },
+            { 
+                id: 30, arabic: "ٱللَّطِيفُ", transliteration: "Al-Latif", meaning: "The Subtle One", tags: ["anxiety", "ease", "unseen help", "jittery", "digital detox", "dieting", "beauty"], defaultPill: "Gentleness Focus",
+                rootAr: "ل ط ف", rootEn: "L-T-F",
+                brief: "The orchestrator of gentle, unseen, and highly precise micro-solutions.",
+                etymology: "Means to be fine, subtle, gentle, and imperceptible. It is the divine mechanic that solves massive problems through microscopic, unseen alignments.",
+                uses: ["When the path forward seems impossible", "To ask for massive changes to happen gently", "When dealing with extreme nervous anxiety"]
+            },
+            { 
+                id: 31, arabic: "ٱلْخَبِيرُ", transliteration: "Al-Khabir", meaning: "The Aware", tags: ["wisdom", "truth", "clarity"], defaultPill: "Awareness Focus",
+                rootAr: "خ ب ر", rootEn: "Kh-B-R",
+                brief: "The possessor of deep, hidden, and experiential knowledge of all inner realities.",
+                etymology: "Means to know the internal, hidden state of a thing. It is the awareness that understands the secret ingredients and core reality of every situation.",
+                uses: ["When investigating a complex business problem", "To gain deep insight into your own psychological blocks", "When you need to uncover a hidden truth"]
+            },
+            { 
+                id: 32, arabic: "ٱلْحَلِيمُ", transliteration: "Al-Halim", meaning: "The Forbearing", tags: ["anger", "patience", "parenting", "impatient", "character", "apathy"], defaultPill: "Patience Focus",
+                rootAr: "ح ل م", rootEn: "H-L-M",
+                brief: "The supremely patient who restrains anger and grants time to correct course.",
+                etymology: "Means to be gentle, patient, and calm. It is the withholding of immediate punishment despite having the absolute power to exact it.",
+                uses: ["When you are boiling over with intense anger", "To develop extreme patience when managing a team or children", "When asking for more time to fix a severe mistake"]
+            },
+            { 
+                id: 33, arabic: "ٱلْعَظِيمُ", transliteration: "Al-'Azim", meaning: "The Magnificent", tags: ["awe", "inspiration", "majesty"], defaultPill: "Magnificence Focus",
+                rootAr: "ع ظ م", rootEn: "A-Z-M",
+                brief: "The entirely magnificent force whose sheer scale commands absolute awe.",
+                etymology: "Means to be great, massive, and awe-inspiring. It represents a magnitude that the human mind cannot fully comprehend, instantly shrinking human problems.",
+                uses: ["When your current problems feel overwhelmingly large", "To cultivate a sense of wonder and perspective", "When seeking inspiration beyond your normal limits"]
+            },
+            { 
+                id: 34, arabic: "ٱلْغَفُورُ", transliteration: "Al-Ghafur", meaning: "The Forgiving", tags: ["forgiveness", "mercy", "repentance"], defaultPill: "Forgiveness Focus",
+                rootAr: "غ ف ر", rootEn: "Gh-F-R",
+                brief: "The entity who completely obscures sins, regardless of their size or severity.",
+                etymology: "Sharing the root of covering and shielding, this form emphasizes the vast *quantity* and *magnitude* of forgiveness, capable of wiping out lifelong errors instantly.",
+                uses: ["When seeking redemption for major life mistakes", "To remove the psychological weight of the past", "When trying to find the capacity to forgive yourself"]
+            },
+            { 
+                id: 35, arabic: "ٱلشَّكُورُ", transliteration: "Ash-Shakur", meaning: "The Appreciative", tags: ["gratitude", "rewards", "joy", "euphoric", "financial windfall", "retirement", "relieved", "awestruck"], defaultPill: "Gratitude Focus",
+                rootAr: "ش ك ر", rootEn: "Sh-K-R",
+                brief: "The perfectly appreciative who multiplies the reward of even the smallest effort.",
+                etymology: "Means to praise, be thankful, and acknowledge. It guarantees that absolutely no positive action, no matter how tiny, goes unrewarded or unnoticed.",
+                uses: ["To multiply the returns on your current efforts", "When feeling your hard work is entirely unappreciated", "To lock in a state of high-performance gratitude"]
+            },
+            { 
+                id: 36, arabic: "ٱلْعَلِيُّ", transliteration: "Al-'Ali", meaning: "The Most High", tags: ["status", "elevation", "inspired", "success"], defaultPill: "Elevation Focus",
+                rootAr: "ع ل و", rootEn: "A-L-W",
+                brief: "The inherently exalted, existing at a level of perfection above all creation.",
+                etymology: "Means to be high, elevated, and lofty. It signifies a status that is untouchable by the lower dynamics of human drama and physical physics.",
+                uses: ["When you need to rise above petty office politics", "To aim for the highest possible standards of excellence", "When asking to elevate your spiritual state"]
+            },
+            { 
+                id: 37, arabic: "ٱلْكَبِيرُ", transliteration: "Al-Kabir", meaning: "The Most Great", tags: ["strength", "greatness", "courage"], defaultPill: "Greatness Focus",
+                rootAr: "ك ب ر", rootEn: "K-B-R",
+                brief: "The universally great, whose essence exceeds the sum of all dimensions.",
+                etymology: "Means to be great in size, rank, and dignity. It is the ultimate reality that shrinks all other fears, competitors, and obstacles into insignificance.",
+                uses: ["When facing a seemingly unbeatable competitor", "To instantly neutralize stage fright or social anxiety", "When attempting a massive, industry-level disruption"]
+            },
+            { 
+                id: 38, arabic: "ٱلْحَافِظُ", transliteration: "Al-Hafiz", meaning: "The Preserver", tags: ["protection", "safety", "travel", "pregnancy", "hajj/umrah"], defaultPill: "Protection Focus",
+                rootAr: "ح ف ظ", rootEn: "H-F-Z",
+                brief: "The meticulous preserver who maintains the integrity of all things.",
+                etymology: "Means to guard, memorize, and preserve. It is the protective grid that keeps your health, your wealth, and your family from sudden decay or destruction.",
+                uses: ["For the physical safety of children or loved ones", "When preserving capital during an economic downturn", "To retain sharp memory and cognitive function"]
+            },
+            { 
+                id: 39, arabic: "ٱلْمُقِيتُ", transliteration: "Al-Muqit", meaning: "The Sustainer", tags: ["nourishment", "health", "energy"], defaultPill: "Sustenance Focus",
+                rootAr: "ق و ت", rootEn: "Q-W-T",
+                brief: "The provider of exact, timely nourishment for both body and soul.",
+                etymology: "Means to feed, sustain, and give exact portions. It is the precise delivery system that gives you exactly the energy you need for today's specific battles.",
+                uses: ["When feeling entirely physically or mentally depleted", "To ask for maximum efficiency from your food and rest", "When seeking the exact resources to survive a rough patch"]
+            },
+            { 
+                id: 40, arabic: "ٱلْحَسِيبُ", transliteration: "Al-Hasib", meaning: "The Reckoner", tags: ["accountability", "finance", "justice"], defaultPill: "Accountability Focus",
+                rootAr: "ح س ب", rootEn: "H-S-B",
+                brief: "The ultimate accounter who perfectly calculates and suffices every need.",
+                etymology: "Means to count, calculate, and be sufficient. It guarantees that every cent, every effort, and every micro-second of work is logged and perfectly accounted for.",
+                uses: ["When executing complex financial planning", "To find peace knowing you've done 'enough'", "When demanding accountability in an unfair system"]
+            },
+            { 
+                id: 41, arabic: "ٱلْجَلِيلُ", transliteration: "Al-Jalil", meaning: "The Majestic", tags: ["majesty", "honor", "respect"], defaultPill: "Majesty Focus",
+                rootAr: "ج ل ل", rootEn: "J-L-L",
+                brief: "The inherently majestic, demanding profound awe and high respect.",
+                etymology: "Means to be great, glorious, and sublime. It is the emanation of absolute dignity that commands the room without needing to speak.",
+                uses: ["To develop an executive presence that commands respect", "When representing your organization on a global stage", "To align yourself with high-dignity actions"]
+            },
+            { 
+                id: 42, arabic: "ٱلْكَرِيمُ", transliteration: "Al-Karim", meaning: "The Generous", tags: ["generosity", "wealth", "gifts", "blessings"], defaultPill: "Generosity Focus",
+                rootAr: "ك ر م", rootEn: "K-R-M",
+                brief: "The infinitely generous who gives without restriction, logic, or limit.",
+                etymology: "Means to be noble, generous, and highly esteemed. It is a generosity so vast that it ignores whether the recipient actually 'deserves' the gift.",
+                uses: ["When making massive, highly ambitious requests", "To cultivate extreme generosity in your own leadership", "When seeking a blessing that defies standard logic"]
+            },
+            { 
+                id: 43, arabic: "ٱلرَّقِيبُ", transliteration: "Ar-Raqib", meaning: "The Watchful", tags: ["mindfulness", "focus", "presence"], defaultPill: "Watchfulness Focus",
+                rootAr: "ر ق ب", rootEn: "R-Q-B",
+                brief: "The vigilant observer who tracks every detail with absolute precision.",
+                etymology: "Means to observe, guard, and watch closely. It is the ultimate state of mindfulness, recognizing that your daily actions are continuously monitored.",
+                uses: ["To build extreme focus and eliminate digital distractions", "When establishing strict self-accountability", "To remember you are never operating in a void"]
+            },
+            { 
+                id: 44, arabic: "ٱلْمُجِيبُ", transliteration: "Al-Mujib", meaning: "The Responsive", tags: ["answered prayers", "hope", "despair"], defaultPill: "Responsiveness Focus",
+                rootAr: "ج و ب", rootEn: "J-W-B",
+                brief: "The immediate responder who actively answers every sincere request.",
+                etymology: "Means to answer, reply, and respond. It is the absolute guarantee that an executive request, made with intent, triggers a direct counter-action in reality.",
+                uses: ["When making an urgent, time-sensitive request", "To cure feelings of extreme isolation or despair", "When waiting for a critical reply or outcome"]
+            },
+            { 
+                id: 45, arabic: "ٱلْوَاسِعُ", transliteration: "Al-Wasi'", meaning: "The All-Encompassing", tags: ["expansion", "capacity", "overwhelmed"], defaultPill: "Capacity Focus",
+                rootAr: "و س ع", rootEn: "W-S-A",
+                brief: "The vast expander of capacity, bandwidth, and resources.",
+                etymology: "Means to be wide, spacious, and all-encompassing. It is the force that widens your mental bandwidth and expands your literal capacity to handle stress.",
+                uses: ["When feeling entirely overwhelmed by responsibilities", "To ask for an expansion in your daily time or energy", "When entering a period of massive organizational scaling"]
+            },
+            { 
+                id: 46, arabic: "ٱلْحَكِيمُ", transliteration: "Al-Hakim", meaning: "The Wise", tags: ["wisdom", "decisions", "strategy", "clarity", "confusion", "indecisive", "legal trouble", "court date"], defaultPill: "Strategy Focus",
+                rootAr: "ح ك م", rootEn: "H-K-M",
+                brief: "The absolute strategist who places everything exactly where it belongs.",
+                etymology: "Means to possess deep wisdom, precision, and decisive judgment. It is the underlying logic that makes seemingly bad events eventually reveal brilliant outcomes.",
+                uses: ["When executing long-term business strategy", "To find meaning in an unexpected failure", "When you need hyper-clarity to make an executive decision"]
+            },
+            { 
+                id: 47, arabic: "ٱلْوَدُودُ", transliteration: "Al-Wadud", meaning: "The Loving", tags: ["love", "loneliness", "marriage", "harmony", "family", "wedding prep", "nostalgic", "hopeful"], defaultPill: "Harmony Focus",
+                rootAr: "و د د", rootEn: "W-D-D",
+                brief: "The source of profound, affectionate, and constantly manifesting love.",
+                etymology: "Means to love deeply, actively, and with outward affection. It represents a love that isn't just felt, but is constantly demonstrated through daily provisions and care.",
+                uses: ["To inject deep harmony into a strained marriage or partnership", "When suffering from acute loneliness", "To build a highly cohesive, loyal company culture"]
+            },
+            { 
+                id: 48, arabic: "ٱلْمَجِيدُ", transliteration: "Al-Majid", meaning: "The Glorious", tags: ["glory", "honor", "success"], defaultPill: "Glory Focus",
+                rootAr: "م ج د", rootEn: "M-J-D",
+                brief: "The ultimately glorious, characterized by extreme beauty and limitless bounty.",
+                etymology: "Means to be glorious, noble, and splendid. It represents an elevated success that is visibly radiant and commands respect from all observers.",
+                uses: ["When pursuing a highly ambitious, legendary goal", "To infuse your work with a sense of high nobility", "When building a lasting, impactful legacy"]
+            },
+            { 
+                id: 49, arabic: "ٱلْبَاعِثُ", transliteration: "Al-Ba'ith", meaning: "The Resurrector", tags: ["revival", "new beginning", "motivation"], defaultPill: "Revival Focus",
+                rootAr: "ب ع ث", rootEn: "B-A-Th",
+                brief: "The reviver who resurrects dead projects, lost motivation, and ultimately, life.",
+                etymology: "Means to resurrect, awaken, and send forth. It is the sudden jolt of electricity that brings a completely stagnant situation back to vibrant life.",
+                uses: ["When a critical project has completely stalled", "To cure deep apathy and reignite your internal drive", "When launching a massive pivot or brand revival"]
+            },
+            { 
+                id: 50, arabic: "ٱلشَّهِيدُ", transliteration: "Ash-Shahid", meaning: "The Witness", tags: ["truth", "awareness", "justice"], defaultPill: "Witness Focus",
+                rootAr: "ش ه د", rootEn: "Sh-H-D",
+                brief: "The absolute witness who is present to observe every action and intention.",
+                etymology: "Means to testify, bear witness, and be present. It guarantees that no hidden effort, silent struggle, or behind-the-scenes injustice goes unnoticed.",
+                uses: ["When your hard work is completely ignored by management", "When you are the victim of a private injustice", "To maintain extreme integrity when nobody is watching"]
+            },
+            { 
+                id: 51, arabic: "ٱلْحَقُّ", transliteration: "Al-Haqq", meaning: "The Truth", tags: ["clarity", "truth", "honesty"], defaultPill: "Truth Focus",
+                rootAr: "ح ق ق", rootEn: "H-Q-Q",
+                brief: "The undeniable, absolute reality that cuts through all human illusions.",
+                etymology: "Means to be right, true, authentic, and undeniably real. It is the gravity that eventually pulls down all lies, facades, and unstable business models.",
+                uses: ["When demanding transparency in a deceptive situation", "To align your business strictly with reality", "When you need the truth to be fully exposed"]
+            },
+            { 
+                id: 52, arabic: "ٱلْوَكِيلُ", transliteration: "Al-Wakil", meaning: "The Trustee", tags: ["reliance", "trust", "surrender", "despair", "moving city", "control"], defaultPill: "Surrender Focus",
+                rootAr: "و ك ل", rootEn: "W-K-L",
+                brief: "The ultimate manager of affairs who perfectly handles what you surrender.",
+                etymology: "Means to entrust, appoint as a guardian, or rely upon completely. It is the executive delegation of your most critical problems to the highest possible authority.",
+                uses: ["When a situation is entirely out of your control", "To instantly neutralize high-level anxiety", "When executing a massive, high-risk leap of faith"]
+            },
+            { 
+                id: 53, arabic: "ٱلْقَوِيُّ", transliteration: "Al-Qawiy", meaning: "The Strong", tags: ["strength", "physical power", "discipline"], defaultPill: "Endurance Focus",
+                rootAr: "ق و ي", rootEn: "Q-W-Y",
+                brief: "The possessor of absolute, inexhaustible, and perfect physical strength.",
+                etymology: "Means to be strong, robust, and entirely capable. It is the raw, kinetic power required to physically and mentally execute difficult tasks.",
+                uses: ["When training for peak physical performance", "To endure punishingly long work hours", "When you literally feel too weak to continue"]
+            },
+            { 
+                id: 54, arabic: "ٱلْمَتِينُ", transliteration: "Al-Matin", meaning: "The Firm", tags: ["steadfastness", "resilience", "stability"], defaultPill: "Firmness Focus",
+                rootAr: "م ت ن", rootEn: "M-T-N",
+                brief: "The unshakably firm whose strength never fatigues or wavers over time.",
+                etymology: "Means to be solid, firm, and thoroughly unbreakable. While Al-Qawiy is explosive strength, Al-Matin is the endurance that withstands years of sustained pressure.",
+                uses: ["To develop extreme psychological resilience", "When leading a company through a multi-year crisis", "To maintain your principles under severe social pressure"]
+            },
+            { 
+                id: 55, arabic: "ٱلْوَلِيُّ", transliteration: "Al-Waliy", meaning: "The Protecting Friend", tags: ["friendship", "loneliness", "support"], defaultPill: "Support Focus",
+                rootAr: "و ل ي", rootEn: "W-L-Y",
+                brief: "The deeply loyal ally who actively protects and advances your interests.",
+                etymology: "Means to be near, to manage, and to be a protecting friend. It is the intimate, protective relationship of an ultimate sponsor backing your daily moves.",
+                uses: ["When feeling isolated in executive decision-making", "To ask for an elite sponsor in your career", "When you need a way out of profound loneliness"]
+            },
+            { 
+                id: 56, arabic: "ٱلْحَمِيدُ", transliteration: "Al-Hamid", meaning: "The Praiseworthy", tags: ["gratitude", "praise", "contentment"], defaultPill: "Praise Focus",
+                rootAr: "ح م د", rootEn: "H-M-D",
+                brief: "The inherently praiseworthy whose actions dictate absolute gratitude.",
+                etymology: "Means to praise, commend, and laud. It shifts your mental state from what is missing to actively praising the perfection of what already exists.",
+                uses: ["To instantly shift out of a cynical or bitter mindset", "When locking in a state of high contentment", "As a foundational primer before making large requests"]
+            },
+            { 
+                id: 57, arabic: "ٱلْمُحْصِي", transliteration: "Al-Muhsi", meaning: "The Accounter", tags: ["accountability", "focus", "organization"], defaultPill: "Accountability Focus",
+                rootAr: "ح ص ي", rootEn: "H-S-Y",
+                brief: "The precise enumerator who comprehends the exact quantity of all things.",
+                etymology: "Means to count, register, and know the exact details. It represents supreme analytical power and the perfect organization of all data in existence.",
+                uses: ["When dealing with massive datasets or organizational chaos", "To bring sharp, analytical focus to your day", "To recognize that every micro-action counts toward the final goal"]
+            },
+            { 
+                id: 58, arabic: "ٱلْمُبْدِئُ", transliteration: "Al-Mubdi", meaning: "The Originator", tags: ["creativity", "new beginning", "ideas"], defaultPill: "Originality Focus",
+                rootAr: "ب د أ", rootEn: "B-D-A",
+                brief: "The ultimate initiator who creates the first draft from pure nothingness.",
+                etymology: "Means to begin, invent, or initiate. It is the spark required to move from the 'idea' phase into actual execution.",
+                uses: ["When starting a company from zero", "To overcome the paralysis of the blank page", "When you need an entirely unprecedented idea"]
+            },
+            { 
+                id: 59, arabic: "ٱلْمُعِيدُ", transliteration: "Al-Mu'id", meaning: "The Restorer", tags: ["restoration", "healing", "recovery"], defaultPill: "Recovery Focus",
+                rootAr: "ع و د", rootEn: "A-W-D",
+                brief: "The regenerator who effortlessly repeats creation and restores life.",
+                etymology: "Means to return, repeat, or restore. It is the guarantee that after a loss, the same level of success, wealth, or health can be systematically rebuilt.",
+                uses: ["When trying to rebuild wealth after a major financial hit", "To restore a completely broken system", "When entering a period of deep physical rehabilitation"]
+            },
+            { 
+                id: 60, arabic: "ٱلْمُحْيِي", transliteration: "Al-Muhyi", meaning: "The Giver of Life", tags: ["vitality", "health", "energy"], defaultPill: "Vitality Focus",
+                rootAr: "ح ي ي", rootEn: "H-Y-Y",
+                brief: "The animator who breathes vibrant, conscious life into dead matter.",
+                etymology: "Means to live, animate, and revive. It is the exact source of biological vitality, mental energy, and the survival instinct.",
+                uses: ["When recovering from severe burnout and fatigue", "To breathe momentum into a dying startup or project", "When praying for extreme longevity and health"]
+            },
+            { 
+                id: 61, arabic: "ٱلْمُمِيتُ", transliteration: "Al-Mumit", meaning: "The Bringer of Death", tags: ["endings", "letting go", "surrender"], defaultPill: "Release Focus",
+                rootAr: "م و ت", rootEn: "M-W-T",
+                brief: "The absolute decider of endings, closing chapters with precision.",
+                etymology: "Means to die, cease, or become lifeless. It represents the necessary, controlled demolition of things that no longer serve a purpose, making way for new growth.",
+                uses: ["When struggling to let go of a toxic relationship", "To cleanly kill a failing business division", "To internalize the brevity of life and force urgency"]
+            },
+            { 
+                id: 62, arabic: "ٱلْحَيُّ", transliteration: "Al-Hayy", meaning: "The Ever-Living", tags: ["fatigue", "energy", "vitality", "burnout", "overwhelmed", "aging", "productivity", "health"], defaultPill: "Vitality Focus",
+                rootAr: "ح ي ي", rootEn: "H-Y-Y",
+                brief: "The perfectly conscious, immortal source of all existence and awareness.",
+                etymology: "Means to be alive, aware, and conscious. It signifies an existence that is entirely self-sustaining, never sleeping, resting, or losing focus.",
+                uses: ["To pull energy during moments of extreme fatigue", "Before the dawn routine to set an awake, alert baseline", "When managing operations that require 24/7 vigilance"]
+            },
+            { 
+                id: 63, arabic: "ٱلْقَيُّومُ", transliteration: "Al-Qayyum", meaning: "The Sustainer", tags: ["stability", "support", "balance", "steadfastness"], defaultPill: "Stability Focus",
+                rootAr: "ق و م", rootEn: "Q-W-M",
+                brief: "The self-subsisting manager who constantly upholds the entire universe.",
+                etymology: "Means to stand, establish, and continuously maintain. It is the operating system running in the background, keeping all structures from collapsing.",
+                uses: ["When holding together a highly unstable organization", "To establish rock-solid personal habits", "When you need the strength to support your entire family"]
+            },
+            { 
+                id: 64, arabic: "ٱلْوَاجِدُ", transliteration: "Al-Wajid", meaning: "The Finder", tags: ["lost things", "direction", "purpose"], defaultPill: "Purpose Focus",
+                rootAr: "و ج د", rootEn: "W-J-D",
+                brief: "The unfailing finder who never lacks what is needed and never loses a thing.",
+                etymology: "Means to find, perceive, and be entirely self-sufficient. It implies an existence so resourceful that it can instantly summon exactly what is required.",
+                uses: ["When feeling entirely lost in your career trajectory", "To find highly specific, hidden resources", "When searching for deep, internal meaning"]
+            },
+            { 
+                id: 65, arabic: "ٱلْمَاجِدُ", transliteration: "Al-Majid", meaning: "The Noble", tags: ["honor", "dignity", "respect"], defaultPill: "Nobility Focus",
+                rootAr: "م ج د", rootEn: "M-J-D",
+                brief: "The brilliantly noble, combining vast generosity with supreme dignity.",
+                etymology: "Sharing a root with Al-Majid (48), this form emphasizes the *consistency* and *character* of nobility. It is the gold standard of high-status behavior.",
+                uses: ["To refine your personal character and executive presence", "When striving to act with extreme class during a dispute", "To elevate the public perception of your brand"]
+            },
+            { 
+                id: 66, arabic: "ٱلْوَاحِدُ", transliteration: "Al-Wahid", meaning: "The One", tags: ["focus", "unity", "singularity"], defaultPill: "Unity Focus",
+                rootAr: "و ح د", rootEn: "W-H-D",
+                brief: "The indivisible one, completely singular in origin and action.",
+                etymology: "Means to be one, alone, and unified. It represents the consolidation of all forces into a single, unbreakable point of focus.",
+                uses: ["To drastically narrow your focus onto a single goal", "When trying to unify a fractured team", "To clear the mind of competing, noisy distractions"]
+            },
+            { 
+                id: 67, arabic: "ٱلْأَحَدُ", transliteration: "Al-Ahad", meaning: "The Unique", tags: ["individuality", "uniqueness", "self-worth"], defaultPill: "Uniqueness Focus",
+                rootAr: "أ ح د", rootEn: "A-H-D",
+                brief: "The utterly unique, completely unlike anything else in existence.",
+                etymology: "Means to be singular and unparalleled. While Wahid is numerical oneness, Ahad is qualitative uniqueness—there is absolutely nothing comparable.",
+                uses: ["When struggling with comparison and self-worth", "To discover your completely unique market advantage", "When seeking an unprecedented, novel solution"]
+            },
+            { 
+                id: 68, arabic: "ٱلصَّمَدُ", transliteration: "As-Samad", meaning: "The Eternal Refuge", tags: ["refuge", "safety", "reliance", "independence"], defaultPill: "Refuge Focus",
+                rootAr: "ص م د", rootEn: "S-M-D",
+                brief: "The impenetrable rock that everything depends upon, while depending on nothing.",
+                etymology: "Means to be solid, impenetrable, and the ultimate destination for needs. It is the absolute anchor point during total chaos.",
+                uses: ["When everyone else is panicking and you must remain the anchor", "To cut off toxic codependency on other people", "When seeking ultimate, impenetrable safety"]
+            },
+            { 
+                id: 69, arabic: "ٱلْقَادِرُ", transliteration: "Al-Qadir", meaning: "The Capable", tags: ["capability", "skill", "competence"], defaultPill: "Capability Focus",
+                rootAr: "ق د ر", rootEn: "Q-D-R",
+                brief: "The inherently capable who executes all plans with perfect measurement.",
+                etymology: "Means to measure, have power over, and be entirely capable. It is the baseline competence that guarantees execution matches the blueprint.",
+                uses: ["When dealing with extreme imposter syndrome", "To request the exact skill sets needed for a new role", "When ensuring a project is delivered flawlessly"]
+            },
+            { 
+                id: 70, arabic: "ٱلْمُقْتَدِرُ", transliteration: "Al-Muqtadir", meaning: "The Powerful", tags: ["power", "control", "mastery"], defaultPill: "Power Focus",
+                rootAr: "ق د ر", rootEn: "Q-D-R",
+                brief: "The dominantly powerful who actively asserts extreme control over reality.",
+                etymology: "Sharing a root with Al-Qadir, this form indicates an active, overwhelming manifestation of power. It is capability taken to absolute dominance.",
+                uses: ["When trying to master a highly complex system", "To aggressively seize control of a failing situation", "When asking for the power to change your reality"]
+            },
+            { 
+                id: 71, arabic: "ٱلْمُقَدِّمُ", transliteration: "Al-Muqaddim", meaning: "The Expediter", tags: ["progress", "speed", "momentum"], defaultPill: "Progress Focus",
+                rootAr: "ق د م", rootEn: "Q-D-M",
+                brief: "The expediter who brings forward what needs to happen now.",
+                etymology: "Means to advance, put at the front, and expedite. It is the accelerator pedal that bypasses red tape and fast-tracks outcomes.",
+                uses: ["When you need an immediate result or fast-tracked decision", "To accelerate your career progression", "When trying to build massive momentum"]
+            },
+            { 
+                id: 72, arabic: "ٱلْمُؤَخِّرُ", transliteration: "Al-Mu'akhkhir", meaning: "The Delayer", tags: ["patience", "timing", "trust in timing"], defaultPill: "Timing Focus",
+                rootAr: "أ خ ر", rootEn: "A-Kh-R",
+                brief: "The deliberate delayer who holds things back for perfect strategic timing.",
+                etymology: "Means to put back, delay, or postpone. It is the realization that a 'no' is often just a 'not yet,' orchestrated for a much better future position.",
+                uses: ["To find peace when a deal falls through at the last minute", "When practicing the patience required for a long-term play", "To trust that your current delay is actively protecting you"]
+            },
+            { 
+                id: 73, arabic: "ٱلْأَوَّلُ", transliteration: "Al-Awwal", meaning: "The First", tags: ["beginnings", "foundations", "priorities"], defaultPill: "Foundation Focus",
+                rootAr: "أ و ل", rootEn: "A-W-L",
+                brief: "The absolute beginning, existing before any cause, condition, or start line.",
+                etymology: "Means to be first, foremost, and the primary cause. It is the ultimate foundation upon which all subsequent strategies and lives are built.",
+                uses: ["When laying the bedrock foundation for a new company", "To realign your core priorities before taking action", "When seeking the absolute root cause of a problem"]
+            },
+            { 
+                id: 74, arabic: "ٱلْآخِرُ", transliteration: "Al-Akhir", meaning: "The Last", tags: ["endings", "legacy", "completion"], defaultPill: "Completion Focus",
+                rootAr: "أ خ ر", rootEn: "A-Kh-R",
+                brief: "The infinite conclusion that remains after all temporary things fade.",
+                etymology: "Means to be last, ultimate, and enduring. It shifts the perspective away from short-term wins and refocuses the mind on the final legacy.",
+                uses: ["When designing your long-term exit strategy", "To push through the final 10% of a grueling project", "When dealing with the grief of a closed chapter"]
+            },
+            { 
+                id: 75, arabic: "ٱلظَّاهِرُ", transliteration: "Az-Zahir", meaning: "The Manifest", tags: ["clarity", "visibility", "evidence"], defaultPill: "Visibility Focus",
+                rootAr: "ظ ه ر", rootEn: "Z-H-R",
+                brief: "The undeniably manifest, visible and evident through all creation.",
+                etymology: "Means to be apparent, visible, and overwhelming. It is the clarity that cuts through confusion, making the right path painfully obvious.",
+                uses: ["When you need an obvious, visible sign of what to do next", "To make your brand or work highly visible to the right people", "When seeking concrete evidence in a chaotic situation"]
+            },
+            { 
+                id: 76, arabic: "ٱلْبَاطِنُ", transliteration: "Al-Batin", meaning: "The Hidden", tags: ["inner peace", "secrets", "unseen help"], defaultPill: "Inner Focus",
+                rootAr: "ب ط ن", rootEn: "B-T-N",
+                brief: "The profoundly hidden, intimately aware of the deepest internal realities.",
+                etymology: "Means to be concealed, internal, and unseen. It is the intimate awareness of your private struggles, silent motives, and unshared pain.",
+                uses: ["When battling silent, internal mental health issues", "To uncover the hidden motives of a competitor", "When seeking solutions from entirely unseen sources"]
+            },
+            { 
+                id: 77, arabic: "ٱلْوَالِي", transliteration: "Al-Wali", meaning: "The Governor", tags: ["leadership", "management", "responsibility"], defaultPill: "Leadership Focus",
+                rootAr: "و ل ي", rootEn: "W-L-Y",
+                brief: "The ultimate administrator who plans, governs, and executes all affairs.",
+                etymology: "Means to govern, manage, and direct. It represents supreme executive administration, ensuring that the complex machinery of life runs flawlessly.",
+                uses: ["When taking on a massive new management role", "To ask for help in directing a fractured organization", "When handling heavy logistical responsibilities"]
+            },
+            { 
+                id: 78, arabic: "ٱلْمُتَعَالِي", transliteration: "Al-Muta'ali", meaning: "The Most Exalted", tags: ["elevation", "excellence", "high standards"], defaultPill: "Excellence Focus",
+                rootAr: "ع ل و", rootEn: "A-L-W",
+                brief: "The supremely exalted, far above any human limitation or flaw.",
+                etymology: "Sharing a root with Al-Ali, this emphasizes an active, ongoing exaltation. It represents a standard of excellence that is continuously rising out of reach.",
+                uses: ["When setting an uncompromising standard for a product", "To detach yourself emotionally from low-level arguments", "When aiming for elite, world-class performance"]
+            },
+            { 
+                id: 79, arabic: "ٱلْبَرُّ", transliteration: "Al-Barr", meaning: "The Source of Goodness", tags: ["goodness", "kindness", "charity"], defaultPill: "Goodness Focus",
+                rootAr: "ب ر ر", rootEn: "B-R-R",
+                brief: "The expansive source of all gentle kindness, piety, and absolute goodness.",
+                etymology: "Means to be devoted, kind, and expansive (like land). It is the wide, encompassing delivery of good things, particularly the gentle honoring of parents and ties.",
+                uses: ["When striving to be intensely good to your aging parents", "To build a company culture based on genuine care", "When executing major philanthropic projects"]
+            },
+            { 
+                id: 80, arabic: "ٱلتَّوَّابُ", transliteration: "At-Tawwab", meaning: "The Accepting of Repentance", tags: ["repentance", "returning", "forgiveness"], defaultPill: "Repentance Focus",
+                rootAr: "ت و ب", rootEn: "T-W-B",
+                brief: "The relentless acceptor who continuously turns back to those who turn to Him.",
+                etymology: "Means to return. It is a highly active dynamic: you return to Him in apology, and He rapidly returns to you with massive forgiveness and restored favor.",
+                uses: ["When you have failed repeatedly and feel ashamed to ask again", "To reset a completely broken trajectory", "When seeking a pure, clean slate"]
+            },
+            { 
+                id: 81, arabic: "ٱلْمُنْتَقِمُ", transliteration: "Al-Muntaqim", meaning: "The Avenger", tags: ["justice", "retribution", "fairness"], defaultPill: "Justice Focus",
+                rootAr: "ن ق م", rootEn: "N-Q-M",
+                brief: "The exactor of justice who ensures severe wrongdoing meets its consequence.",
+                etymology: "Means to avenge, retaliate, or inflict a penalty. It is the stern, terrifying guarantee that unrepentant tyranny and oppression will be systematically dismantled.",
+                uses: ["When helpless against severe, unchecked oppression", "To seek ultimate justice for a major betrayal", "To deter yourself from crossing ethical lines"]
+            },
+            { 
+                id: 82, arabic: "ٱلْعَفُوُّ", transliteration: "Al-'Afuww", meaning: "The Pardoner", tags: ["forgiveness", "erasing mistakes", "purity"], defaultPill: "Release Focus",
+                rootAr: "ع ف و", rootEn: "A-F-W",
+                brief: "The ultimate eraser who completely deletes sins as if they never occurred.",
+                etymology: "Means to wipe away, obliterate, and leave no trace (like wind erasing footprints). While Al-Ghaffar covers the mistake, Al-Afuww completely deletes the record of it.",
+                uses: ["During the last 10 nights of Ramadan", "When you want absolute closure on a dark chapter", "To find the strength to completely pardon someone who wronged you"]
+            },
+            { 
+                id: 83, arabic: "ٱلرَّءُوفُ", transliteration: "Ar-Ra'uf", meaning: "The Compassionate", tags: ["compassion", "gentleness", "soft heart"], defaultPill: "Compassion Focus",
+                rootAr: "ر أ ف", rootEn: "R-A-F",
+                brief: "The deeply compassionate whose pity shields you from severe hardships.",
+                etymology: "Means to show extreme pity, tenderness, and compassion. It is a specific type of mercy focused on alleviating suffering and making life intensely easier.",
+                uses: ["When you are physically or emotionally frail", "To ask for an easy transition during a major life change", "To soften the hearts of an aggressive board or family member"]
+            },
+            { 
+                id: 84, arabic: "مَالِكُ ٱلْمُلْكِ", transliteration: "Malik-ul-Mulk", meaning: "The Owner of all Sovereignty", tags: ["sovereignty", "wealth", "dominion"], defaultPill: "Sovereignty Focus",
+                rootAr: "م ل ك", rootEn: "M-L-K",
+                brief: "The absolute owner of all kingdoms, wealth, and power structures.",
+                etymology: "A repetition of the root for possession and kingdom. It signifies that all worldly power is merely leased; the true, permanent title deed belongs to Him.",
+                uses: ["When attempting to build massive generational wealth", "To maintain extreme humility when given great power", "When dealing with intimidating billionaires or politicians"]
+            },
+            { 
+                id: 85, arabic: "ذُو ٱلْجَلَالِ وَٱلْإِكْرَامِ", transliteration: "Dhul-Jalali wal-Ikram", meaning: "Lord of Majesty and Bounty", tags: ["majesty", "bounty", "respect"], defaultPill: "Majesty Focus",
+                rootAr: "ج ل ل / ك ر م", rootEn: "J-L-L & K-R-M",
+                brief: "The possessor of both terrifying majesty and overwhelming generosity.",
+                etymology: "Combines two massive roots: Jalil (awe-inspiring greatness) and Karim (limitless generosity). It represents the ultimate balance of deep reverence and intense love.",
+                uses: ["As the ultimate capstone to any major supplication", "When seeking both high respect and financial bounty", "To completely realign your perspective on the Divine"]
+            },
+            { 
+                id: 86, arabic: "ٱلْمُقْسِطُ", transliteration: "Al-Muqsit", meaning: "The Equitable", tags: ["fairness", "balance", "equality"], defaultPill: "Equity Focus",
+                rootAr: "ق س ط", rootEn: "Q-S-T",
+                brief: "The perfectly equitable who distributes justice and resources in perfect balance.",
+                etymology: "Means to act justly and equitably. It is the precise distribution of rights, ensuring that every soul gets exactly what it deserves without bias.",
+                uses: ["When finalizing a complex business split or inheritance", "To ask for fairness in an HR or legal dispute", "To ensure you are treating your subordinates with exact equity"]
+            },
+            { 
+                id: 87, arabic: "ٱلْجَامِعُ", transliteration: "Al-Jami'", meaning: "The Gatherer", tags: ["gathering", "reunion", "unity"], defaultPill: "Unity Focus",
+                rootAr: "ج م ع", rootEn: "J-M-A",
+                brief: "The ultimate gatherer who seamlessly unites disparate and scattered things.",
+                etymology: "Means to collect, unite, and gather together. It is the force that pulls scattered resources, distant people, and lost focus back into a unified center.",
+                uses: ["When trying to pull together funding from scattered investors", "To pray for the safe return of someone far away", "To gather your highly fragmented thoughts and focus"]
+            },
+            { 
+                id: 88, arabic: "ٱلْغَنِيُّ", transliteration: "Al-Ghani", meaning: "The Self-Sufficient", tags: ["independence", "wealth", "sufficiency"], defaultPill: "Sufficiency Focus",
+                rootAr: "غ ن ي", rootEn: "Gh-N-Y",
+                brief: "The entirely self-sufficient, utterly independent of all needs.",
+                etymology: "Means to be free from want, incredibly wealthy, and entirely independent. It is the realization that the Divine requires absolutely nothing from creation.",
+                uses: ["When seeking total financial independence", "To break a toxic reliance on a specific client or boss", "When you realize you have been working for the praise of people"]
+            },
+            { 
+                id: 89, arabic: "ٱلْمُغْنِي", transliteration: "Al-Mughni", meaning: "The Enricher", tags: ["wealth", "enrichment", "abundance"], defaultPill: "Enrichment Focus",
+                rootAr: "غ ن ي", rootEn: "Gh-N-Y",
+                brief: "The active enricher who grants massive wealth and removes all dependency.",
+                etymology: "Sharing the root of Al-Ghani, this form is active—it is the direct transfer of wealth and independence from the Creator to you.",
+                uses: ["When executing a strategy to rapidly build net worth", "To pray for a massive, life-changing financial windfall", "When you want your business to be entirely self-funded"]
+            },
+            { 
+                id: 90, arabic: "ٱلْمَانِعُ", transliteration: "Al-Mani'", meaning: "The Preventer", tags: ["protection", "prevention", "boundaries"], defaultPill: "Boundary Focus",
+                rootAr: "م ن ع", rootEn: "M-N-A",
+                brief: "The protective barrier who deliberately blocks harm and premature events.",
+                etymology: "Means to stop, block, or prevent. It is the divine firewall that stops toxic people, bad deals, and destructive forces from entering your orbit.",
+                uses: ["When setting severe personal or professional boundaries", "To thank Him when a deal you wanted falls through", "To ask for an invisible shield against unseen malice"]
+            },
+            { 
+                id: 91, arabic: "ٱلضَّارُّ", transliteration: "Ad-Darr", meaning: "The Distresser", tags: ["hardship", "trials", "tests"], defaultPill: "Trial Focus",
+                rootAr: "ض ر ر", rootEn: "D-R-R",
+                brief: "The creator of necessary friction, pain, and trials that force evolution.",
+                etymology: "Means to harm, afflict, or cause distress. It represents the surgical, highly controlled pain that is absolutely necessary to wake a person up or trigger growth.",
+                uses: ["When trying to survive a brutal period of testing", "To acknowledge that the current pain has a specific architectural purpose", "When you need friction to force a massive life change"]
+            },
+            { 
+                id: 92, arabic: "ٱلنَّافِعُ", transliteration: "An-Nafi'", meaning: "The Propitious", tags: ["benefit", "advantage", "usefulness"], defaultPill: "Benefit Focus",
+                rootAr: "ن ف ع", rootEn: "N-F-A",
+                brief: "The creator of sheer benefit, usefulness, and pure advantage.",
+                etymology: "Means to profit, be of use, and create advantage. Paired with Ad-Darr, it confirms that all genuine benefit and positive ROI comes solely from this source.",
+                uses: ["When optimizing a product to be highly beneficial to users", "To ask for an outsized ROI on a small investment", "When seeking relationships that are mutually elevating"]
+            },
+            { 
+                id: 93, arabic: "ٱلنُّورُ", transliteration: "An-Nur", meaning: "The Light", tags: ["clarity", "guidance", "focus", "illumination"], defaultPill: "Illumination Focus",
+                rootAr: "ن و ر", rootEn: "N-W-R",
+                brief: "The absolute light that renders the universe visible and the truth clear.",
+                etymology: "Means light, illumination, and brilliance. It is the profound spiritual and intellectual clarity that instantly banishes the darkness of ignorance and confusion.",
+                uses: ["When trapped in a state of severe intellectual confusion", "To ask for literal 'light' and charisma in your face and speech", "When seeking the answer to a deeply complex problem"]
+            },
+            { 
+                id: 94, arabic: "ٱلْهَادِي", transliteration: "Al-Hadi", meaning: "The Guide", tags: ["guidance", "confusion", "lost", "ramadan prep", "new hobby", "good end"], defaultPill: "Direction Focus",
+                rootAr: "ه د ي", rootEn: "H-D-Y",
+                brief: "The continuous guide who steadily leads you toward the ultimate destination.",
+                etymology: "Means to guide, lead, and show the way. It is the internal compass and the external signs that constantly course-correct your life trajectory.",
+                uses: ["When you have absolutely no idea what to do next", "To request mentorship and elite guidance in your career", "To keep your moral compass locked during high-stress choices"]
+            },
+            { 
+                id: 95, arabic: "ٱلْبَدِيعُ", transliteration: "Al-Badi'", meaning: "The Incomparable", tags: ["creativity", "innovation", "uniqueness"], defaultPill: "Innovation Focus",
+                rootAr: "ب د ع", rootEn: "B-D-A",
+                brief: "The unprecedented innovator who creates without any prior blueprint.",
+                etymology: "Means to invent, innovate, and create something entirely new. It is the absolute peak of creativity, completely unconstrained by existing paradigms.",
+                uses: ["When designing a completely disruptive business model", "To ask for an idea that no one else has ever thought of", "When standard solutions have completely failed you"]
+            },
+            { 
+                id: 96, arabic: "ٱلْبَاقِي", transliteration: "Al-Baqi", meaning: "The Everlasting", tags: ["eternity", "legacy", "permanence"], defaultPill: "Legacy Focus",
+                rootAr: "ب ق ي", rootEn: "B-Q-Y",
+                brief: "The permanent and eternal, remaining long after all creation ceases.",
+                etymology: "Means to remain, endure, and outlast. It is the sobering reality that every single physical asset will vanish, leaving only this eternal reality.",
+                uses: ["When structuring a 100-year legacy or endowment", "To detach your heart from the extreme stress of temporary losses", "When writing a will or planning for succession"]
+            },
+            { 
+                id: 97, arabic: "ٱلْوَارِثُ", transliteration: "Al-Warith", meaning: "The Inheritor", tags: ["inheritance", "succession", "future"], defaultPill: "Future Focus",
+                rootAr: "و ر ث", rootEn: "W-R-Th",
+                brief: "The final inheritor to whom all wealth, power, and property eventually returns.",
+                etymology: "Means to inherit or be an heir. It reminds the executive that they are merely managing capital temporarily before it all reverts to the original Owner.",
+                uses: ["To cure the obsessive hoarding of wealth", "When navigating highly stressful inheritance or succession planning", "To recognize the ultimate futility of corporate empires"]
+            },
+            { 
+                id: 98, arabic: "ٱلرَّشِيدُ", transliteration: "Ar-Rashid", meaning: "The Guide", tags: ["decisions", "judgment", "righteousness"], defaultPill: "Judgment Focus",
+                rootAr: "ر ش د", rootEn: "R-Sh-D",
+                brief: "The infallible director who leads straight to the right outcome with zero error.",
+                etymology: "Means to be on the right path, to have sound judgment. It represents flawless execution and the perfect alignment of action with the correct destination.",
+                uses: ["When you need to make a massive, irreversible executive decision", "To ask that a current project is steered to a flawless conclusion", "When seeking elite judgment and maturity"]
+            },
+            { 
+                id: 99, arabic: "ٱلصَّبُورُ", transliteration: "As-Sabur", meaning: "The Patient", tags: ["patience", "hardship", "waiting", "caring for parents"], defaultPill: "Executive Patience",
+                rootAr: "ص ب ر", rootEn: "S-B-R",
+                brief: "The perfectly patient who never rushes action before its perfectly scheduled time.",
+                etymology: "Means to bind, tie, or endure. It is an active, highly disciplined patience that absorbs massive pressure without breaking or acting prematurely.",
+                uses: ["When forced to play a grueling, multi-year long game", "To endure the severe pain of waiting for a breakthrough", "When managing wildly incompetent people without losing your temper"]
+            }
         ];
 
         function initApp() {
@@ -706,8 +1371,8 @@
             isRoutineActive = true;
             routineIndex = 0;
             const sets = {
-                dawn: { q: [62, 63, 18, 94], t: 33, pill: "Dawn Alignment" },
-                midmorning: { q: [8, 46, 26, 23], t: 33, pill: "Performance Flow" },
+                dawn: { q: [62, 18, 94], t: 33, pill: "Dawn Alignment" },
+                midmorning: { q: [17, 12, 16], t: 33, pill: "Performance Flow" },
                 midday: { q: [5, 30, 84], t: 33, pill: "Pressure Reset" },
                 afternoon: { q: [75, 19, 46], t: 33, pill: "Strategic Synthesis" },
                 sunset: { q: [17, 12, 99], t: 33, pill: "Provision + Gratitude" },
@@ -1060,6 +1725,104 @@
             document.getElementById('btn-reset-stats').onclick = () => { const m = document.getElementById('confirm-reset-modal'); m.classList.remove('hidden', 'opacity-0'); m.classList.add('flex', 'opacity-100'); };
             document.getElementById('btn-reset-stats-confirm').onclick = () => { totalLifetimeDhikr = 0; localStorage.setItem('lifetime_dhikr', '0'); updateStatsDisplay(); document.getElementById('confirm-reset-modal').classList.add('hidden'); };
             document.getElementById('btn-reset').onclick = (e) => { e.stopPropagation(); resetCounter(); };
+        }
+
+        function shuffleCurrentFormula(e) {
+            if(e) e.stopPropagation();
+            if(!currentNameData) return;
+            let newText = "";
+            if(currentNameData.id === 999) {
+                newText = generateDynamicSupplication(currentSelectedTagsArr, currentDynamicNamesStr);
+                activeWeavedFormula = newText;
+            } else {
+                const yaName = "Ya " + clean(currentNameData.transliteration);
+                const req = getDynamicRequestString(currentNameData.tags, 2);
+                newText = `${yaName}, please ${req}`;
+            }
+            const ctTpl = document.getElementById('counter-template');
+            if (ctTpl) {
+                ctTpl.style.opacity = 0;
+                setTimeout(() => { ctTpl.innerText = `"${newText}"`; ctTpl.style.opacity = 1; }, 200);
+            }
+        }
+
+        function startWeavedDua() {
+            isRoutineActive = false;
+            const finalDuaText = generateDynamicSupplication(currentSelectedTagsArr, currentDynamicNamesStr);
+            const shortRecitation = `Ya Rahman Ya Rahim, ${currentDynamicNamesStr}, Ya Wakil`;
+            const intentionFocus = currentSelectedTagsArr.length > 0 ? currentSelectedTagsArr.slice(0, 3).join(' • ') : "Combined Focus";
+            activeWeavedFormula = finalDuaText;
+            target = 33; 
+            currentNameData = { id: 999, arabic: "◌", transliteration: shortRecitation, meaning: intentionFocus, defaultPill: "Layered Supplication" };
+            document.getElementById('counter-arabic').innerText = currentNameData.arabic;
+            document.getElementById('counter-transliteration').innerText = currentNameData.transliteration;
+            document.getElementById('counter-meaning').innerText = currentNameData.meaning;
+            document.getElementById('counter-pill').innerText = currentNameData.defaultPill;
+            document.getElementById('how-to-ask-box').classList.remove('hidden');
+            document.getElementById('shuffle-dua-btn').classList.remove('hidden');
+            document.getElementById('counter-template').innerText = `"${activeWeavedFormula}"`; 
+            document.getElementById('target-display-num').innerText = target;
+            resetCounter();
+            switchTab('counter');
+        }
+
+        function openJournal() {
+            const jp = document.getElementById('journal-prompt');
+            if (jp) jp.innerText = `What clarity was achieved during this repetition?`; 
+            const m = document.getElementById('journal-write-modal'); 
+            if (m) { m.classList.remove('hidden'); m.classList.add('flex'); void m.offsetWidth; m.classList.add('opacity-100'); }
+        }
+
+        function closeJournalModal() {
+            const m = document.getElementById('journal-write-modal');
+            if(m) { m.classList.remove('opacity-100'); setTimeout(() => m.classList.add('hidden'), 300); }
+        }
+
+        function saveJournalEntry() {
+            const ji = document.getElementById('journal-input');
+            if (ji && ji.value.trim() !== '') {
+                const logName = currentNameData && currentNameData.id === 999 ? "Weaved Supplication" : currentNameData.transliteration;
+                journalEntries.unshift({ date: new Date().toLocaleDateString(), name: logName, text: ji.value });
+                localStorage.setItem('journal_entries', JSON.stringify(journalEntries));
+                ji.value = ""; 
+            }
+            closeJournalModal(); renderJournal(); switchTab('journal');
+        }
+
+        function exportVault() {
+            if (personalVault.length === 0) { showToast("Vault is empty."); return; }
+            const dataStr = JSON.stringify(personalVault, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', '99_names_vault_backup.json');
+            linkElement.click();
+            showToast("Backup Exported");
+        }
+
+        function triggerImport() { document.getElementById('import-file-input').click(); }
+
+        function handleImportFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const importedData = JSON.parse(e.target.result);
+                    let addedCount = 0;
+                    importedData.forEach(item => {
+                        const exists = personalVault.some(v => v.title === item.title && v.content === item.content);
+                        if (!exists) { personalVault.push(item); addedCount++; }
+                    });
+                    if (addedCount > 0) {
+                        logVaultAction(`Restored ${addedCount} via Backup`);
+                        localStorage.setItem('personal_vault', JSON.stringify(personalVault));
+                        renderVault(); showToast(`Restored ${addedCount} sessions`);
+                    } else showToast("No new data.");
+                } catch (err) { showToast("Invalid file."); }
+                event.target.value = '';
+            };
+            reader.readAsText(file);
         }
 
         window.onload = initApp;
